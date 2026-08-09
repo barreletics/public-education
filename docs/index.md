@@ -6,7 +6,8 @@ Reference material for Kim, Greg, and anyone exploring metabolic cancer strategi
 
 | Topic | Link |
 |-------|------|
-| **Cancer Metabolic Strategy** — experts, community groups, NED data, protocol | [cancer-metabolic-strategy.html](./cancer-metabolic-strategy.html) · [Live site](https://barreletics.github.io/public-education/cancer-metabolic-strategy.html) |
+| **Cancer Metabolic Strategy** — experts, community groups, NED data, protocol | [cancer-metabolic-strategy.html](./cancer-metabolic-strategy.html) |
+| **Greg's Roadmap** — Karmanos prep, 90-day OS, oncologist questions (sinus NEC, liver/pelvis mets) | [greg-karmanos-roadmap.html](./greg-karmanos-roadmap.html) |
 
 ## What's in the cancer guide
 
