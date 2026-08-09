@@ -3,13 +3,15 @@ Resolves to reel: https://www.facebook.com/reel/1436497078090396/
 Posted by: Nicolas Hulscher, MPH (McCullough Foundation epidemiologist)
 Engagement (Aug 2026): ~17K views · ~1K reactions
 
-=== REEL CAPTION / CLAIM (verbatim from og:description) ===
+=== FULL POST TEXT (user-pasted + matches og:description) ===
 
 A recent study reported COMPLETE REMISSION of Stage IV cancers using fenbendazole.
 
 Patients with advanced melanoma, breast, and prostate cancer saw their tumors disappear — without chemotherapy.
 
 Clinical trials must be launched immediately.
+
+Note: Same obfuscated prefix string as Nurse Maria post (Facebook spam/bot evasion pattern).
 
 === WHAT PAPER THIS REFERS TO ===
 Title: "Fenbendazole as an Anticancer Agent? A Case Series of Self-Administration in Three Patients"
@@ -24,7 +26,11 @@ Reason: Makis failed to disclose COI — offered fenbendazole-related services a
 
 === WHY THE REEL IS MISLEADING ===
 1. **Retracted paper** — still promoted on social media as "recent study" with no retraction disclaimer
-2. **"Without chemotherapy"** — Dr. Andrés Pérez Román's critique documents concurrent standard therapies in the cases (e.g. Keytruda/pembrolizumab, apalutamide). Remissions cannot be attributed to fenbendazole alone.
+2. **"Without chemotherapy" is FALSE** — Makis paper timelines + infographic show concurrent standard care:
+   - Breast: Fulvestrant injections + radiation to spine mets (2021–2022)
+   - Prostate: ADT (Orgovyx + Erleada) + Xgeva + supplements
+   - Melanoma: Prior dabrafenib/trametinib; surgery for ureteral tumors
+   Dr. Andrés Pérez Román attributes remissions partly to these therapies, not FBZ alone.
 3. **Cancer types** — breast, prostate, melanoma — not sinonasal high-grade NEC (Greg's diagnosis)
 4. **Same hype pattern** as Rises Above It All Facebook post (see facebook-makis-case-series-rises-above-itall.txt)
 
