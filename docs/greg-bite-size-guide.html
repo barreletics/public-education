@@ -23,8 +23,8 @@
         body {
             margin: 0;
             font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-            font-size: 15px;
-            line-height: 1.5;
+            font-size: 17px;
+            line-height: 1.65;
             color: var(--ink);
             background: var(--wash);
         }
@@ -105,15 +105,27 @@
         }
         .sec-title {
             margin: 0;
-            font-size: 1rem;
+            font-size: 1.15rem;
             font-weight: 600;
             color: var(--ink);
         }
         .sec-lead {
             margin: 0 0 14px;
             color: var(--muted);
-            font-size: 14px;
+            font-size: 15px;
+            line-height: 1.6;
         }
+        .start-here {
+            margin: 0 32px 0;
+            padding: 18px 20px;
+            background: var(--success-soft);
+            border: 1px solid #a5d6a7;
+            font-size: 15px;
+            line-height: 1.55;
+        }
+        .start-here strong { color: var(--success); display: block; margin-bottom: 8px; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; }
+        .start-here ol { margin: 0; padding-left: 1.25rem; }
+        .start-here li { margin: 6px 0; }
 
         /* Principle */
         .principle {
@@ -143,7 +155,7 @@
         .tbl {
             width: 100%;
             border-collapse: collapse;
-            font-size: 13px;
+            font-size: 14px;
             margin: 12px 0;
         }
         .tbl th {
@@ -595,10 +607,20 @@
 
     <div class="principle">
         <strong>Chemo at Karmanos</strong> — carboplatin + etoposide.
-        <strong>Metabolic lane starts now</strong> — keto, GKI, protocol below runs <em>with</em> chemo to enhance response. Tell Karmanos what you're doing; don't wait for permission.
+        <strong>Metabolic lane starts now</strong> — keto, GKI, and the protocol below run <em>with</em> chemo. Tell Karmanos what you're doing. We're not waiting for permission to start keto and prep.
     </div>
 
-    <div style="margin:16px 32px;padding:14px 16px;background:#fff8e1;border:1px solid #ffe082;font-size:14px">
+    <div class="start-here">
+        <strong>If you read nothing else</strong>
+        <ol>
+            <li><strong>Start keto today</strong> — under 20g carbs · print the <a href="keto-starter-sheet.html">keto starter sheet</a></li>
+            <li><strong>Order Keto-Mojo</strong> — measure GKI twice daily (morning + evening)</li>
+            <li><strong>Wednesday at Karmanos</strong> — get chemo plan in writing · tell them the metabolic protocol</li>
+            <li><strong>FBZ + ivermectin</strong> — sources disagree on cycle timing (see §04) · consider <strong>Dr. Katsonas</strong> to help pick the right schedule</li>
+        </ol>
+    </div>
+
+    <div style="margin:16px 32px;padding:14px 16px;background:#fff8e1;border:1px solid #ffe082;font-size:15px;line-height:1.55">
         <strong>Two abbreviations — do not mix these up:</strong><br>
         <strong>NED</strong> = <em>No Evidence of Disease</em> — the <strong>goal</strong> (scans show no cancer).<br>
         <strong>Greg's diagnosis</strong> = <em>high-grade neuroendocrine carcinoma</em> — the type of cancer. (Doctors sometimes write "NEC" on charts for that diagnosis — it is <strong>not</strong> NED.)
@@ -651,31 +673,14 @@
         <section class="sec">
             <div class="sec-head">
                 <span class="sec-num">01</span>
-                <h2 class="sec-title">Your diagnosis</h2>
+                <h2 class="sec-title">Your diagnosis (short version)</h2>
             </div>
-            <p class="sec-lead">High-grade neuroendocrine carcinoma — aggressive, chemo-responsive, treated systemically.</p>
-            <dl class="dl">
-                <div class="dl-row">
-                    <dt>What it is</dt>
-                    <dd>Poorly differentiated <strong>neuroendocrine carcinoma</strong> — confirmed on pathology with neuroendocrine markers (synaptophysin, chromogranin). High-grade by WHO definition.</dd>
-                </div>
-                <div class="dl-row">
-                    <dt>Not a NET</dt>
-                    <dd>Well-differentiated neuroendocrine <em>tumors</em> (NETs) are often slower. Greg's is the high-grade <strong>carcinoma</strong> category — different treatment path.</dd>
-                </div>
-                <div class="dl-row">
-                    <dt>Subtype</dt>
-                    <dd>Small-cell or large-cell — confirm on pathology report at Karmanos.</dd>
-                </div>
-                <div class="dl-row">
-                    <dt>Primary site</dt>
-                    <dd>Sinonasal tract (sinus / paranasal area).</dd>
-                </div>
-                <div class="dl-row">
-                    <dt>First-line</dt>
-                    <dd><strong>Carboplatin + etoposide</strong> — standard for high-grade neuroendocrine carcinoma with metastases.</dd>
-                </div>
-            </dl>
+            <p class="sec-lead">High-grade neuroendocrine carcinoma — aggressive, but chemo-responsive. First-line treatment: <strong>carboplatin + etoposide</strong> at Karmanos.</p>
+            <ul style="margin:0;padding-left:1.25rem;font-size:15px;color:var(--muted);line-height:1.6">
+                <li><strong>Primary:</strong> sinus area · <strong>Spread:</strong> liver + pelvis</li>
+                <li><strong>Not a slow NET</strong> — this is high-grade carcinoma (different path)</li>
+                <li><strong>Goal:</strong> NED on scans — no evidence of disease</li>
+            </ul>
         </section>
 
         <!-- 02 Why together -->
@@ -684,38 +689,13 @@
                 <span class="sec-num">02</span>
                 <h2 class="sec-title">Why both lanes work better</h2>
             </div>
-            <p class="sec-lead">Chemo kills dividing cells. Metabolic therapy starves fuel and may reduce chemo resistance.</p>
-
-            <table class="tbl">
-                <thead>
-                    <tr><th>Standard care</th><th>Metabolic support</th></tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Carboplatin + etoposide — kills rapidly dividing cells</td>
-                        <td>Strict keto — restricts glucose &amp; glutamine fuel</td>
-                    </tr>
-                    <tr>
-                        <td>Systemic treatment for liver &amp; pelvis mets</td>
-                        <td><strong>GKI ≤ 3</strong> — daily proof metabolic lane is working</td>
-                    </tr>
-                    <tr>
-                        <td>Proven first-line for this cancer type</td>
-                        <td>May sensitize tumors to chemo (Seyfried metabolic research)</td>
-                    </tr>
-                    <tr>
-                        <td>Etoposide targets cell division</td>
-                        <td>Fenbendazole + ivermectin cycle — complements chemo (see §05)</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p class="sec-lead">Chemo kills dividing cells. Keto + GKI starves tumor fuel. Both together — not either/or.</p>
 
             <div class="tip">
-                <strong>GKI — your daily number (Glucose Ketone Index)</strong><br>
-                Each check: prick finger → test strip in Keto-Mojo → write down glucose and ketones → <strong>GKI = glucose ÷ ketones</strong>.<br>
-                <strong>Target ≤ 3</strong> (ideal ≤ 2) = you're starving tumor fuel. Above 5 = cut carbs, walk 20 min.<br>
-                <strong>When:</strong> morning before eating · evening before dinner = <em>2 checks per day</em>.<br>
-                <strong>Strips:</strong> meter needs <em>two types</em> — glucose strips + ketone strips (separate boxes, both from Keto-Mojo).
+                <strong>GKI in plain English</strong><br>
+                Prick finger → test strip in Keto-Mojo → write glucose and ketones → <strong>divide glucose by ketones = GKI</strong>.<br>
+                <strong>Target ≤ 3.</strong> Check <strong>twice a day</strong>: morning before food, evening before dinner.<br>
+                <strong>Strips:</strong> you need two boxes — glucose strips + ketone strips (both Keto-Mojo brand).
             </div>
 
             <div class="lanes">
@@ -780,32 +760,59 @@
         <section class="sec">
             <div class="sec-head">
                 <span class="sec-num">04</span>
-                <h2 class="sec-title">Protocol doses (settled)</h2>
+                <h2 class="sec-title">Protocol — doses &amp; cycling</h2>
             </div>
-            <p class="sec-lead">You saw different numbers online. <strong>This is Greg's protocol</strong> — Joe Tippens baseline + community cycle.</p>
+            <p class="sec-lead">You'll see different numbers online. <strong>Dose is mostly agreed; cycle timing is not.</strong> Pick one schedule and stay consistent.</p>
 
+            <p style="font-size:14px;font-weight:600;margin:0 0 8px">Daily (every day)</p>
             <table class="tbl">
-                <thead><tr><th>Item</th><th>Dose</th><th>Schedule</th></tr></thead>
+                <thead><tr><th>Item</th><th>Amount</th></tr></thead>
                 <tbody>
-                    <tr><td><strong>Fenbendazole</strong></td><td><strong>222 mg</strong> per day</td><td>4 days ON · 10 days OFF · repeat</td></tr>
-                    <tr><td><strong>Ivermectin</strong></td><td><strong>12 mg</strong> per day</td><td>Same 4 ON days as FBZ</td></tr>
-                    <tr><td><strong>Keto</strong></td><td>&lt; 20 g net carbs</td><td>Every day</td></tr>
-                    <tr><td><strong>GKI</strong></td><td>Target ≤ 3</td><td>Measure AM + evening</td></tr>
-                    <tr><td>Vitamin D3</td><td>5000 IU</td><td>Daily</td></tr>
-                    <tr><td>Vitamin E</td><td>400–800 IU</td><td>Daily (Tippens stack)</td></tr>
-                    <tr><td>Curcumin</td><td>500–1000 mg</td><td>Daily</td></tr>
-                    <tr><td>Magnesium glycinate</td><td>200–400 mg</td><td>Daily · evening helps sleep</td></tr>
+                    <tr><td><strong>Keto</strong></td><td>&lt; 20 g net carbs · see <a href="keto-starter-sheet.html">keto starter sheet</a></td></tr>
+                    <tr><td><strong>GKI</strong></td><td>Target ≤ 3 · measure AM + evening</td></tr>
+                    <tr><td>Vitamin D3</td><td>5000 IU</td></tr>
+                    <tr><td>Vitamin E</td><td>400–800 IU (with food)</td></tr>
+                    <tr><td>Curcumin</td><td>500–1000 mg (with fatty meal)</td></tr>
+                    <tr><td>Magnesium glycinate</td><td>200–400 mg (evening · helps sleep)</td></tr>
+                </tbody>
+            </table>
+
+            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Optional daily adds (Kim flagged these)</p>
+            <table class="tbl">
+                <thead><tr><th>Item</th><th>How</th></tr></thead>
+                <tbody>
+                    <tr><td>Apple cider vinegar</td><td>1–2 tbsp in water · daily · before meals OK</td></tr>
+                    <tr><td>Matcha or green tea</td><td>1–2 cups/day · EGCG support · skip if it upsets stomach</td></tr>
+                </tbody>
+            </table>
+
+            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Cycled (FBZ + ivermectin together on ON days)</p>
+            <table class="tbl">
+                <thead><tr><th>Drug</th><th>Dose on ON days</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Fenbendazole</strong></td><td><strong>222 mg</strong> · one Panacur C packet · <em>with fat</em></td></tr>
+                    <tr><td><strong>Ivermectin</strong></td><td><strong>12 mg</strong> · same ON days as FBZ</td></tr>
                 </tbody>
             </table>
 
             <div class="tip">
-                <strong>Why 222 mg fenbendazole?</strong> Joe Tippens dose · one <strong>Panacur C</strong> 1-gram packet = 222 mg active drug. Other sources cite up to 444–2000 mg — <strong>Greg stays at 222 mg</strong> unless Karmanos suggests otherwise.<br>
-                <strong>Take FBZ with fat</strong> (avocado, olive oil, nut butter) — absorption requires it.
+                <strong>Why 222 mg fenbendazole?</strong> Joe Tippens dose · one 1g Panacur packet = 222 mg. Some sources say 444–2000 mg for aggressive cancer — <strong>start at 222 mg</strong> unless you and your metabolic clinician decide otherwise.
             </div>
 
-            <p style="font-size:13px;margin:16px 0 4px;font-weight:600">14-day cycle</p>
+            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Cycle timing — sources disagree (this is normal)</p>
+            <table class="tbl">
+                <thead><tr><th>What you may see</th><th>Schedule</th><th>Notes</th></tr></thead>
+                <tbody>
+                    <tr><td>Joe Tippens / many Facebook groups</td><td><strong>4 days ON</strong> · 10 days OFF</td><td>14-day repeat cycle</td></tr>
+                    <tr><td>What Greg read</td><td><strong>6 days ON</strong> · 6 days OFF</td><td>12-day repeat cycle</td></tr>
+                    <tr><td>Makis (high-grade cancers)</td><td><strong>6 days ON</strong> · 1 day OFF</td><td>More aggressive schedule</td></tr>
+                </tbody>
+            </table>
+            <p style="font-size:14px;color:var(--muted);margin:10px 0 0;line-height:1.55">There is no single right answer in the research. <strong>Pick one, write it down, stay consistent.</strong> Kim suggests Greg consider a consult with <strong>Dr. Katsonas</strong> — he knows this plan and can help choose cycle timing and tune doses. That runs <em>alongside</em> Karmanos, not instead of it.</p>
+
+            <p style="font-size:13px;margin:16px 0 4px;font-weight:600;color:var(--muted)">Example: 4 on / 10 off (Tippens style)</p>
             <div class="cycle-bar">
-                <div class="cycle-on">4 days ON — FBZ + IVM</div>
+                <div class="cycle-on">4 days ON</div>
                 <div class="cycle-off">10 days OFF — keto + supplements only</div>
             </div>
         </section>
@@ -822,8 +829,12 @@
                 <div><label>Strips (ongoing)</label><strong>Glucose strips</strong> + <strong>ketone strips</strong> — separate boxes, Keto-Mojo brand. ~2 checks/day = plan on refills.</div>
             </div>
             <div class="shop-row">
-                <div><label>Keto food</label>Any grocery — eggs, avocados, olive oil, salmon, spinach, macadamia nuts, cheese, cauliflower. Zero sugar.</div>
-                <div><label>Electrolytes</label>Amazon or grocery — <strong>LMNT</strong>, <strong>Nuun</strong>, or bulk potassium + salt. Prevents keto flu.</div>
+                <div><label>Keto food</label>Print <a href="keto-starter-sheet.html">keto starter sheet</a> · any grocery · eggs, avocado, meat, fish, greens, cheese. Optional app: Carb Manager or Cronometer (not required).</div>
+                <div><label>Electrolytes</label>Amazon or grocery — <strong>LMNT</strong>, <strong>Nuun</strong>, or salt + potassium. Prevents keto flu.</div>
+            </div>
+            <div class="shop-row">
+                <div><label>ACV + tea</label>Apple cider vinegar (any grocery) · matcha or green tea bags (Amazon / grocery)</div>
+                <div><label>Metabolic clinician</label><strong>Dr. Katsonas</strong> — Kim recommends a consult to pick cycle timing and tune the protocol</div>
             </div>
             <div class="shop-row">
                 <div><label>Fenbendazole</label><strong>Panacur C</strong> — Tractor Supply, Amazon, farm stores (~$8–15). Each 1g packet = 222 mg. Or pre-made capsules (Sanare Lab, etc.) for convenience — same dose, not stronger.</div>
@@ -848,6 +859,10 @@
             <p class="sec-lead">Everything lives on this one page. Print these extras for Wednesday and daily tracking.</p>
 
             <div class="doc-links">
+                <a class="doc-link" href="keto-starter-sheet.html">
+                    <div><strong>Keto starter sheet</strong><span>What to eat · what to skip · stick on the fridge</span></div>
+                    <em>Print →</em>
+                </a>
                 <a class="doc-link" href="shopping-sourcing-list.html">
                     <div><strong>Shopping list</strong><span>Checklist — Keto-Mojo, groceries, supplements, Panacur C</span></div>
                     <em>Print →</em>
