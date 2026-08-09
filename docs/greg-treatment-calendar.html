@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg's Treatment Calendar — Template</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background: #f9f9f9; color: #333; }
+        h1 { border-bottom: 3px solid #1565c0; padding-bottom: 10px; }
+        h2 { color: #1565c0; }
+        .banner { background: #fff3e0; border-left: 4px solid #ef6c00; padding: 16px 20px; margin-bottom: 20px; border-radius: 4px; }
+        .section { background: white; padding: 20px; margin: 16px 0; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.08); }
+        table { width: 100%; border-collapse: collapse; font-size: 0.88em; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+        th { background: #f5f5f5; }
+        .chemo { background: #ffebee; }
+        .fbz { background: #e8f5e9; }
+        .scan { background: #e3f2fd; }
+        .karmanos { background: #fff9c4; }
+        input[type="text"] { border: none; border-bottom: 1px solid #999; width: 90%; font: inherit; }
+        a { color: #1565c0; }
+        @media print { body { background: white; } .section { box-shadow: none; } }
+    </style>
+</head>
+<body>
+
+<p><a href="deliverables-roadmap.html">← Project roadmap</a> · <a href="greg-karmanos-roadmap.html">Greg's roadmap</a></p>
+
+<h1>Greg's Treatment Calendar</h1>
+
+<div class="banner">
+    <strong>Template — fill in after Karmanos (Wed Aug 13, 2026).</strong> Send back: treatment start date, chemo regimen, cycle length, scan dates, and oncologist approval on metabolic adjuncts. This page will be updated with real dates.
+</div>
+
+<div class="section">
+    <h2>Treatment facts (fill in at Karmanos)</h2>
+    <table>
+        <tr><td width="40%"><strong>Oncologist</strong></td><td><input type="text" placeholder="Name"></td></tr>
+        <tr><td><strong>Regimen</strong></td><td><input type="text" placeholder="e.g. Carboplatin AUC 5 + Etoposide D1-3, q21d"></td></tr>
+        <tr><td><strong>Cycle length</strong></td><td><input type="text" placeholder="e.g. 21 days"></td></tr>
+        <tr><td><strong>Planned cycles</strong></td><td><input type="text" placeholder="e.g. 4-6"></td></tr>
+        <tr><td><strong>Treatment start date</strong></td><td><input type="text" placeholder="YYYY-MM-DD"></td></tr>
+        <tr><td><strong>Restaging scan date</strong></td><td><input type="text" placeholder="YYYY-MM-DD"></td></tr>
+        <tr><td><strong>Metabolic adjuncts approved?</strong></td><td><input type="text" placeholder="Y/N — FBZ, IVM, which supplements"></td></tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Sample 12-week map (dates TBD)</h2>
+    <p>Legend: <span class="karmanos" style="padding:2px 6px;">Karmanos</span>
+    <span class="chemo" style="padding:2px 6px;">Chemo cycle</span>
+    <span class="fbz" style="padding:2px 6px;">FBZ/IVM days 1–4</span>
+    <span class="scan" style="padding:2px 6px;">Scan</span></p>
+
+    <table>
+        <tr><th>Week</th><th>Calendar dates</th><th>Chemo</th><th>FBZ/IVM cycle</th><th>GKI / diet</th><th>Notes</th></tr>
+        <tr class="karmanos">
+            <td>0</td>
+            <td>Aug 13, 2026</td>
+            <td>—</td>
+            <td>Do NOT start until discussed</td>
+            <td>Begin strict keto; baseline GKI</td>
+            <td>Karmanos appointment — capture plan in writing</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><input type="text" placeholder="dates"></td>
+            <td>Cycle 1 Day 1?</td>
+            <td>Days 1–4 ON if approved</td>
+            <td>Daily GKI log</td>
+            <td>Order meter if not done</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="text"></td>
+            <td>Cycle 1 recovery</td>
+            <td>Days 5–14 OFF</td>
+            <td>Target GKI ≤3</td>
+            <td>Log nausea, energy</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><input type="text"></td>
+            <td>Cycle 2 Day 1?</td>
+            <td>Repeat 4-on cycle</td>
+            <td>Continue keto through chemo</td>
+            <td>Call oncology if LFTs spike</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><input type="text"></td>
+            <td>Cycle 2 recovery</td>
+            <td>OFF week</td>
+            <td>Review GKI averages</td>
+            <td>Do not quit before week 8</td>
+        </tr>
+        <tr>
+            <td>5–8</td>
+            <td><input type="text"></td>
+            <td>Cycles 3–4?</td>
+            <td>Alternate 4-on / 10-off</td>
+            <td>Stay in kill zone</td>
+            <td>Community minimum commitment window</td>
+        </tr>
+        <tr class="scan">
+            <td>9–12</td>
+            <td><input type="text"></td>
+            <td>Cycle 5–6 or rest?</td>
+            <td>Continue if approved</td>
+            <td>—</td>
+            <td><strong>Restaging scan</strong> — compare to baseline; NED goal</td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>How chemo + FBZ cycles usually align</h2>
+    <p>Ask oncologist specifically: <em>"Can we run fenbendazole/ivermectin days 1–4 of each 14-day metabolic cycle, avoiding chemo infusion days if there's interaction risk?"</em></p>
+    <ul>
+        <li>Some patients offset IVM from FBZ by a few hours</li>
+        <li>Some pause antiparasitics 48h before/after infusion until team confirms safety</li>
+        <li>Never self-adjust chemo schedule — only the adjunct cycle</li>
+    </ul>
+    <p>Related: <a href="gki-tracking-sheet.html">GKI sheet</a> · <a href="shopping-sourcing-list.html">Shopping list</a></p>
+</div>
+
+</body>
+</html>
