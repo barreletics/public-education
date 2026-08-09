@@ -412,6 +412,164 @@
             color: var(--accent);
             margin-bottom: 4px;
         }
+
+        /* Flow diagram */
+        .flow {
+            margin: 0 32px 8px;
+            padding: 20px 18px;
+            background: #fafbfc;
+            border: 1px solid var(--line);
+        }
+        .flow-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .flow-goal {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .flow-goal-box {
+            display: inline-block;
+            padding: 10px 24px;
+            background: var(--success-soft);
+            border: 2px solid var(--success);
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--success);
+        }
+        .flow-goal-box small {
+            display: block;
+            font-weight: 400;
+            font-size: 11px;
+            color: var(--muted);
+            margin-top: 2px;
+        }
+        .flow-arrow {
+            text-align: center;
+            color: var(--muted);
+            font-size: 18px;
+            line-height: 1;
+            margin: 6px 0;
+        }
+        .flow-merge {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent);
+            padding: 8px;
+            background: var(--accent-soft);
+            border: 1px dashed var(--accent);
+            margin-bottom: 12px;
+        }
+        .flow-lanes {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 8px;
+            align-items: stretch;
+            margin-bottom: 12px;
+        }
+        @media (max-width: 520px) {
+            .flow-lanes { grid-template-columns: 1fr; }
+            .flow-plus { display: none; }
+        }
+        .flow-lane {
+            border: 1px solid var(--line);
+            padding: 12px;
+            font-size: 12px;
+            text-align: center;
+            background: var(--paper);
+        }
+        .flow-lane strong {
+            display: block;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        .flow-lane-a { border-top: 3px solid var(--accent); }
+        .flow-lane-a strong { color: var(--accent); }
+        .flow-lane-b { border-top: 3px solid var(--success); }
+        .flow-lane-b strong { color: var(--success); }
+        .flow-plus {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            color: var(--muted);
+            padding: 0 2px;
+        }
+        .flow-track {
+            text-align: center;
+            font-size: 12px;
+            padding: 8px 12px;
+            background: #fff8e1;
+            border: 1px solid #ffe082;
+            margin-bottom: 14px;
+        }
+        .flow-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            border: 1px solid var(--line);
+            font-size: 11px;
+        }
+        @media (max-width: 520px) {
+            .flow-steps { grid-template-columns: 1fr 1fr; }
+        }
+        .flow-step {
+            padding: 10px 8px;
+            text-align: center;
+            border-right: 1px solid var(--line);
+            background: var(--paper);
+        }
+        .flow-step:last-child { border-right: none; }
+        .flow-step b {
+            display: block;
+            font-size: 10px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 3px;
+        }
+        .flow-step-arrow {
+            text-align: center;
+            font-size: 11px;
+            color: var(--muted);
+            margin: 8px 0 0;
+        }
+
+        /* Document links */
+        .doc-links {
+            display: grid;
+            gap: 8px;
+        }
+        .doc-link {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 12px;
+            align-items: center;
+            padding: 12px 14px;
+            border: 1px solid var(--line);
+            background: #fafbfc;
+            text-decoration: none;
+            color: inherit;
+            font-size: 13px;
+        }
+        .doc-link:hover { border-color: var(--accent); background: var(--accent-soft); }
+        .doc-link strong { display: block; color: var(--accent); font-size: 14px; margin-bottom: 2px; }
+        .doc-link span { color: var(--muted); font-size: 12px; }
+        .doc-link em {
+            font-style: normal;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--accent);
+            white-space: nowrap;
+        }
+
         @media print {
             body { background: white; padding: 0; }
             .doc { box-shadow: none; border: none; max-width: 100%; }
@@ -444,6 +602,47 @@
         <strong>Two abbreviations — do not mix these up:</strong><br>
         <strong>NED</strong> = <em>No Evidence of Disease</em> — the <strong>goal</strong> (scans show no cancer).<br>
         <strong>Greg's diagnosis</strong> = <em>high-grade neuroendocrine carcinoma</em> — the type of cancer. (Doctors sometimes write "NEC" on charts for that diagnosis — it is <strong>not</strong> NED.)
+    </div>
+
+    <!-- How it works diagram -->
+    <div class="flow">
+        <div class="flow-title">How it all works</div>
+
+        <div class="flow-goal">
+            <div class="flow-goal-box">
+                GOAL: NED
+                <small>No evidence of disease on scans</small>
+            </div>
+        </div>
+
+        <div class="flow-arrow">▲</div>
+        <div class="flow-merge">Both lanes run together — not instead of chemo</div>
+
+        <div class="flow-lanes">
+            <div class="flow-lane flow-lane-a">
+                <strong>Lane 1 · Oncology</strong>
+                Karmanos<br>
+                Carboplatin + etoposide<br>
+                Scans · radiation · trials
+            </div>
+            <div class="flow-plus">+</div>
+            <div class="flow-lane flow-lane-b">
+                <strong>Lane 2 · Metabolic</strong>
+                Strict keto (&lt;20g carbs)<br>
+                Fenbendazole + ivermectin cycle<br>
+                D3 · E · curcumin · magnesium
+            </div>
+        </div>
+
+        <div class="flow-track"><strong>Daily proof metabolic lane works:</strong> GKI = glucose ÷ ketones · target ≤ 3 · measure AM + evening</div>
+
+        <div class="flow-steps">
+            <div class="flow-step"><b>Now</b>Order supplies · start keto · log GKI</div>
+            <div class="flow-step"><b>Aug 13</b>Karmanos · get chemo plan</div>
+            <div class="flow-step"><b>Week 1+</b>Chemo + metabolic together</div>
+            <div class="flow-step"><b>8–12 wk</b>Scans · judge response</div>
+        </div>
+        <div class="flow-step-arrow">NOW → KARMANOS → TREATMENT → SCANS</div>
     </div>
 
     <div class="body">
@@ -640,12 +839,34 @@
             </div>
         </section>
 
+        <!-- 06 Print & links -->
+        <section class="sec">
+            <div class="sec-head">
+                <span class="sec-num">06</span>
+                <h2 class="sec-title">Print &amp; links</h2>
+            </div>
+            <p class="sec-lead">Everything lives on this one page. Print these extras for Wednesday and daily tracking.</p>
+
+            <div class="doc-links">
+                <a class="doc-link" href="shopping-sourcing-list.html">
+                    <div><strong>Shopping list</strong><span>Checklist — Keto-Mojo, groceries, supplements, Panacur C</span></div>
+                    <em>Print →</em>
+                </a>
+                <a class="doc-link" href="greg-karmanos-roadmap.html">
+                    <div><strong>Karmanos prep</strong><span>15 questions for the oncologist · what to bring Wednesday</span></div>
+                    <em>Print →</em>
+                </a>
+                <a class="doc-link" href="gki-tracking-sheet.html">
+                    <div><strong>GKI tracking sheet</strong><span>Log glucose, ketones, and GKI twice daily</span></div>
+                    <em>Print →</em>
+                </a>
+            </div>
+        </section>
+
     </div>
 
     <footer class="foot">
-        <a href="shopping-sourcing-list.html">Print shopping list</a> ·
-        <a href="greg-karmanos-roadmap.html">Karmanos prep + questions</a> ·
-        <a href="gki-tracking-sheet.html">GKI log sheet</a>
+        One link for Greg: <strong>barreletics.github.io/public-education/greg-bite-size-guide.html</strong> · Built by Andrew · Aug 2026
     </footer>
 
 </div>
