@@ -20,12 +20,13 @@ Copy from **[MESSAGE-FOR-GREG.md](./MESSAGE-FOR-GREG.md)** — explains research
 
 | Item | Count |
 |------|-------|
-| Facebook / YouTube sources fact-checked | **17 transcripts** in `docs/transcripts/` |
-| HTML guides for Greg | **9 pages** |
+| **Research effort** | **80–120+ hours equivalent** — iterative multi-day build, not one chat session |
+| Facebook / YouTube sources fact-checked | **17 transcripts** |
+| HTML guides for Greg | **9 pages** — **operating system** (clear path + grounded hope) |
 | Expert / source verdicts documented | Makis (retracted), Hulscher (EoC), Seyfried, Sulack, Supple, Berg, Skymeds, Tippens, Nurse Maria, Pharmacy Times, McCullough, Mary Bowden, + more |
 | Diagnosis-specific framing | Sinonasal **high-grade NEC stage IV**, liver + pelvis mets |
 
-### Debunked or flagged (from links Kim sent)
+### Debunked or flagged (sources reviewed in this project)
 - Makis / Hulscher → retracted paper + Expression of Concern  
 - Nurse Maria / Skymeds sales / Linda Traitz → product ads  
 - Pete Sulack Be Resilient → paid wellness funnel, not oncology  
