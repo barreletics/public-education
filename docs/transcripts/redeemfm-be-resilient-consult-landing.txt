@@ -1,0 +1,65 @@
+Source: https://protocol.redeemfm.com/consult (user-shared link, Aug 2026)
+Operator: Dr. Pete Sulack, DC — Redeem Health / Be Resilient (Knoxville TN)
+Related: facebook-pete-sulack-fenbendazole-brain-cancer.txt
+
+=== WHAT THIS PAGE IS ===
+**Sales landing page** for "Be Resilient" — an 8-month wellness coaching program, NOT a medical clinic or oncology service.
+
+Primary CTA: "Book My Consult" → 1-on-1 call with a **Senior Program Advisor** (sales/discovery call).
+
+=== PROGRAM OFFER (from page) ===
+- 470+ biomarker lab testing
+- Custom-compounded supplements (shipped to door)
+- Personalized nutrition from food sensitivity testing
+- 8-month guided program
+- 1-on-1 health advisor calls
+- Monthly training with "team of experts" / Dr. Pete's journey materials
+- **U.S. clients only**
+- Disclaimer: "Does not diagnose, treat, or cure cancer" — "wellness support" / "internal terrain"
+
+=== TESTIMONIALS ON PAGE ===
+- Cancer survivor anecdotes (oncologist surprised, PSA drop, hospice → living)
+- Standard disclaimer: individual results, not guaranteed
+
+=== CONNECTION TO FACEBOOK ===
+Same funnel as Sulack FB posts asking users to comment "CONSULT" or "PROTOCOL":
+→ DMs → this booking page → paid program + supplement sales
+
+The URL may include tracking tokens (mcp_token) tying the lead to a specific ad/share.
+
+=== LEGIT OR NOT? ===
+**❌ Do NOT treat as medical care for Greg**
+
+| Aspect | Verdict |
+|--------|---------|
+| Operator credentials | Chiropractor (DC), brain cancer survivor anecdote — NOT NEC oncologist |
+| Business model | High-ticket wellness sales funnel |
+| Cancer treatment claims | Legally disclaimed on page — "not a cure" |
+| Evidence for sinonasal NEC | None |
+| Relevance to Greg's liver mets | Unknown supplement stack = **extra risk** without oncology oversight |
+| Cost | Likely thousands (not disclosed on landing page) |
+
+=== RELEVANCE FOR GREG (sinonasal high-grade NEC, stage IV, liver + pelvis mets, Karmanos Aug 13) ===
+
+**DO NOT book or pay before Karmanos.**
+
+Reasons:
+1. Greg needs **board-certified neuroendocrine oncology** — carboplatin/etoposide, staging, trials — not a chiropractor's wellness program.
+2. Sulack's story = **diffuse astrocytoma (brain)** — different cancer, different standard care, unclear what else he received (surgery/radiation/chemo not disclosed in FB post).
+3. Custom supplement stacks with **liver mets** require hepatology/oncology review — not a program advisor.
+4. The "free consult" is a **sales call**; page itself says advisors may tell you it's not a fit, but the business goal is enrollment.
+5. Metabolic adjunct (keto, GKI, mebendazole discussion) belongs **parallel to** Karmanos — coordinated with treating team, not a parallel paid coach.
+
+=== IF KIM/GREG ARE TEMPTED ===
+Ask on the call (if curious, after oncology):
+- Total program cost (all-in including labs + supplements)?
+- Who signs off on drug interactions with **carboplatin/etoposide**?
+- Any **NEC or neuroendocrine** patients in your cohort?
+- Will you share protocol in writing with our oncologist?
+- What happens if liver enzymes rise?
+
+**Better use of time before Wed:** greg-karmanos-roadmap.html + Seyfried metabolic framing for oncology conversation.
+
+=== BOTTOM LINE ===
+⚠️ **Hope story + commercial wellness program** — same tier as Pete Sulack Facebook lead-gen.
+Not a substitute for Karmanos. Not evidence for NEC. Do not delay or replace standard care.
