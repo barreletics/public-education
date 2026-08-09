@@ -3,395 +3,627 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greg — Bite-Size Plan (Read This First)</title>
+    <title>Greg — Operating System (Bite-Size)</title>
     <style>
         :root {
-            --bg: #f9f9f9;
-            --surface: #ffffff;
-            --text: #333333;
-            --muted: #666666;
-            --blue: #1565c0;
-            --blue-light: #e3f2fd;
-            --green: #2e7d32;
-            --green-light: #e8f5e9;
-            --red: #c62828;
-            --red-light: #ffebee;
-            --amber: #ef6c00;
-            --amber-light: #fff3e0;
-            --border: #dddddd;
+            --ink: #1a1a1a;
+            --muted: #5c5c5c;
+            --line: #d8dce0;
+            --paper: #ffffff;
+            --wash: #f4f6f8;
+            --accent: #0d47a1;
+            --accent-soft: #e8eef7;
+            --success: #1b5e20;
+            --success-soft: #edf7ed;
+            --warn: #e65100;
+            --warn-soft: #fff8e1;
+            --danger: #b71c1c;
         }
         * { box-sizing: border-box; }
         body {
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.55;
+            font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+            color: var(--ink);
+            background: var(--wash);
         }
-        .wrap { max-width: 720px; margin: 0 auto; padding: 28px 20px 64px; }
-        h1 {
-            font-size: 1.75rem;
-            margin: 0 0 8px;
-            line-height: 1.25;
-            border-bottom: 3px solid var(--blue);
-            padding-bottom: 10px;
+        .doc {
+            max-width: 680px;
+            margin: 0 auto;
+            background: var(--paper);
+            border: 1px solid var(--line);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
         }
-        .sub { color: var(--muted); margin-bottom: 24px; font-size: 0.95rem; }
-        .pill {
-            display: inline-block;
-            font-size: 0.72rem;
+        @media (min-width: 700px) {
+            body { padding: 32px 16px; }
+            .doc { border-radius: 2px; }
+        }
+
+        /* Header */
+        .head {
+            padding: 28px 32px 24px;
+            border-bottom: 3px solid var(--accent);
+        }
+        .head-tag {
+            font-size: 11px;
             font-weight: 600;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
-            background: var(--blue-light);
-            color: var(--blue);
-            padding: 5px 12px;
-            border-radius: 4px;
-            margin-bottom: 16px;
+            color: var(--accent);
+            margin-bottom: 10px;
         }
-        .card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            padding: 20px;
-            margin: 16px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
-        }
-        h2 {
-            font-size: 0.95rem;
-            color: var(--blue);
-            margin: 28px 0 12px;
-            font-weight: 700;
-        }
-        .rule {
-            text-align: center;
-            font-size: 1.1rem;
-            font-weight: 700;
-            padding: 18px;
-            background: var(--blue-light);
-            border-radius: 6px;
-            border-left: 4px solid var(--blue);
-            margin: 20px 0;
-        }
-        .rule em { color: var(--green); font-style: normal; }
-
-        .lanes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0; }
-        @media (max-width: 520px) { .lanes { grid-template-columns: 1fr; } }
-        .lane {
-            border-radius: 6px;
-            padding: 16px;
-            text-align: center;
-            font-size: 0.88rem;
-        }
-        .lane-main { background: var(--blue-light); border: 2px solid var(--blue); }
-        .lane-side { background: var(--green-light); border: 2px dashed var(--green); }
-        .lane-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 8px; }
-        .lane-main .lane-title { color: var(--blue); }
-        .lane-side .lane-title { color: var(--green); }
-        .plus { text-align: center; font-size: 1.4rem; font-weight: 700; color: var(--muted); margin: 4px 0; }
-
-        .steps { counter-reset: step; }
-        .step {
-            display: flex;
-            gap: 14px;
-            align-items: flex-start;
-            margin: 14px 0;
-            padding: 14px;
-            background: var(--surface);
-            border-radius: 6px;
-            border: 1px solid var(--border);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-        .step-num {
-            flex-shrink: 0;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: var(--blue);
-            color: white;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-        }
-        .step-body strong { display: block; margin-bottom: 4px; }
-
-        .pyramid { margin: 16px 0; }
-        .pyr-row {
-            margin: 6px auto;
-            padding: 10px 14px;
-            border-radius: 6px;
-            text-align: center;
-            font-size: 0.85rem;
+        .head h1 {
+            margin: 0 0 16px;
+            font-size: 1.65rem;
             font-weight: 600;
-            border: 1px solid var(--border);
+            letter-spacing: -0.02em;
+            line-height: 1.2;
         }
-        .pyr-1 { width: 55%; background: var(--green-light); color: var(--green); }
-        .pyr-2 { width: 72%; background: var(--blue-light); color: var(--blue); }
-        .pyr-3 { width: 88%; background: var(--amber-light); color: var(--amber); }
-        .pyr-4 { width: 100%; background: var(--red-light); color: var(--red); font-weight: 500; }
+        .meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            background: var(--line);
+            border: 1px solid var(--line);
+            font-size: 13px;
+        }
+        @media (max-width: 480px) { .meta { grid-template-columns: 1fr; } }
+        .meta div {
+            background: var(--wash);
+            padding: 10px 14px;
+        }
+        .meta label {
+            display: block;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 2px;
+        }
 
-        .cycle {
+        /* Sections */
+        .body { padding: 8px 32px 32px; }
+        .sec {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .sec:last-child { border-bottom: none; }
+        .sec-head {
             display: flex;
-            flex-wrap: wrap;
-            gap: 4px;
-            justify-content: center;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+        .sec-num {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        .sec-title {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--ink);
+        }
+        .sec-lead {
+            margin: 0 0 14px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* Principle */
+        .principle {
+            margin: 0 32px;
+            padding: 16px 18px;
+            background: var(--accent-soft);
+            border-left: 4px solid var(--accent);
+            font-size: 14px;
+        }
+        .principle strong { color: var(--accent); }
+
+        /* Definition list */
+        .dl { margin: 0; }
+        .dl-row {
+            display: grid;
+            grid-template-columns: 118px 1fr;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+        .dl-row:last-child { border-bottom: none; }
+        .dl dt { font-weight: 600; color: var(--ink); margin: 0; }
+        .dl dd { margin: 0; color: var(--muted); }
+
+        /* Synergy table */
+        .tbl {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
             margin: 12px 0;
         }
-        .cycle-day {
-            width: 28px;
-            height: 28px;
-            border-radius: 4px;
-            font-size: 0.65rem;
+        .tbl th {
+            text-align: left;
+            padding: 10px 12px;
+            background: var(--wash);
+            border: 1px solid var(--line);
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .tbl td {
+            padding: 10px 12px;
+            border: 1px solid var(--line);
+            vertical-align: top;
+        }
+        .tbl tr:nth-child(even) td { background: #fafbfc; }
+
+        /* Two lanes */
+        .lanes {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 8px;
+            align-items: stretch;
+            margin: 14px 0;
+        }
+        @media (max-width: 520px) {
+            .lanes { grid-template-columns: 1fr; }
+            .lanes-join { display: none; }
+        }
+        .lane {
+            border: 1px solid var(--line);
+            padding: 14px;
+            font-size: 13px;
+        }
+        .lane-a { border-top: 3px solid var(--accent); background: var(--accent-soft); }
+        .lane-b { border-top: 3px solid var(--success); background: var(--success-soft); }
+        .lane-label {
+            font-size: 10px;
             font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .lane-a .lane-label { color: var(--accent); }
+        .lane-b .lane-label { color: var(--success); }
+        .lanes-join {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            font-weight: 300;
+            color: var(--muted);
+            padding: 0 4px;
+        }
+
+        /* Steps */
+        .path {
+            display: grid;
+            gap: 10px;
+            margin-top: 12px;
+        }
+        .path-item {
+            display: grid;
+            grid-template-columns: 44px 1fr;
+            gap: 14px;
+            padding: 14px;
+            border: 1px solid var(--line);
+            background: #fafbfc;
+        }
+        .path-n {
+            width: 44px; height: 44px;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .path-item strong { display: block; margin-bottom: 4px; font-size: 14px; }
+        .path-item p { margin: 0; font-size: 13px; color: var(--muted); }
+
+        /* Timeline inline */
+        .timeline {
+            display: flex;
+            gap: 0;
+            margin: 14px 0;
+            font-size: 12px;
+            border: 1px solid var(--line);
+        }
+        @media (max-width: 520px) {
+            .timeline { flex-direction: column; }
+        }
+        .tl-block {
+            flex: 1;
+            padding: 12px 10px;
+            border-right: 1px solid var(--line);
+            text-align: center;
+        }
+        .tl-block:last-child { border-right: none; }
+        .tl-block span {
+            display: block;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+
+        /* Cycle */
+        .cycle-bar {
+            display: flex;
+            height: 32px;
+            border: 1px solid var(--line);
+            overflow: hidden;
+            margin: 12px 0 8px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .cycle-on {
+            flex: 4;
+            background: var(--success);
+            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .on { background: #2e7d32; color: #fff; }
-        .off { background: #e0e0e0; color: #666; }
-        .cycle-legend { font-size: 0.8rem; color: var(--muted); text-align: center; margin-top: 8px; }
-
-        .tl { border-left: 3px solid var(--blue); padding-left: 18px; margin: 12px 0; }
-        .tl-item { margin-bottom: 16px; position: relative; }
-        .tl-item::before {
-            content: '';
-            position: absolute;
-            left: -25px;
-            top: 6px;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: var(--blue);
+        .cycle-off {
+            flex: 10;
+            background: #eceff1;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .tl-when { font-size: 0.75rem; color: var(--blue); font-weight: 700; text-transform: uppercase; }
+        .cycle-note { font-size: 12px; color: var(--muted); }
 
-        .skip { color: var(--red); font-weight: 600; }
-        .ok { color: var(--green); font-weight: 600; }
-        .links a {
+        /* Trust tiers */
+        .tier { font-size: 13px; }
+        .tier-row {
+            display: flex;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            align-items: flex-start;
+        }
+        .tier-row:last-child { border-bottom: none; }
+        .tier-badge {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .t1 { background: var(--success-soft); color: var(--success); }
+        .t2 { background: var(--accent-soft); color: var(--accent); }
+        .t3 { background: var(--warn-soft); color: var(--warn); }
+        .t4 { background: #fce4ec; color: var(--danger); }
+
+        /* Action grid */
+        .actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 13px;
+        }
+        @media (max-width: 480px) { .actions { grid-template-columns: 1fr; } }
+        .action-box {
+            padding: 12px 14px;
+            border: 1px solid var(--line);
+        }
+        .action-box h4 {
+            margin: 0 0 8px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .action-box ul { margin: 0; padding-left: 18px; }
+        .action-box li { margin: 4px 0; color: var(--muted); }
+        .now h4 { color: var(--success); }
+        .wait h4 { color: var(--accent); }
+        .skip h4 { color: var(--danger); }
+        .skip { grid-column: 1 / -1; background: #fff5f5; }
+
+        /* Metrics strip */
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--line);
+            border: 1px solid var(--line);
+            margin: 14px 0;
+        }
+        .metric {
+            background: var(--paper);
+            padding: 12px;
+            text-align: center;
+        }
+        .metric val {
             display: block;
-            color: var(--blue);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .metric label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+        }
+
+        /* Footer */
+        .foot {
+            padding: 20px 32px;
+            background: var(--wash);
+            border-top: 1px solid var(--line);
+            font-size: 12px;
+            color: var(--muted);
+        }
+        .foot a { color: var(--accent); }
+        .links {
+            display: grid;
+            gap: 6px;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+        .links a {
+            color: var(--accent);
             text-decoration: none;
-            padding: 10px 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 0.92rem;
         }
         .links a:hover { text-decoration: underline; }
-        .links a:last-child { border-bottom: none; }
-        .note {
-            font-size: 0.88rem;
-            color: var(--muted);
-            margin-top: 24px;
-            line-height: 1.55;
-            background: #f5f5f5;
-            padding: 14px 16px;
-            border-radius: 6px;
-            border: 1px solid var(--border);
-        }
-        .info-table td { border-bottom: 1px solid #eee; }
+
         @media print {
-            body { background: white; color: #111; }
-            .wrap { padding: 0; max-width: 100%; }
-            .card, .step, .lane, .rule, .note {
-                box-shadow: none;
-                border: 1px solid #ccc;
-                break-inside: avoid;
-            }
+            body { background: white; padding: 0; }
+            .doc { box-shadow: none; border: none; max-width: 100%; }
             .links { display: none; }
-            h2 { color: #1565c0; }
+            .sec { break-inside: avoid; }
         }
     </style>
 </head>
 <body>
-<div class="wrap">
 
-    <div class="pill">5-minute read · print this</div>
-    <h1>Greg's plan — bite size</h1>
-    <p class="sub">High-grade neuroendocrine carcinoma · Sinus · Stage IV · Karmanos <strong>Wed Aug 13</strong></p>
+<div class="doc">
 
-    <div class="rule">
-        <span style="color:var(--blue)">CHEMO FIRST</span> — carboplatin + etoposide<br>
-        Keto + metabolic support <em>ENHANCE</em> chemo — together, not instead
-    </div>
-
-    <!-- What is neuroendocrine carcinoma -->
-    <h2>What is Greg's cancer? (plain English)</h2>
-    <div class="card" style="font-size:0.92rem">
-        <p style="margin-top:0"><strong>Greg has high-grade neuroendocrine carcinoma</strong> of the sinonasal (sinus) tract — with spread to the liver and pelvis.</p>
-        <p>On charts, doctors sometimes shorten this to <strong>NEC</strong> — meaning <strong>neuroendocrine carcinoma</strong>, not other medical abbreviations (like necrotizing enterocolitis, which is unrelated).</p>
-        <p><strong>What that actually means:</strong></p>
-        <ul style="margin:8px 0;padding-left:20px">
-            <li><strong>Neuroendocrine carcinoma</strong> — a <em>poorly differentiated, high-grade</em> cancer. Pathology confirms it with neuroendocrine markers (e.g. synaptophysin, chromogranin). By WHO classification, this category is <strong>aggressive by definition</strong> — not a slow-growing "NET."</li>
-            <li><strong>High-grade</strong> — cells divide rapidly (pathology often shows high <strong>Ki-67</strong>, frequent mitoses, areas of necrosis).</li>
-            <li><strong>Small-cell or large-cell type</strong> — ask Karmanos which subtype Greg's pathology shows; both are treated similarly to other high-grade NECs.</li>
-            <li><strong>Sinonasal primary</strong> — started in the sinus / paranasal area.</li>
-            <li><strong>Stage IV</strong> — metastatic (liver + pelvis); treatment is systemic (whole body).</li>
-        </ul>
-        <p style="margin-bottom:0"><strong>Important distinction:</strong> This is <strong>not</strong> the same as a well-differentiated neuroendocrine <em>tumor</em> (NET) — those are often slower and treated differently. Greg's is the high-grade <strong>carcinoma</strong> category — which is why first-line is usually aggressive chemo: <strong>carboplatin + etoposide</strong>.</p>
-    </div>
-
-    <!-- Why together -->
-    <h2>Why chemo + diet together? (the whole point)</h2>
-    <div class="card" style="font-size:0.92rem;background:var(--green-light);border-color:var(--green)">
-        <p style="margin-top:0"><strong>Chemo and metabolic therapy attack cancer from different angles — and together they can work better than either alone.</strong></p>
-        <table style="width:100%;font-size:0.88rem;border-collapse:collapse;margin:12px 0">
-            <tr style="background:#fff">
-                <th style="padding:8px;border:1px solid var(--border);text-align:left;width:35%">Chemo does</th>
-                <th style="padding:8px;border:1px solid var(--border);text-align:left">Metabolic lane does</th>
-            </tr>
-            <tr>
-                <td style="padding:8px;border:1px solid var(--border);vertical-align:top">Kills rapidly dividing cancer cells (carboplatin + etoposide)</td>
-                <td style="padding:8px;border:1px solid var(--border);vertical-align:top">Starves tumor fuel — glucose &amp; glutamine — that fast-growing NEC depends on</td>
-            </tr>
-            <tr style="background:#fff">
-                <td style="padding:8px;border:1px solid var(--border);vertical-align:top">Systemic attack on mets (liver, pelvis)</td>
-                <td style="padding:8px;border:1px solid var(--border);vertical-align:top"><strong>GKI tracking</strong> (glucose ÷ ketones) — measurable proof you're starving fuel; target ≤3</td>
-            </tr>
-            <tr>
-                <td style="padding:8px;border:1px solid var(--border);vertical-align:top">Standard proven first-line for high-grade NEC</td>
-                <td style="padding:8px;border:1px solid var(--border);vertical-align:top">May <strong>sensitize</strong> tumors to chemo by lowering the metabolic shield (Seyfried research)</td>
-            </tr>
-            <tr style="background:#fff">
-                <td style="padding:8px;border:1px solid var(--border);vertical-align:top">Targets cell division</td>
-                <td style="padding:8px;border:1px solid var(--border);vertical-align:top">Benzimidazoles (if MD OK) hit microtubules &amp; glutamine — may <strong>complement</strong> etoposide</td>
-            </tr>
-        </table>
-        <p style="margin-bottom:0"><strong>Bottom line:</strong> Chemo is the hammer. Keto + GKI + approved adjuncts make the cancer less able to feed, hide, and resist. That's why this approach is <em>better together</em> — and why you ask Karmanos to run both lanes with their blessing.</p>
-    </div>
-    <h2>Diagram — two lanes (not either/or)</h2>
-    <div class="card" style="padding:16px">
-        <div class="lanes">
-            <div class="lane lane-main">
-                <div class="lane-title">LANE 1 — Main fight</div>
-                Karmanos oncology<br>
-                Carboplatin + etoposide<br>
-                Radiation · scans · trials
-            </div>
-            <div class="lane lane-side">
-                <div class="lane-title">LANE 2 — Parallel</div>
-                Strict keto · GKI ≤3<br>
-                Antiparasitics (if OK'd)<br>
-                Supplements per team
-            </div>
+    <header class="head">
+        <div class="head-tag">Greg's cancer operating system · bite-size</div>
+        <h1>Clear path. Both lanes. One fight.</h1>
+        <div class="meta">
+            <div><label>Diagnosis</label>High-grade neuroendocrine carcinoma · sinus</div>
+            <div><label>Stage</label>IV · liver + pelvis metastases</div>
+            <div><label>Next step</label>Karmanos · Wed Aug 13, 2026</div>
+            <div><label>Goal</label>NED — no evidence of disease on scans</div>
         </div>
-        <div class="plus">+ together = stronger response</div>
+    </header>
+
+    <div class="principle">
+        <strong>Chemo first</strong> — carboplatin + etoposide at Karmanos.
+        Strict keto, GKI tracking, and oncologist-approved adjuncts <strong>enhance</strong> chemo response. Together — not instead.
     </div>
 
-    <!-- DIAGRAM 2: 3 steps -->
-    <h2>Diagram — your 3 steps</h2>
-    <div class="steps">
-        <div class="step">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <strong>Now → Aug 13</strong>
-                Gather records · cut sugar · order Keto-Mojo · read Karmanos questions.<br>
-                <span class="skip">No fenbendazole yet. No paid Facebook programs.</span>
+    <div class="body">
+
+        <!-- 01 Diagnosis -->
+        <section class="sec">
+            <div class="sec-head">
+                <span class="sec-num">01</span>
+                <h2 class="sec-title">Your diagnosis</h2>
             </div>
+            <p class="sec-lead">High-grade neuroendocrine carcinoma — aggressive, chemo-responsive, treated systemically.</p>
+            <dl class="dl">
+                <div class="dl-row">
+                    <dt>What it is</dt>
+                    <dd>Poorly differentiated <strong>neuroendocrine carcinoma</strong> — confirmed on pathology with neuroendocrine markers (synaptophysin, chromogranin). High-grade by WHO definition.</dd>
+                </div>
+                <div class="dl-row">
+                    <dt>Not a NET</dt>
+                    <dd>Well-differentiated neuroendocrine <em>tumors</em> (NETs) are often slower. Greg's is the high-grade <strong>carcinoma</strong> category — different treatment path.</dd>
+                </div>
+                <div class="dl-row">
+                    <dt>Subtype</dt>
+                    <dd>Small-cell or large-cell — confirm on pathology report at Karmanos.</dd>
+                </div>
+                <div class="dl-row">
+                    <dt>Primary site</dt>
+                    <dd>Sinonasal tract (sinus / paranasal area).</dd>
+                </div>
+                <div class="dl-row">
+                    <dt>First-line</dt>
+                    <dd><strong>Carboplatin + etoposide</strong> — standard for high-grade neuroendocrine carcinoma with metastases.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- 02 Why together -->
+        <section class="sec">
+            <div class="sec-head">
+                <span class="sec-num">02</span>
+                <h2 class="sec-title">Why both lanes work better</h2>
+            </div>
+            <p class="sec-lead">Chemo kills dividing cells. Metabolic therapy starves fuel and may reduce chemo resistance.</p>
+
+            <table class="tbl">
+                <thead>
+                    <tr><th>Standard care</th><th>Metabolic support</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carboplatin + etoposide — kills rapidly dividing cells</td>
+                        <td>Strict keto — restricts glucose &amp; glutamine fuel</td>
+                    </tr>
+                    <tr>
+                        <td>Systemic treatment for liver &amp; pelvis mets</td>
+                        <td><strong>GKI ≤ 3</strong> — daily proof metabolic lane is working</td>
+                    </tr>
+                    <tr>
+                        <td>Proven first-line for this cancer type</td>
+                        <td>May sensitize tumors to chemo (Seyfried metabolic research)</td>
+                    </tr>
+                    <tr>
+                        <td>Etoposide targets cell division</td>
+                        <td>Benzimidazoles (if MD approves) may complement via microtubules &amp; glutamine</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="lanes">
+                <div class="lane lane-a">
+                    <div class="lane-label">Lane 1 · Oncology</div>
+                    Karmanos<br>Carboplatin + etoposide<br>Radiation · scans · trials
+                </div>
+                <div class="lanes-join">+</div>
+                <div class="lane lane-b">
+                    <div class="lane-label">Lane 2 · Metabolic</div>
+                    Keto · GKI tracking<br>Adjuncts if approved<br>Supplements per team
+                </div>
+            </div>
+
+            <div class="metrics">
+                <div class="metric"><val>≤3</val><label>GKI target</label></div>
+                <div class="metric"><val>&lt;20g</val><label>net carbs/day</label></div>
+                <div class="metric"><val>2×</val><label>GKI checks daily</label></div>
+            </div>
+        </section>
+
+        <!-- 03 Path -->
+        <section class="sec">
+            <div class="sec-head">
+                <span class="sec-num">03</span>
+                <h2 class="sec-title">Your path</h2>
+            </div>
+
+            <div class="path">
+                <div class="path-item">
+                    <div class="path-n">1</div>
+                    <div>
+                        <strong>Now → Aug 13</strong>
+                        <p>Gather records · cut sugar · order Keto-Mojo · baseline GKI. Hold antiparasitics until Karmanos.</p>
+                    </div>
+                </div>
+                <div class="path-item">
+                    <div class="path-n">2</div>
+                    <div>
+                        <strong>Wednesday · Karmanos</strong>
+                        <p>Kim takes notes. Ask: chemo plan, adjunct safety with liver mets, nutrition support. Get plan in writing.</p>
+                    </div>
+                </div>
+                <div class="path-item">
+                    <div class="path-n">3</div>
+                    <div>
+                        <strong>Week 1 onward</strong>
+                        <p>Run both lanes. Daily GKI. Chemo cycles. Judge at 8–12 weeks by scans.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="tl-block"><span>Now</span>Prep + keto</div>
+                <div class="tl-block"><span>Aug 13</span>Karmanos</div>
+                <div class="tl-block"><span>Wk 1–4</span>Chemo + adjuncts</div>
+                <div class="tl-block"><span>Wk 5–12</span>Stay on system</div>
+            </div>
+        </section>
+
+        <!-- 04 Protocol after OK -->
+        <section class="sec">
+            <div class="sec-head">
+                <span class="sec-num">04</span>
+                <h2 class="sec-title">Metabolic protocol</h2>
+            </div>
+            <p class="sec-lead">Start only after Karmanos approval — especially with liver metastases.</p>
+
+            <p style="font-size:13px;margin:0 0 4px;font-weight:600">14-day cycle (community protocol)</p>
+            <div class="cycle-bar">
+                <div class="cycle-on">4 days ON</div>
+                <div class="cycle-off">10 days OFF</div>
+            </div>
+            <p class="cycle-note">
+                <strong>ON:</strong> 222 mg fenbendazole + 12 mg ivermectin (with fatty meal) ·
+                <strong>OFF:</strong> keto + approved supplements only ·
+                <strong>Daily:</strong> &lt;20 g carbs · GKI AM + evening · vitamin D · magnesium
+            </p>
+        </section>
+
+        <!-- 05 Actions -->
+        <section class="sec">
+            <div class="sec-head">
+                <span class="sec-num">05</span>
+                <h2 class="sec-title">What to do</h2>
+            </div>
+            <div class="actions">
+                <div class="action-box now">
+                    <h4>Start now</h4>
+                    <ul>
+                        <li>Keto-Mojo meter + strips</li>
+                        <li>Keto groceries + electrolytes</li>
+                        <li>GKI tracking sheet</li>
+                    </ul>
+                </div>
+                <div class="action-box wait">
+                    <h4>After Aug 13</h4>
+                    <ul>
+                        <li>Antiparasitics if MD approves</li>
+                        <li>Supplements per oncology</li>
+                        <li>Treatment calendar filled in</li>
+                    </ul>
+                </div>
+                <div class="action-box skip">
+                    <h4>Skip</h4>
+                    <ul>
+                        <li>Paid wellness funnels · bulk FBZ before oncology · anything that delays chemo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06 Sources -->
+        <section class="sec">
+            <div class="sec-head">
+                <span class="sec-num">06</span>
+                <h2 class="sec-title">Sources ranked</h2>
+            </div>
+            <div class="tier">
+                <div class="tier-row">
+                    <div class="tier-badge t1">1</div>
+                    <div><strong>Karmanos + standard chemo</strong> — treatment decisions</div>
+                </div>
+                <div class="tier-row">
+                    <div class="tier-badge t2">2</div>
+                    <div><strong>Seyfried · Pharmacy Times</strong> — metabolic research + professional balance</div>
+                </div>
+                <div class="tier-row">
+                    <div class="tier-badge t3">3</div>
+                    <div><strong>Tippens · Berg · Supple</strong> — hope &amp; protocol ideas; not medical authority</div>
+                </div>
+                <div class="tier-row">
+                    <div class="tier-badge t4">4</div>
+                    <div><strong>Makis · Skymeds ads · sales funnels</strong> — debunked or flagged; do not follow</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="foot">
+        <strong>At Karmanos:</strong> Lead with your diagnosis and questions about enhancing chemo — not "AI" or Facebook protocols.
+        <div class="links">
+            <a href="greg-karmanos-roadmap.html">Full Karmanos prep + 15 questions →</a>
+            <a href="gki-tracking-sheet.html">GKI tracking sheet →</a>
+            <a href="greg-benzimidazole-sourcing-guide.html">Fenbendazole vs mebendazole →</a>
+            <a href="index.html">All guides →</a>
         </div>
-        <div class="step">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <strong>Wednesday — Karmanos</strong>
-                Kim takes notes. Ask: chemo plan + is keto/FBZ safe with liver mets?<br>
-                Get names, dates, and plan <em>in writing</em>.
-            </div>
-        </div>
-        <div class="step">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <strong>Week 1+ — Run the system</strong>
-                Chemo cycles + daily GKI + metabolic support oncologist approved.<br>
-                Judge progress at 8–12 weeks by <em>scans</em>.
-            </div>
-        </div>
-    </div>
-
-    <!-- DIAGRAM 3: Timeline -->
-    <h2>Diagram — timeline</h2>
-    <div class="card">
-        <div class="tl">
-            <div class="tl-item">
-                <div class="tl-when">Now</div>
-                Prep + keto start + GKI baseline
-            </div>
-            <div class="tl-item">
-                <div class="tl-when">Aug 13</div>
-                Karmanos — oncology owns the plan
-            </div>
-            <div class="tl-item">
-                <div class="tl-when">Week 1–4</div>
-                Chemo cycle 1 + approved adjuncts
-            </div>
-            <div class="tl-item">
-                <div class="tl-when">Week 5–12</div>
-                Stay on system · rest scans · don't quit early
-            </div>
-        </div>
-    </div>
-
-    <!-- DIAGRAM 4: FBZ cycle (after approval) -->
-    <h2>Diagram — antiparasitic cycle (only after Karmanos OK)</h2>
-    <div class="card">
-        <p style="margin:0 0 8px;font-size:0.88rem">14-day repeat pattern (community protocol):</p>
-        <div class="cycle">
-            <div class="cycle-day on">1</div><div class="cycle-day on">2</div><div class="cycle-day on">3</div><div class="cycle-day on">4</div>
-            <div class="cycle-day off">5</div><div class="cycle-day off">6</div><div class="cycle-day off">7</div>
-            <div class="cycle-day off">8</div><div class="cycle-day off">9</div><div class="cycle-day off">10</div>
-            <div class="cycle-day off">11</div><div class="cycle-day off">12</div><div class="cycle-day off">13</div><div class="cycle-day off">14</div>
-        </div>
-        <div class="cycle-legend">
-            <span class="ok">■ ON (4 days)</span> — 222 mg fenbendazole + 12 mg ivermectin · with fatty meal<br>
-            <span style="color:var(--muted)">■ OFF (10 days)</span> — keto + supplements only
-        </div>
-    </div>
-
-    <!-- About this OS -->
-    <h2>What this guide is (and isn't)</h2>
-    <div class="card" style="font-size:0.88rem">
-        <p style="margin-top:0"><strong>Your cancer operating system</strong> — clear path + grounded hope. Not Facebook chaos. Not a chatbot answer.</p>
-        <table style="width:100%;font-size:0.85rem;border-collapse:collapse;margin:12px 0">
-            <tr><td style="padding:6px 0;color:var(--muted)">Sources fact-checked</td><td style="padding:6px 0"><strong>17</strong></td></tr>
-            <tr><td style="padding:6px 0;color:var(--muted)">Research + build effort</td><td style="padding:6px 0"><strong>80–120+ hrs</strong> equivalent</td></tr>
-            <tr><td style="padding:6px 0;color:var(--muted)">Built by</td><td style="padding:6px 0">Engineer · Cursor power-user program</td></tr>
-            <tr><td style="padding:6px 0;color:var(--muted)">Mapped to</td><td style="padding:6px 0">Sinonasal NEC · stage IV · liver + pelvis</td></tr>
-            <tr><td style="padding:6px 0;color:var(--muted)">Already removed</td><td style="padding:6px 0">Retracted Makis · Hulscher EoC · sales funnels</td></tr>
-        </table>
-        <p style="margin-bottom:0"><strong>Not</strong> your treatment plan — Karmanos writes that Wednesday.<br>
-        <strong>At the doctor:</strong> say you prepped questions for NEC + adjunct safety — don't lead with "AI."</p>
-    </div>
-
-    <!-- DIAGRAM 5: Trust pyramid -->
-    <h2>Diagram — who to trust</h2>
-    <div class="pyramid">
-        <div class="pyr-row pyr-1">✅ Karmanos + standard NEC chemo</div>
-        <div class="pyr-row pyr-2">✅ Seyfried / Pharmacy Times (research + skeptic)</div>
-        <div class="pyr-row pyr-3">⚠️ Tippens · Berg · Supple · Sulack (hope + ideas only)</div>
-        <div class="pyr-row pyr-4">❌ Makis · Hulscher hype · Skymeds ads · Nurse Maria · Be Resilient sales</div>
-    </div>
-
-    <!-- Buy / skip -->
-    <h2>Buy now vs wait</h2>
-    <div class="card" style="font-size:0.9rem">
-        <p><span class="ok">✓ Now:</span> Keto-Mojo · keto food · electrolytes · GKI sheet</p>
-        <p><span class="ok">✓ After Aug 13:</span> FBZ / IVM / supplements — only if oncologist says yes</p>
-        <p style="margin-bottom:0"><span class="skip">✗ Skip:</span> Sulack $program · Skymeds · bulk FBZ · anything that delays chemo</p>
-    </div>
-
-    <!-- Links -->
-    <h2>Full docs (when you want more)</h2>
-    <div class="card links">
-        <a href="greg-karmanos-roadmap.html">→ Karmanos prep + 15 questions (print for Wednesday)</a>
-        <a href="greg-benzimidazole-sourcing-guide.html">→ Fenbendazole vs mebendazole (sourced)</a>
-        <a href="gki-tracking-sheet.html">→ GKI tracking sheet</a>
-        <a href="shopping-sourcing-list.html">→ Shopping list</a>
-        <a href="index.html">→ Home / all links</a>
-    </div>
-
-    <p class="note">
-        <strong>Built for Greg:</strong> Many tens of hours of source vetting and systems design — a full operating system (clear path + real hope), not a longer Facebook scroll. Karmanos writes the prescription; this gets you there ready.
-    </p>
+    </footer>
 
 </div>
+
 </body>
 </html>
