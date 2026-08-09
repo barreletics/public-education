@@ -1,0 +1,43 @@
+Source: Facebook page "Just Discovered" (user-pasted)
+Note: Same obfuscated prefix spam pattern as Nurse Maria, Hulscher, Sulack posts
+
+=== FULL POST TEXT ===
+
+Three terminal cancer patients defied the odds by achieving remission using fenbendazole, a veterinary drug, without any side effects. Facing advanced breast cancer, aggressive melanoma, and late-stage prostate cancer, they had exhausted all traditional treatments. With no clinical trials or medical endorsements, they took a leap of faith, self-administering the drug and closely monitoring their health. The results were astonishing: significant tumor reduction and no side effects, leaving doctors baffled. Fenbendazole is believed to disrupt cancer cell growth by interfering with microtubule structures, though the exact mechanism remains unclear.
+
+This unexpected outcome is sparking interest in the potential of repurposed, low-cost medications for cancer treatment. Could this be the beginning of a new era in cancer therapy?
+
+=== WHAT THIS REFERS TO ===
+Same 3 cases as Makis et al. 2025 case series (retracted Jan 21, 2026):
+DOI: https://doi.org/10.1159/000546362
+Retraction: https://doi.org/10.1159/000549387
+
+Also promoted by: Rises Above It All, Nicolas Hulscher, Makis infographic
+
+=== CLAIM vs REALITY ===
+
+| Post claim | Reality |
+|------------|---------|
+| "Exhausted all traditional treatments" | FALSE — patients had concurrent standard care (see infographic timelines) |
+| "Without any side effects" | Unverified self-report in retracted paper; hepatotoxicity documented elsewhere with FBZ |
+| "No clinical trials or medical endorsements" | Misleading — they used other approved therapies alongside FBZ |
+| "Doctors baffled" / "defied the odds" | Hype language — not independent validation |
+| "Remission using fenbendazole alone" | Cannot attribute — breast had Fulvestrant + radiation; prostate had ADT + Xgeva; melanoma had prior targeted therapy + surgery |
+| Paper status | RETRACTED Jan 2026 — undisclosed COI (Makis sold FBZ-related services) |
+
+=== WHO IS "JUST DISCOVERED"? ===
+- Facebook content/viral discovery page — not a medical institution, journal, or oncology team
+- Same content-farm posting pattern (obfuscated prefix) as other fenbendazole hype posts
+- Lead with sensational narrative — no retraction notice, no concurrent-treatment context
+
+=== RELEVANCE FOR GREG ===
+- Do NOT cite at Karmanos
+- Same debunk as Hulscher reel: retracted paper + false "alone / no traditional treatment" framing
+- Cancer types ≠ sinonasal high-grade NEC
+- Greg's path: carboplatin/etoposide + ask Karmanos about FBZ adjunct — not Facebook viral posts
+
+=== VERDICT ===
+NOT a legit source. Recycled Makis retracted case series hype from a viral content page.
+
+=== ONE-LINER FOR GREG/KIM ===
+"That's the same three-patient story the journal retracted — and those patients were on other treatments too. It's viral Facebook content, not our evidence."
