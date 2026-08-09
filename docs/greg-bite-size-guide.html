@@ -176,6 +176,47 @@
         }
         .tbl tr:nth-child(even) td { background: #fafbfc; }
 
+        .lane ul { margin: 8px 0 0; padding-left: 1.1rem; line-height: 1.55; }
+        .lane li { margin: 4px 0; }
+        .lane-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            margin: 0;
+        }
+        .lane-table th {
+            text-align: left;
+            padding: 10px 12px;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            border: 1px solid var(--line);
+        }
+        .lane-table th.lane-a-h { background: var(--accent-soft); color: var(--accent); }
+        .lane-table th.lane-b-h { background: var(--success-soft); color: var(--success); }
+        .lane-table td {
+            padding: 10px 12px;
+            border: 1px solid var(--line);
+            vertical-align: top;
+            line-height: 1.5;
+        }
+        .lane-block {
+            margin: 0 32px 16px;
+            padding: 18px 20px;
+            border: 1px solid var(--line);
+        }
+        .lane-block-a { border-top: 4px solid var(--accent); background: var(--accent-soft); }
+        .lane-block-b { border-top: 4px solid var(--success); background: var(--success-soft); }
+        .lane-block-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .lane-block-a .lane-block-label { color: var(--accent); }
+        .lane-block-b .lane-block-label { color: var(--success); }
+
         /* Two lanes */
         .lanes {
             display: grid;
@@ -562,8 +603,8 @@
 <div class="doc">
 
     <header class="head">
-        <div class="head-tag">Greg's plan · everything on one page</div>
-        <h1>Your plan. One page. Both lanes.</h1>
+        <div class="head-tag">Greg's plan · two lanes · one page</div>
+        <h1>Two lanes. Greg decides.</h1>
         <div class="meta">
             <div><label>Diagnosis</label>High-grade neuroendocrine carcinoma · sinus</div>
             <div><label>Stage</label>IV · liver + pelvis metastases</div>
@@ -573,47 +614,61 @@
     </header>
 
     <div class="principle">
-        <strong>One possible plan</strong> — standard chemo (carboplatin + etoposide) plus a metabolic lane (keto, supplements, optional adjuncts in §04).
-        <strong>Greg and family decide</strong> what's right; this page is research prep, not a prescription.
+        Research prep — not a prescription. <strong>Greg and family choose</strong> what to do.
+        Two separate conversations: <strong>Lane A = Karmanos</strong> (chemo) · <strong>Lane B = metabolic</strong> (keto at home; antiparasitics via outside MD).
     </div>
 
+    <!-- Two lanes — master frame -->
+    <div class="lane-block lane-block-a" style="margin-top:16px">
+        <div class="lane-block-label">Lane A — Karmanos</div>
+        <p style="margin:0 0 10px;font-size:15px;line-height:1.55"><strong>Chemo:</strong> carboplatin + etoposide. Get the plan, dates, and restaging in writing.</p>
+        <p style="margin:0;font-size:14px;color:var(--muted);line-height:1.55"><strong>Also tell them:</strong> strict keto + supplement list (§03). Ask if anything conflicts. <strong>Do not lead with fenbendazole or ivermectin.</strong></p>
+    </div>
+
+    <div class="lane-block lane-block-b">
+        <div class="lane-block-label">Lane B — Greg at home (+ outside MD for drugs)</div>
+        <p style="margin:0 0 10px;font-size:15px;line-height:1.55"><strong>Keto + GKI + supplements</strong> (§03) — start if Greg chooses. Track daily.</p>
+        <p style="margin:0;font-size:14px;color:var(--muted);line-height:1.55"><strong>Antiparasitics</strong> (§04) — fenbendazole + ivermectin only if Greg wants them. <strong>Outside guide</strong> (Care Oncology, integrative onc), not Karmanos.</p>
+    </div>
+
+    <table class="lane-table" style="margin:0 32px 16px">
+        <thead>
+            <tr>
+                <th class="lane-a-h" style="width:50%">Lane A — Karmanos</th>
+                <th class="lane-b-h" style="width:50%">Lane B — Greg / outside MD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chemo plan &amp; cycles</td>
+                <td>Strict keto · GKI ≤ 3</td>
+            </tr>
+            <tr>
+                <td>Staging · trials · scans</td>
+                <td>Vitamins &amp; supplements (§03)</td>
+            </tr>
+            <tr>
+                <td>Keto + supplement safety check</td>
+                <td>Fenbendazole + ivermectin (§04) — outside MD only</td>
+            </tr>
+            <tr>
+                <td>Mom takes notes Wednesday</td>
+                <td>Panacur from farm store · Rx ivermectin from guide</td>
+            </tr>
+        </tbody>
+    </table>
+
     <div class="start-here">
-        <strong>Greg — start here</strong>
+        <strong>Start here</strong>
         <ol>
-            <li><strong>Today (if you choose keto):</strong> §04 daily doses · §05 shopping · Keto-Mojo</li>
-            <li><strong>Wed Aug 13:</strong> Karmanos — Mom takes notes (§06)</li>
-            <li><strong>If this approach fits:</strong> keto + supplements now; antiparasitics (§04) via outside guide — not Karmanos</li>
+            <li><strong>Lane B now (if chosen):</strong> keto + supplements · §03 doses · §05 shopping</li>
+            <li><strong>Lane A Wed Aug 13:</strong> Karmanos — chemo plan + tell them about keto (§02)</li>
+            <li><strong>Lane B drugs (if chosen):</strong> outside guide — not this Karmanos visit (§04)</li>
         </ol>
     </div>
 
-    <div style="margin:16px 32px;padding:14px 16px;background:#fff8e1;border:1px solid #ffe082;font-size:15px;line-height:1.55">
-        <strong>Two abbreviations — do not mix these up:</strong><br>
-        <strong>NED</strong> = <em>No Evidence of Disease</em> — the <strong>goal</strong> (scans show no cancer).<br>
-        <strong>Greg's diagnosis</strong> = <em>high-grade neuroendocrine carcinoma</em> — the type of cancer. (Doctors sometimes write "NEC" on charts for that diagnosis — it is <strong>not</strong> NED.)
-    </div>
-
-    <!-- How it works -->
-    <div class="flow">
-        <div class="flow-title">How it works</div>
-        <p class="flow-lead">If you want to add a metabolic lane alongside chemo, many people <strong>start keto before treatment</strong> (GKI ≤ 3). When carboplatin/etoposide starts, both can run in parallel — if Greg and the oncologist agree that's safe.</p>
-
-        <div class="flow-simple">
-            <div class="flow-simple-step now">
-                <b>Now</b>
-                Start keto<br>Track GKI daily<br>Get metabolic state
-            </div>
-            <div class="flow-arrow-h">→</div>
-            <div class="flow-simple-step">
-                <b>Aug 13</b>
-                Karmanos<br>Treatment plan<br>Both lanes together
-            </div>
-            <div class="flow-arrow-h">→</div>
-            <div class="flow-simple-step">
-                <b>8–12 weeks</b>
-                Stay on system<br>Rest scans<br>Goal: NED
-            </div>
-        </div>
-        <p class="flow-foot">Metabolic + chemo together · not instead of chemo</p>
+    <div style="margin:0 32px 16px;padding:12px 14px;background:#fff8e1;border:1px solid #ffe082;font-size:14px;line-height:1.55">
+        <strong>NED</strong> = No Evidence of Disease (the goal). <strong>NEC</strong> = neuroendocrine carcinoma (the diagnosis). Don't mix them up.
     </div>
 
     <div class="body">
@@ -622,28 +677,68 @@
         <section class="sec">
             <div class="sec-head">
                 <span class="sec-num">01</span>
-                <h2 class="sec-title">Your diagnosis (short version)</h2>
+                <h2 class="sec-title">Diagnosis (short)</h2>
             </div>
-            <p class="sec-lead">High-grade neuroendocrine carcinoma — aggressive, but chemo-responsive. First-line treatment: <strong>carboplatin + etoposide</strong> at Karmanos.</p>
+            <p class="sec-lead">High-grade neuroendocrine carcinoma — aggressive, chemo-responsive. Both lanes run in parallel — not instead of chemo.</p>
             <ul style="margin:0;padding-left:1.25rem;font-size:15px;color:var(--muted);line-height:1.6">
-                <li><strong>Primary:</strong> sinus area · <strong>Spread:</strong> liver + pelvis</li>
-                <li><strong>Not a slow NET</strong> — this is high-grade carcinoma (different path)</li>
-                <li><strong>Goal:</strong> NED on scans — no evidence of disease</li>
+                <li>Sinus primary · liver + pelvis mets · stage IV</li>
+                <li>First-line at Karmanos: <strong>carboplatin + etoposide</strong></li>
+                <li>Goal: NED on scans</li>
             </ul>
         </section>
 
-        <!-- 02 Why together -->
-        <section class="sec">
+        <!-- 02 Lane A — Karmanos -->
+        <section class="sec" id="karmanos">
             <div class="sec-head">
                 <span class="sec-num">02</span>
-                <h2 class="sec-title">GKI — your daily number</h2>
+                <h2 class="sec-title">Lane A — Karmanos (Wed Aug 13)</h2>
             </div>
-            <p class="sec-lead">This is how you know keto is working before chemo starts.</p>
+            <p class="sec-lead">Chemo planning visit. Mom takes notes. Lead with chemo; tell them about keto + supplements; skip antiparasitics.</p>
+
+            <p style="font-size:14px;font-weight:600;margin:0 0 8px">Bring</p>
+            <ul class="checklist">
+                <li>Pathology · imaging · symptom list</li>
+                <li>Written list: <strong>keto + supplements only</strong> (from §03)</li>
+                <li>This page</li>
+            </ul>
+
+            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Ask — diagnosis &amp; chemo</p>
+            <ol class="q-list">
+                <li>Confirm high-grade NEC — Ki-67? Small-cell or large-cell?</li>
+                <li>Staging complete — any sites beyond liver + pelvis?</li>
+                <li>Carboplatin + etoposide — how many cycles, when start?</li>
+                <li>Radiation? Liver-directed options? Clinical trials?</li>
+                <li>When restage? What response by cycle 2–3?</li>
+                <li>After-hours contact if side effects spike?</li>
+            </ol>
+
+            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Tell them — keto &amp; supplements</p>
+            <div class="script-box">
+                "We want carboplatin/etoposide as first-line. We're doing strict keto with daily glucose-ketone tracking, plus vitamins on this list. Walk us through the chemo plan and flag anything on our diet or supplements that conflicts."
+            </div>
+            <ol class="q-list">
+                <li>Strict keto + daily GKI — anything to change during chemo?</li>
+                <li>Supplement list (§03) — anything to pause with etoposide/platinum?</li>
+                <li>Liver mets — how will you monitor LFTs and blood counts?</li>
+            </ol>
+
+            <div class="warn-box">
+                <strong>Not this visit:</strong> fenbendazole and ivermectin. Karmanos won't prescribe them. If Greg wants them → §04 outside guide.
+            </div>
+
+            <p style="font-size:14px;color:var(--muted);margin:8px 0 0">Mom writes down: Oncologist _____ · Nurse navigator _____ · After-hours _____ · Chemo start _____ · Next scan _____ · Supplements to pause _____</p>
+        </section>
+
+        <!-- 03 Lane B — Keto -->
+        <section class="sec">
+            <div class="sec-head">
+                <span class="sec-num">03</span>
+                <h2 class="sec-title">Lane B — Keto &amp; supplements</h2>
+            </div>
+            <p class="sec-lead">Greg runs this at home. Tell Karmanos what you're doing (§02); they won't manage it for you.</p>
 
             <div class="tip">
-                Prick finger → test strip in Keto-Mojo → write glucose and ketones → <strong>GKI = glucose ÷ ketones</strong>.<br>
-                <strong>Target ≤ 3.</strong> Morning before food + evening before dinner.<br>
-                Two strip boxes: glucose + ketone (both Keto-Mojo).
+                <strong>GKI</strong> = glucose ÷ ketones (Keto-Mojo strips). Target <strong>≤ 3</strong>. Check AM (before food) + evening (before dinner).
             </div>
 
             <div class="metrics">
@@ -651,81 +746,38 @@
                 <div class="metric"><val>&lt;20g</val><label>net carbs/day</label></div>
                 <div class="metric"><val>2×</val><label>checks daily</label></div>
             </div>
-        </section>
 
-        <!-- 03 Path -->
-        <section class="sec">
-            <div class="sec-head">
-                <span class="sec-num">03</span>
-                <h2 class="sec-title">Your path</h2>
-            </div>
-
-            <div class="path">
-                <div class="path-item">
-                    <div class="path-n">1</div>
-                    <div>
-                        <strong>Now → Aug 13</strong>
-                        <p>If pursuing §04: keto + supplements now. Mom comes Wednesday — notes only.</p>
-                    </div>
-                </div>
-                <div class="path-item">
-                    <div class="path-n">2</div>
-                    <div>
-                        <strong>Wednesday · Karmanos</strong>
-                        <p>Mom takes notes. Get chemo plan, restaging dates, and safety answers (§06).</p>
-                    </div>
-                </div>
-                <div class="path-item">
-                    <div class="path-n">3</div>
-                    <div>
-                        <strong>Week 1 onward</strong>
-                        <p>Run both lanes. Daily GKI. Chemo cycles. Judge at 8–12 weeks by scans.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline">
-                <div class="tl-block"><span>Now</span>Prep + keto</div>
-                <div class="tl-block"><span>Aug 13</span>Karmanos</div>
-                <div class="tl-block"><span>Wk 1–4</span>Chemo + adjuncts</div>
-                <div class="tl-block"><span>Wk 5–12</span>Stay on system</div>
-            </div>
-        </section>
-
-        <!-- 04 Protocol -->
-        <section class="sec">
-            <div class="sec-head">
-                <span class="sec-num">04</span>
-                <h2 class="sec-title">Start today — reference doses</h2>
-            </div>
-            <p class="sec-lead">Reference doses if you pursue this path — not medical orders. Confirm anything with the oncologist Wednesday (especially with liver mets), then adjust with an outside guide if you want one.</p>
-
-            <p style="font-size:14px;font-weight:600;margin:0 0 8px">Daily — start now</p>
             <table class="tbl">
-                <thead><tr><th>Item</th><th>Common range</th></tr></thead>
+                <thead><tr><th>Daily</th><th>Dose / target</th></tr></thead>
                 <tbody>
-                    <tr><td><strong>Keto</strong></td><td>&lt; 20 g net carbs · <a href="keto-starter-sheet.html">keto starter sheet</a></td></tr>
-                    <tr><td><strong>GKI</strong></td><td>Target ≤ 3 · measure AM + evening</td></tr>
-                    <tr><td>Vitamin D3</td><td>5000 IU (some protocols go higher)</td></tr>
+                    <tr><td><strong>Keto</strong></td><td>&lt; 20 g net carbs · <a href="keto-starter-sheet.html">starter sheet</a></td></tr>
+                    <tr><td><strong>GKI</strong></td><td>≤ 3 · AM + evening</td></tr>
+                    <tr><td>Vitamin D3</td><td>5000 IU</td></tr>
                     <tr><td>Vitamin E</td><td>400–800 IU with food</td></tr>
                     <tr><td>Curcumin</td><td>500–1000 mg with fatty meal</td></tr>
                     <tr><td>Magnesium glycinate</td><td>200–400 mg evening</td></tr>
-                    <tr><td>Apple cider vinegar</td><td>1–2 tbsp in water · optional daily</td></tr>
-                    <tr><td>Matcha / green tea</td><td>1–2 cups/day · optional</td></tr>
+                    <tr><td>ACV · green tea</td><td>optional</td></tr>
                 </tbody>
             </table>
+        </section>
 
-            <div style="background:var(--success-soft);border:2px solid var(--success);padding:16px 18px;margin:16px 0">
-                <p style="font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--success);margin:0 0 10px">If you choose this path — reference drug doses</p>
+        <!-- 04 Lane B — Antiparasitics -->
+        <section class="sec">
+            <div class="sec-head">
+                <span class="sec-num">04</span>
+                <h2 class="sec-title">Lane B — Antiparasitics (optional · outside MD)</h2>
+            </div>
+            <p class="sec-lead">Only if Greg chooses. Reference doses — not Karmanos orders. Needs outside guide + liver labs (liver mets).</p>
+
+            <div style="background:var(--success-soft);border:2px solid var(--success);padding:16px 18px;margin:12px 0">
                 <table class="tbl" style="margin:0">
-                    <thead><tr><th>Item</th><th>Starting dose</th><th>When</th></tr></thead>
+                    <thead><tr><th>Drug</th><th>Reference dose</th><th>When</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>Fenbendazole</strong> (Panacur C)</td><td><strong>222 mg/day</strong> — one 1g packet · with fatty meal</td><td>6 ON days only</td></tr>
-                        <tr><td><strong>Ivermectin</strong> (human tablets)</td><td><strong>18–24 mg/day</strong> (~170 lb) — e.g. 12 mg + 6 mg, or 12 + 12 · with fat</td><td>Same 6 ON days</td></tr>
-                        <tr><td><strong>Cycle</strong></td><td colspan="2"><strong>6 days ON · 1 day OFF</strong> · then repeat</td></tr>
+                        <tr><td><strong>Fenbendazole</strong> (Panacur C)</td><td><strong>222 mg/day</strong> — 1g packet · with fat</td><td>6 ON days</td></tr>
+                        <tr><td><strong>Ivermectin</strong> (human tabs)</td><td><strong>18–24 mg/day</strong> (~170 lb) · with fat</td><td>Same 6 ON days</td></tr>
+                        <tr><td><strong>Cycle</strong></td><td colspan="2"><strong>6 days ON · 1 day OFF</strong> · repeat</td></tr>
                     </tbody>
                 </table>
-                <p style="font-size:13px;color:var(--muted);margin:10px 0 0;line-height:1.5">OFF days: keto + supplements only. Get liver labs when you can. Fine-tune with a guide — but this is where you start.</p>
             </div>
 
             <div class="cycle-bar">
@@ -733,140 +785,64 @@
                 <div class="cycle-off" style="flex:1">1 day OFF</div>
             </div>
 
-            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Find a guide for antiparasitics (not Karmanos, not Mom)</p>
-            <p style="font-size:14px;color:var(--muted);margin:0 0 10px;line-height:1.55">Karmanos won't dose fenbendazole or ivermectin. If Greg wants them, that's a separate MD outside the hospital:</p>
-            <ul style="margin:0 0 12px;padding-left:1.25rem;font-size:14px;line-height:1.6;color:var(--muted)">
-                <li><strong>Care Oncology Clinic</strong> — remote · <a href="https://careoncology.com/" target="_blank">careoncology.com</a></li>
-                <li><strong>Integrative oncologist</strong> — <a href="https://integrativeonc.org/" target="_blank">integrativeonc.org</a> directory</li>
+            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Outside guide (not Karmanos, not Mom)</p>
+            <ul style="margin:0;padding-left:1.25rem;font-size:14px;line-height:1.6;color:var(--muted)">
+                <li><strong>Care Oncology Clinic</strong> — <a href="https://careoncology.com/" target="_blank">careoncology.com</a></li>
+                <li><strong>Integrative oncologist</strong> — <a href="https://integrativeonc.org/" target="_blank">integrativeonc.org</a></li>
             </ul>
-            <p style="font-size:14px;color:var(--muted);margin:0;line-height:1.55"><strong>Seyfried</strong> (Diary of a CEO) explains the science — he does not prescribe. Watch to understand why; find an MD for doses.</p>
-
-            <div class="warn-box">
-                Greg has <strong>liver mets</strong> — any FBZ/ivermectin dose needs liver labs (LFTs) and a clinician. <strong>Start keto today anyway.</strong>
-            </div>
+            <p style="font-size:13px;color:var(--muted);margin:12px 0 0">Seyfried (Diary of a CEO) = science only, no prescriptions.</p>
         </section>
 
-        <!-- 05 Shopping + sourcing -->
+        <!-- 05 Shopping -->
         <section class="sec" id="shopping">
             <div class="sec-head">
                 <span class="sec-num">05</span>
                 <h2 class="sec-title">Where to buy</h2>
             </div>
-            <p class="sec-lead">Keto/supplements now. Panacur + ivermectin when starting §04 drug protocol.</p>
 
-            <p style="font-size:14px;font-weight:600;margin:0 0 8px">Start now</p>
+            <p style="font-size:14px;font-weight:600;margin:0 0 8px;color:var(--success)">Lane B — keto &amp; supplements (now)</p>
             <ul class="checklist">
-                <li><strong>Keto-Mojo + strips</strong> — ketomojo.com or Amazon · glucose + ketone strips (two boxes)</li>
-                <li><strong>Keto groceries</strong> — any store · <a href="keto-starter-sheet.html">keto starter sheet</a></li>
+                <li><strong>Keto-Mojo + strips</strong> — glucose + ketone (two boxes)</li>
+                <li><strong>Keto groceries</strong> — <a href="keto-starter-sheet.html">starter sheet</a></li>
                 <li><strong>Electrolytes</strong> — LMNT, Nuun, grocery</li>
-                <li><strong>Supplements</strong> — D3, E, curcumin, magnesium glycinate · Amazon or CVS</li>
-                <li><strong>ACV + green tea</strong> — grocery · optional</li>
+                <li><strong>D3, E, curcumin, magnesium</strong> — Amazon or CVS</li>
             </ul>
 
-            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Drug sourcing — when your guide says go</p>
+            <p style="font-size:14px;font-weight:600;margin:16px 0 8px;color:var(--success)">Lane B — antiparasitics (when outside guide says go)</p>
             <table class="tbl">
-                <thead><tr><th>Drug</th><th>Best source</th><th>Notes</th></tr></thead>
+                <thead><tr><th>Drug</th><th>Source</th></tr></thead>
                 <tbody>
                     <tr>
-                        <td><strong>Fenbendazole</strong><br>(Panacur C)</td>
-                        <td><strong>Tractor Supply</strong> · farm &amp; feed store · rural co-op</td>
-                        <td>Joe Tippens used this. Brand: <strong>Panacur C</strong> — 1g packet = 222 mg. ~$8–15. Mix in fatty food. <strong>Farm supply is the standard source</strong> — skip random Amazon capsule brands.</td>
+                        <td><strong>Panacur C</strong> (fenbendazole)</td>
+                        <td><strong>Tractor Supply</strong> / farm store · 1g packet = 222 mg · ~$8–15 · mix in fatty food</td>
                     </tr>
                     <tr>
-                        <td><strong>Mebendazole</strong><br>(human form)</td>
-                        <td>Pharmacy with <strong>prescription</strong> (Vermox / Emverm) · or telehealth MD</td>
-                        <td>Same drug family as fenbendazole but human-approved. Care Oncology and some MD protocols use this instead of Panacur. Needs a doctor.</td>
+                        <td><strong>Mebendazole</strong> (human Rx alt.)</td>
+                        <td>Pharmacy with prescription · Care Oncology sometimes uses this instead of Panacur</td>
                     </tr>
                     <tr>
-                        <td><strong>Ivermectin</strong><br>(human tablets)</td>
-                        <td><strong>Compounding pharmacy</strong> or telehealth doctor · 3, 6, or 12 mg tablets</td>
-                        <td>Preferred: human pharma-grade tablets from an MD who writes the Rx. Pills often come in 12 mg — you may need ~18–24 mg/day at ~170 lb depending on protocol (combine tablets).</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Ivermectin</strong><br>(farm / horse paste)</td>
-                        <td>Farm supply (some use this)</td>
-                        <td>Some people use farm formulations — dosing is harder and less precise than tablets. <strong>Human tablets from a compounding pharmacy or MD are safer</strong> once you have a prescriber. Don't start farm paste without a guide.</td>
+                        <td><strong>Ivermectin</strong> (human tablets)</td>
+                        <td>Compounding pharmacy or telehealth MD · 3/6/12 mg tabs · ~18–24 mg/day at ~170 lb</td>
                     </tr>
                 </tbody>
             </table>
-
-            <div class="warn-box">
-                <strong>Farm vs human:</strong> For <strong>fenbendazole</strong>, farm Panacur C <em>is</em> the normal source (same as Tippens). For <strong>ivermectin</strong>, human tablets from a doctor/compounder are usually better than guessing farm paste doses. For <strong>mebendazole</strong>, that's the human Rx path — pharmacy only.
-            </div>
+            <p style="font-size:13px;color:var(--muted);margin:8px 0 0">Panacur from farm store is normal (Tippens path). Human ivermectin tablets beat guessing farm paste doses.</p>
         </section>
 
-        <!-- 06 Karmanos Wednesday -->
-        <section class="sec" id="karmanos">
-            <div class="sec-head">
-                <span class="sec-num">06</span>
-                <h2 class="sec-title">Wednesday at Karmanos</h2>
-            </div>
-            <p class="sec-lead">First oncology visit — get the chemo plan in writing. Mom takes notes. <strong>Karmanos runs chemo.</strong> If Greg wants the metabolic lane, tell them about <strong>keto and supplements</strong> there. Fenbendazole and ivermectin are a separate conversation — don't expect Karmanos to approve them; use an outside guide (§04) if Greg chooses that path.</p>
-
-            <div class="warn-box">
-                <strong>Practical split:</strong> At Karmanos, lead with chemo + strict keto. Ask whether keto or your vitamin list conflicts with treatment. <strong>Don't open with fenbendazole or ivermectin</strong> — most oncologists will say no and the visit gets sidetracked. If Greg wants those drugs, that's Care Oncology or an integrative MD, not this appointment.
-            </div>
-
-            <p style="font-size:14px;font-weight:600;margin:0 0 8px">Bring</p>
-            <ul class="checklist">
-                <li>Pathology reports · ask for Ki-67 score if missing</li>
-                <li>Imaging (CD/USB or portal login)</li>
-                <li>Written list: <strong>keto + supplements only</strong> (D3, E, curcumin, magnesium, etc. from §04)</li>
-                <li>Symptom list (pain, fatigue, weight, headaches)</li>
-                <li>This page · Mom takes notes</li>
-            </ul>
-
-            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Questions worth asking — diagnosis &amp; staging</p>
-            <p style="font-size:14px;color:var(--muted);margin:0 0 10px;line-height:1.55">These apply no matter which path you take.</p>
-            <ol class="q-list">
-                <li>Please confirm: high-grade NEC — Ki-67? Small-cell or large-cell type?</li>
-                <li>Confirm staging: sinus primary, liver + pelvis — any other active sites?</li>
-                <li>Was DOTATATE PET done? Would Lutathera ever apply, or is this strictly platinum/etoposide disease?</li>
-            </ol>
-
-            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Questions worth asking — treatment plan</p>
-            <ol class="q-list" start="4">
-                <li>Is <strong>carboplatin + etoposide</strong> the right first-line here? How many cycles, and when would chemo actually start?</li>
-                <li>Radiation to the sinus? Any liver-directed options (embolization, etc.)?</li>
-                <li>Any clinical trials at Karmanos or nearby we should consider?</li>
-                <li>When do we restage (CT/MRI)? What response are you hoping to see by cycle 2–3?</li>
-            </ol>
-
-            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Tell Karmanos — keto &amp; supplements (if Greg is doing them)</p>
-            <p style="font-size:14px;color:var(--muted);margin:0 0 10px;line-height:1.55">Frame it as what you're already doing, not asking permission for a whole protocol.</p>
-            <ol class="q-list" start="8">
-                <li>We're on a strict ketogenic diet and tracking glucose-ketone index daily — anything you want us to change during chemo?</li>
-                <li>Here's our supplement list (§04) — anything to pause or avoid with etoposide/platinum?</li>
-                <li>Given my liver mets — how will you monitor liver function and blood counts?</li>
-                <li>If side effects spike between visits — who do we call, including after hours?</li>
-            </ol>
-
-            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">What to say — keep it simple</p>
-            <div class="script-box">
-                "We want carboplatin/etoposide as first-line. We're also doing strict keto with daily glucose-ketone tracking, plus vitamins and supplements on this list. Can you walk us through the chemo plan and flag anything on our diet or supplement list that conflicts with treatment?"
-            </div>
-
-            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Fenbendazole &amp; ivermectin — not this visit</p>
-            <p style="font-size:14px;color:var(--muted);margin:0 0 10px;line-height:1.55">If Greg wants antiparasitics, doses and safety are for an <strong>outside guide</strong> (Care Oncology, integrative onc — §04). Karmanos won't prescribe or endorse them; leading with them wastes the appointment. Greg decides whether to pursue them separately from chemo planning.</p>
-
-            <p style="font-size:14px;color:var(--muted);margin:8px 0 0">Mom writes down: Oncologist _____ · Nurse navigator _____ · After-hours line _____ · Chemo start date _____ · Next scan date _____ · Supplements to pause _____</p>
-        </section>
-
-        <!-- 07 Print helpers only -->
+        <!-- 06 Print -->
         <section class="sec" id="print">
             <div class="sec-head">
-                <span class="sec-num">07</span>
+                <span class="sec-num">06</span>
                 <h2 class="sec-title">Print helpers</h2>
             </div>
-            <p class="sec-lead">Optional extras — the plan above is complete. These are just for logging food and numbers.</p>
-
+            <p class="sec-lead">Optional — for logging food and numbers.</p>
             <div class="doc-links">
                 <a class="doc-link" href="keto-starter-sheet.html">
-                    <div><strong>Keto starter sheet</strong><span>Fridge list — what to eat, what to skip</span></div>
+                    <div><strong>Keto starter sheet</strong><span>What to eat · what to skip</span></div>
                     <em>Print →</em>
                 </a>
                 <a class="doc-link" href="gki-tracking-sheet.html">
-                    <div><strong>GKI tracking sheet</strong><span>Daily log — glucose, ketones, GKI</span></div>
+                    <div><strong>GKI tracking sheet</strong><span>Daily glucose · ketones · GKI</span></div>
                     <em>Print →</em>
                 </a>
             </div>
