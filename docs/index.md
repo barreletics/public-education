@@ -1,19 +1,21 @@
-# Getting Started
+# Public Education
 
-This document is the entry point for the Public Education repository. It explains what lives here, how the material is organized, and how to use it.
+Reference material for Kim, Greg, and anyone exploring metabolic cancer strategies. Read directly on GitHub or the live site — no setup required.
 
-## What This Covers
+## Documents
 
-Reference material written to be read directly on GitHub, without any setup or tooling. Each document is self-contained and can be linked to on its own.
+| Topic | Link |
+|-------|------|
+| **Cancer Metabolic Strategy** — experts, community groups, NED data, protocol | [cancer-metabolic-strategy.html](./cancer-metabolic-strategy.html) · [Live site](https://barreletics.github.io/public-education/cancer-metabolic-strategy.html) |
 
-*Add a short description of the first topic here, along with who it is written for and what a reader should already know.*
+## What's in the cancer guide
 
-## How to Use These Documents
+- Tiered expert directory (Seyfried, Riggins, Marik, skeptics, etc.)
+- Facebook groups, Reddit, Telegram — where real patients post NED stories
+- Compiled data tables (318–760+ community case reports)
+- Documented remission cases with source links
+- The community protocol: keto + GKI + fenbendazole/ivermectin cycling
 
-Read straight through, or jump to the section you need. Documents are versioned in Git, so the history of every change is visible and each revision can be referenced by commit.
+## Contributing
 
-*Add usage notes here, including any conventions used across documents and where to start for a first-time reader.*
-
-## Contributing and Corrections
-
-Corrections and suggestions are welcome. Open an issue describing what is unclear or incorrect, or submit a pull request with the proposed change.
+Corrections welcome via issue or pull request.
