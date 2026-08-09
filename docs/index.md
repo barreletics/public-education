@@ -8,6 +8,7 @@ Reference material for Kim, Greg, and anyone exploring metabolic cancer strategi
 |-------|------|
 | **Cancer Metabolic Strategy** — experts, community groups, NED data, protocol | [cancer-metabolic-strategy.html](./cancer-metabolic-strategy.html) |
 | **Greg's Roadmap** — Karmanos prep, 90-day OS, oncologist questions (sinus NEC, liver/pelvis mets) | [greg-karmanos-roadmap.html](./greg-karmanos-roadmap.html) |
+| **Mebendazole vs Fenbendazole** — comparison, farm supply truth-check, sources (for Greg) | [greg-benzimidazole-sourcing-guide.html](./greg-benzimidazole-sourcing-guide.html) |
 | **Project Roadmap** — what's built, what's next, access needed | [deliverables-roadmap.html](./deliverables-roadmap.html) |
 | **GKI Tracking Sheet** — printable 4-week log | [gki-tracking-sheet.html](./gki-tracking-sheet.html) |
 | **Shopping & Sourcing List** — meters, supplements, protocol items | [shopping-sourcing-list.html](./shopping-sourcing-list.html) |
