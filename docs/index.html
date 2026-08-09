@@ -7,19 +7,19 @@
     <meta name="description" content="Personal roadmap for Greg — Karmanos prep, metabolic strategy, and practical tools. Chemo first. Metabolic protocol parallel.">
     <style>
         :root {
-            --bg: #0f1419;
-            --surface: #1a2332;
-            --surface-hover: #243044;
-            --text: #e8ecf1;
-            --muted: #94a3b8;
-            --accent: #3b82f6;
-            --accent-soft: rgba(59, 130, 246, 0.15);
-            --green: #34d399;
-            --green-soft: rgba(52, 211, 153, 0.12);
-            --amber: #fbbf24;
-            --amber-soft: rgba(251, 191, 36, 0.12);
-            --border: rgba(255, 255, 255, 0.08);
-            --radius: 14px;
+            --bg: #f9f9f9;
+            --surface: #ffffff;
+            --surface-hover: #f0f4f8;
+            --text: #333333;
+            --muted: #666666;
+            --accent: #1565c0;
+            --accent-soft: #e3f2fd;
+            --green: #2e7d32;
+            --green-soft: #e8f5e9;
+            --amber: #ef6c00;
+            --amber-soft: #fff3e0;
+            --border: #dddddd;
+            --radius: 8px;
         }
         * { box-sizing: border-box; }
         body {
@@ -90,11 +90,11 @@
         }
         .core-message strong { color: var(--green); }
         h2 {
-            font-size: 0.72rem;
-            font-weight: 600;
-            letter-spacing: 0.14em;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
             text-transform: uppercase;
-            color: var(--muted);
+            color: var(--accent);
             margin: 36px 0 14px;
         }
         .card {
@@ -106,16 +106,17 @@
             margin-bottom: 12px;
             text-decoration: none;
             color: inherit;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
             transition: background 0.15s, border-color 0.15s, transform 0.15s;
         }
         .card:hover {
             background: var(--surface-hover);
-            border-color: rgba(59, 130, 246, 0.35);
+            border-color: var(--accent);
             transform: translateY(-1px);
         }
         .card-primary {
-            border-color: rgba(59, 130, 246, 0.4);
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), var(--surface));
+            border-color: var(--accent);
+            background: linear-gradient(135deg, var(--accent-soft), var(--surface));
         }
         .card-tag {
             font-size: 0.68rem;
