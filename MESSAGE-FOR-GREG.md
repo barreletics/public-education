@@ -1,6 +1,6 @@
 # Message for Greg (from Kim)
 
-Greg — Kim had a lot of Facebook links, YouTube videos, and protocol pages run through a full research pass. **This is not the same document she sent you at the start, made longer.** It's a separate package built by fact-checking everything against oncology guidelines, retracted papers, and your specific cancer type.
+Greg — this package was built through a **structured research project** (Cursor power-user program), not by pasting links into a chatbot. **~17 sources fact-checked**, bad ones removed (retracted Makis paper, Skymeds ads, Sulack sales page), and a plan built for **your exact cancer** — sinonasal NEC stage IV with liver mets.
 
 ---
 
@@ -22,9 +22,9 @@ https://barreletics.github.io/public-education/greg-karmanos-roadmap.html
 
 ---
 
-## What we actually looked at
+## Who built this
 
-This package is built from **independent synthesis**, not copy-paste of one source:
+**Andrew** (engineer, Cursor power-user program) — structured research project over several days. **Kim** supports Wednesday visit and notes. This is **source-vetted patient preparation**, not AI-generated treatment advice.
 
 | Category | Volume |
 |----------|--------|
