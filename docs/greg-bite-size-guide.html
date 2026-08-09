@@ -425,7 +425,7 @@
             margin-bottom: 4px;
         }
 
-        /* Flow diagram */
+        /* Flow diagram — simplified */
         .flow {
             margin: 0 32px 8px;
             padding: 20px 18px;
@@ -438,120 +438,59 @@
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: var(--accent);
-            margin-bottom: 16px;
-            text-align: center;
-        }
-        .flow-goal {
-            text-align: center;
             margin-bottom: 12px;
         }
-        .flow-goal-box {
-            display: inline-block;
-            padding: 10px 24px;
-            background: var(--success-soft);
-            border: 2px solid var(--success);
-            font-weight: 700;
-            font-size: 14px;
-            color: var(--success);
+        .flow-lead {
+            font-size: 16px;
+            line-height: 1.55;
+            margin: 0 0 16px;
+            color: var(--ink);
         }
-        .flow-goal-box small {
-            display: block;
-            font-weight: 400;
-            font-size: 11px;
-            color: var(--muted);
-            margin-top: 2px;
-        }
-        .flow-arrow {
-            text-align: center;
-            color: var(--muted);
-            font-size: 18px;
-            line-height: 1;
-            margin: 6px 0;
-        }
-        .flow-merge {
-            text-align: center;
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--accent);
-            padding: 8px;
-            background: var(--accent-soft);
-            border: 1px dashed var(--accent);
-            margin-bottom: 12px;
-        }
-        .flow-lanes {
+        .flow-lead strong { color: var(--success); }
+        .flow-simple {
             display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            gap: 8px;
-            align-items: stretch;
-            margin-bottom: 12px;
+            grid-template-columns: 1fr auto 1fr auto 1fr;
+            gap: 6px;
+            align-items: center;
+            font-size: 14px;
         }
-        @media (max-width: 520px) {
-            .flow-lanes { grid-template-columns: 1fr; }
-            .flow-plus { display: none; }
+        @media (max-width: 560px) {
+            .flow-simple {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            .flow-arrow-h { display: none; }
         }
-        .flow-lane {
+        .flow-simple-step {
+            padding: 14px 12px;
             border: 1px solid var(--line);
-            padding: 12px;
-            font-size: 12px;
-            text-align: center;
             background: var(--paper);
+            text-align: center;
+            line-height: 1.45;
         }
-        .flow-lane strong {
+        .flow-simple-step b {
             display: block;
             font-size: 11px;
             letter-spacing: 0.06em;
             text-transform: uppercase;
+            color: var(--accent);
             margin-bottom: 6px;
         }
-        .flow-lane-a { border-top: 3px solid var(--accent); }
-        .flow-lane-a strong { color: var(--accent); }
-        .flow-lane-b { border-top: 3px solid var(--success); }
-        .flow-lane-b strong { color: var(--success); }
-        .flow-plus {
-            display: flex;
-            align-items: center;
-            font-size: 22px;
+        .flow-simple-step.now {
+            border-top: 3px solid var(--success);
+            background: var(--success-soft);
+        }
+        .flow-simple-step.now b { color: var(--success); }
+        .flow-arrow-h {
             color: var(--muted);
-            padding: 0 2px;
-        }
-        .flow-track {
+            font-size: 20px;
             text-align: center;
-            font-size: 12px;
-            padding: 8px 12px;
-            background: #fff8e1;
-            border: 1px solid #ffe082;
-            margin-bottom: 14px;
         }
-        .flow-steps {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 0;
-            border: 1px solid var(--line);
-            font-size: 11px;
-        }
-        @media (max-width: 520px) {
-            .flow-steps { grid-template-columns: 1fr 1fr; }
-        }
-        .flow-step {
-            padding: 10px 8px;
-            text-align: center;
-            border-right: 1px solid var(--line);
-            background: var(--paper);
-        }
-        .flow-step:last-child { border-right: none; }
-        .flow-step b {
-            display: block;
-            font-size: 10px;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: var(--accent);
-            margin-bottom: 3px;
-        }
-        .flow-step-arrow {
-            text-align: center;
-            font-size: 11px;
+        .flow-foot {
+            margin-top: 14px;
+            font-size: 13px;
             color: var(--muted);
-            margin: 8px 0 0;
+            text-align: center;
         }
 
         /* Document links */
@@ -654,45 +593,28 @@
         <strong>Greg's diagnosis</strong> = <em>high-grade neuroendocrine carcinoma</em> — the type of cancer. (Doctors sometimes write "NEC" on charts for that diagnosis — it is <strong>not</strong> NED.)
     </div>
 
-    <!-- How it works diagram -->
+    <!-- How it works -->
     <div class="flow">
-        <div class="flow-title">How it all works</div>
+        <div class="flow-title">How it works</div>
+        <p class="flow-lead"><strong>Start keto now — before chemo.</strong> Get into metabolic state first (GKI ≤ 3). When carboplatin/etoposide starts, you're already starving tumor fuel — chemo may hit harder.</p>
 
-        <div class="flow-goal">
-            <div class="flow-goal-box">
-                GOAL: NED
-                <small>No evidence of disease on scans</small>
+        <div class="flow-simple">
+            <div class="flow-simple-step now">
+                <b>Now</b>
+                Start keto<br>Track GKI daily<br>Get metabolic state
+            </div>
+            <div class="flow-arrow-h">→</div>
+            <div class="flow-simple-step">
+                <b>Aug 13</b>
+                Karmanos<br>Chemo begins<br>Both lanes together
+            </div>
+            <div class="flow-arrow-h">→</div>
+            <div class="flow-simple-step">
+                <b>8–12 weeks</b>
+                Stay on system<br>Rest scans<br>Goal: NED
             </div>
         </div>
-
-        <div class="flow-arrow">▲</div>
-        <div class="flow-merge">Both lanes run together — not instead of chemo</div>
-
-        <div class="flow-lanes">
-            <div class="flow-lane flow-lane-a">
-                <strong>Lane 1 · Oncology</strong>
-                Karmanos<br>
-                Carboplatin + etoposide<br>
-                Scans · radiation · trials
-            </div>
-            <div class="flow-plus">+</div>
-            <div class="flow-lane flow-lane-b">
-                <strong>Lane 2 · Metabolic</strong>
-                Strict keto (&lt;20g carbs)<br>
-                Fenbendazole + ivermectin cycle<br>
-                D3 · E · curcumin · magnesium
-            </div>
-        </div>
-
-        <div class="flow-track"><strong>Daily proof metabolic lane works:</strong> GKI = glucose ÷ ketones · target ≤ 3 · measure AM + evening</div>
-
-        <div class="flow-steps">
-            <div class="flow-step"><b>Now</b>Order supplies · start keto · log GKI</div>
-            <div class="flow-step"><b>Aug 13</b>Karmanos · get chemo plan</div>
-            <div class="flow-step"><b>Week 1+</b>Chemo + metabolic together</div>
-            <div class="flow-step"><b>8–12 wk</b>Scans · judge response</div>
-        </div>
-        <div class="flow-step-arrow">NOW → KARMANOS → TREATMENT → SCANS</div>
+        <p class="flow-foot">Metabolic + chemo together · not instead of chemo</p>
     </div>
 
     <div class="body">
@@ -715,33 +637,20 @@
         <section class="sec">
             <div class="sec-head">
                 <span class="sec-num">02</span>
-                <h2 class="sec-title">Why both lanes work better</h2>
+                <h2 class="sec-title">GKI — your daily number</h2>
             </div>
-            <p class="sec-lead">Chemo kills dividing cells. Keto + GKI starves tumor fuel. Both together — not either/or.</p>
+            <p class="sec-lead">This is how you know keto is working before chemo starts.</p>
 
             <div class="tip">
-                <strong>GKI in plain English</strong><br>
-                Prick finger → test strip in Keto-Mojo → write glucose and ketones → <strong>divide glucose by ketones = GKI</strong>.<br>
-                <strong>Target ≤ 3.</strong> Check <strong>twice a day</strong>: morning before food, evening before dinner.<br>
-                <strong>Strips:</strong> you need two boxes — glucose strips + ketone strips (both Keto-Mojo brand).
-            </div>
-
-            <div class="lanes">
-                <div class="lane lane-a">
-                    <div class="lane-label">Lane 1 · Oncology</div>
-                    Karmanos<br>Carboplatin + etoposide<br>Radiation · scans · trials
-                </div>
-                <div class="lanes-join">+</div>
-                <div class="lane lane-b">
-                    <div class="lane-label">Lane 2 · Metabolic</div>
-                    Keto · GKI 2× daily<br>Fenbendazole + ivermectin cycle<br>Supplements below
-                </div>
+                Prick finger → test strip in Keto-Mojo → write glucose and ketones → <strong>GKI = glucose ÷ ketones</strong>.<br>
+                <strong>Target ≤ 3.</strong> Morning before food + evening before dinner.<br>
+                Two strip boxes: glucose + ketone (both Keto-Mojo).
             </div>
 
             <div class="metrics">
                 <div class="metric"><val>≤3</val><label>GKI target</label></div>
                 <div class="metric"><val>&lt;20g</val><label>net carbs/day</label></div>
-                <div class="metric"><val>2×</val><label>GKI checks daily</label></div>
+                <div class="metric"><val>2×</val><label>checks daily</label></div>
             </div>
         </section>
 
