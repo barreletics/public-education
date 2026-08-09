@@ -1,0 +1,48 @@
+Source page: https://www.facebook.com/profile.php?id=61580313849874
+Canonical URL: https://www.facebook.com/people/Mary-Bowden-MPH/61580313849874/
+Related share link (post text not extractable): https://www.facebook.com/share/p/19Sxoht6j1/
+
+=== PAGE IDENTITY ===
+Name: Mary Bowden MPH (Facebook display name)
+Real name: Dr. Mary Talley Bowden, MD
+Category: Doctor
+Followers (Aug 2026): ~12,885 likes · ~457 talking about this
+
+=== WHO SHE IS ===
+- Houston ENT / sleep medicine physician (Stanford residency)
+- Board-certified Otolaryngology + Sleep Medicine
+- NOT a medical oncologist or hematologist-oncologist
+- Rose to prominence during COVID-19 as ivermectin prescriber/advocate
+- Lost Houston Methodist hospital privileges (2021) over ivermectin promotion + vaccine mandate opposition
+- Texas Medical Board reprimand (2025) for prescribing ivermectin at a hospital where she lacked privileges
+- Sued FDA (with Paul Marik, Robert Apter) over "horse medicine" ivermectin messaging — FDA removed contested language
+- Texas AG Ken Paxton backed her in medical board fight (Feb 2026)
+- Now sells ivermectin directly to Texans OTC-style ($85–110 per 100 tablets, May 2026)
+
+=== FACEBOOK PAGE CONTEXT ===
+- Page feed HTML references Dr William Makis (61592619271677) — same ecosystem as retracted fenbendazole case series
+- Share link 19Sxoht6j1 resolves to this page's content but full post text blocked behind login
+- If user shared a specific post from this page, paste screenshot or text to complete this file
+
+=== CANCER / METABOLIC RELEVANCE ===
+Primary lane: ivermectin access and advocacy — NOT fenbendazole protocol design
+- Full Measure interview (2026): discusses Florida $60M generic drug exploration including ivermectin for cancer
+- Tucker Carlson interview: discusses rising cancer rates post-COVID vaccine (speculative, not peer-reviewed)
+- No published oncology trials or NEC/sinus cancer expertise
+- Overlaps socially with Makis/McCullough ivermectin + antiparasitic cancer community
+
+=== RELEVANCE FOR GREG (sinonasal high-grade NEC, liver mets) ===
+- Bowden is an ivermectin prescriber/seller, not an NEC oncologist
+- If considering IVM adjunct: liver mets = extra hepatotoxicity risk (see skeptic IVM+FBZ short transcript)
+- Do NOT cite Bowden Facebook posts as oncology evidence at Karmanos
+- Pair with: Dr. Roman Groisberg (IVM facts), Pharmacy Times misinformation video, Paul Marik (lower-dose IVM protocol, rejects Makis high-dose)
+
+=== TIER FOR EXPERT DIRECTORY ===
+Caution — ivermectin advocacy / access, not metabolic oncology research
+
+=== LINKS ===
+Facebook: https://www.facebook.com/people/Mary-Bowden-MPH/61580313849874/
+Substack: https://drbowden.substack.com/
+Full Measure interview: https://fullmeasure.news/newest-videos/bowdenivermectin
+Texas Tribune (med board): https://www.texastribune.org/2026/02/12/texas-paxton-medical-board-mary-bowden-ivermectin/
+Houston Chronicle (ivermectin sales): https://www.chron.com/news/houston-texas/article/mary-bowden-ivermectin-hantavirus-22249517.php
