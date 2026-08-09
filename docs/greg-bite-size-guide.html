@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greg — Operating System (Bite-Size)</title>
+    <title>Greg — Your Plan</title>
     <style>
         :root {
             --ink: #1a1a1a;
@@ -382,10 +382,40 @@
         }
         .links a:hover { text-decoration: underline; }
 
+        .tip {
+            font-size: 13px;
+            color: var(--muted);
+            background: #fafbfc;
+            border: 1px solid var(--line);
+            padding: 12px 14px;
+            margin: 12px 0;
+            line-height: 1.45;
+        }
+        .tip strong { color: var(--ink); }
+        .shop-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            background: var(--line);
+            border: 1px solid var(--line);
+            font-size: 13px;
+            margin: 10px 0;
+        }
+        @media (max-width: 520px) { .shop-row { grid-template-columns: 1fr; } }
+        .shop-row > div { background: var(--paper); padding: 10px 12px; }
+        .shop-row label {
+            display: block;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
         @media print {
             body { background: white; padding: 0; }
             .doc { box-shadow: none; border: none; max-width: 100%; }
-            .links { display: none; }
+            .foot a { color: var(--accent); }
             .sec { break-inside: avoid; }
         }
     </style>
@@ -395,7 +425,7 @@
 <div class="doc">
 
     <header class="head">
-        <div class="head-tag">Greg's cancer operating system · bite-size</div>
+        <div class="head-tag">Greg's plan · bite-size</div>
         <h1>Clear path. Both lanes. One fight.</h1>
         <div class="meta">
             <div><label>Diagnosis</label>High-grade neuroendocrine carcinoma · sinus</div>
@@ -406,8 +436,8 @@
     </header>
 
     <div class="principle">
-        <strong>Chemo first</strong> — carboplatin + etoposide at Karmanos.
-        Strict keto, GKI tracking, and oncologist-approved adjuncts <strong>enhance</strong> chemo response. Together — not instead.
+        <strong>Chemo at Karmanos</strong> — carboplatin + etoposide.
+        <strong>Metabolic lane starts now</strong> — keto, GKI, protocol below runs <em>with</em> chemo to enhance response. Tell Karmanos what you're doing; don't wait for permission.
     </div>
 
     <div style="margin:16px 32px;padding:14px 16px;background:#fff8e1;border:1px solid #ffe082;font-size:14px">
@@ -476,10 +506,18 @@
                     </tr>
                     <tr>
                         <td>Etoposide targets cell division</td>
-                        <td>Benzimidazoles (if MD approves) may complement via microtubules &amp; glutamine</td>
+                        <td>Fenbendazole + ivermectin cycle — complements chemo (see §05)</td>
                     </tr>
                 </tbody>
             </table>
+
+            <div class="tip">
+                <strong>GKI — your daily number (Glucose Ketone Index)</strong><br>
+                Each check: prick finger → test strip in Keto-Mojo → write down glucose and ketones → <strong>GKI = glucose ÷ ketones</strong>.<br>
+                <strong>Target ≤ 3</strong> (ideal ≤ 2) = you're starving tumor fuel. Above 5 = cut carbs, walk 20 min.<br>
+                <strong>When:</strong> morning before eating · evening before dinner = <em>2 checks per day</em>.<br>
+                <strong>Strips:</strong> meter needs <em>two types</em> — glucose strips + ketone strips (separate boxes, both from Keto-Mojo).
+            </div>
 
             <div class="lanes">
                 <div class="lane lane-a">
@@ -489,7 +527,7 @@
                 <div class="lanes-join">+</div>
                 <div class="lane lane-b">
                     <div class="lane-label">Lane 2 · Metabolic</div>
-                    Keto · GKI tracking<br>Adjuncts if approved<br>Supplements per team
+                    Keto · GKI 2× daily<br>Fenbendazole + ivermectin cycle<br>Supplements below
                 </div>
             </div>
 
@@ -512,14 +550,14 @@
                     <div class="path-n">1</div>
                     <div>
                         <strong>Now → Aug 13</strong>
-                        <p>Gather records · cut sugar · order Keto-Mojo · baseline GKI. Hold antiparasitics until Karmanos.</p>
+                        <p>Order shopping list items · start keto · log GKI twice daily · gather records for Karmanos.</p>
                     </div>
                 </div>
                 <div class="path-item">
                     <div class="path-n">2</div>
                     <div>
                         <strong>Wednesday · Karmanos</strong>
-                        <p>Kim takes notes. Ask: chemo plan, adjunct safety with liver mets, nutrition support. Get plan in writing.</p>
+                        <p>Kim takes notes. Tell them chemo + metabolic protocol. Get chemo schedule in writing. Goal = NED on scans.</p>
                     </div>
                 </div>
                 <div class="path-item">
@@ -539,94 +577,75 @@
             </div>
         </section>
 
-        <!-- 04 Protocol after OK -->
+        <!-- 04 Protocol -->
         <section class="sec">
             <div class="sec-head">
                 <span class="sec-num">04</span>
-                <h2 class="sec-title">Metabolic protocol</h2>
+                <h2 class="sec-title">Protocol doses (settled)</h2>
             </div>
-            <p class="sec-lead">Start only after Karmanos approval — especially with liver metastases.</p>
+            <p class="sec-lead">You saw different numbers online. <strong>This is Greg's protocol</strong> — Joe Tippens baseline + community cycle.</p>
 
-            <p style="font-size:13px;margin:0 0 4px;font-weight:600">14-day cycle (community protocol)</p>
-            <div class="cycle-bar">
-                <div class="cycle-on">4 days ON</div>
-                <div class="cycle-off">10 days OFF</div>
+            <table class="tbl">
+                <thead><tr><th>Item</th><th>Dose</th><th>Schedule</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Fenbendazole</strong></td><td><strong>222 mg</strong> per day</td><td>4 days ON · 10 days OFF · repeat</td></tr>
+                    <tr><td><strong>Ivermectin</strong></td><td><strong>12 mg</strong> per day</td><td>Same 4 ON days as FBZ</td></tr>
+                    <tr><td><strong>Keto</strong></td><td>&lt; 20 g net carbs</td><td>Every day</td></tr>
+                    <tr><td><strong>GKI</strong></td><td>Target ≤ 3</td><td>Measure AM + evening</td></tr>
+                    <tr><td>Vitamin D3</td><td>5000 IU</td><td>Daily</td></tr>
+                    <tr><td>Vitamin E</td><td>400–800 IU</td><td>Daily (Tippens stack)</td></tr>
+                    <tr><td>Curcumin</td><td>500–1000 mg</td><td>Daily</td></tr>
+                    <tr><td>Magnesium glycinate</td><td>200–400 mg</td><td>Daily · evening helps sleep</td></tr>
+                </tbody>
+            </table>
+
+            <div class="tip">
+                <strong>Why 222 mg fenbendazole?</strong> Joe Tippens dose · one <strong>Panacur C</strong> 1-gram packet = 222 mg active drug. Other sources cite up to 444–2000 mg — <strong>Greg stays at 222 mg</strong> unless Karmanos suggests otherwise.<br>
+                <strong>Take FBZ with fat</strong> (avocado, olive oil, nut butter) — absorption requires it.
             </div>
-            <p class="cycle-note">
-                <strong>ON:</strong> 222 mg fenbendazole + 12 mg ivermectin (with fatty meal) ·
-                <strong>OFF:</strong> keto + approved supplements only ·
-                <strong>Daily:</strong> &lt;20 g carbs · GKI AM + evening · vitamin D · magnesium
-            </p>
+
+            <p style="font-size:13px;margin:16px 0 4px;font-weight:600">14-day cycle</p>
+            <div class="cycle-bar">
+                <div class="cycle-on">4 days ON — FBZ + IVM</div>
+                <div class="cycle-off">10 days OFF — keto + supplements only</div>
+            </div>
         </section>
 
-        <!-- 05 Actions -->
+        <!-- 05 Shopping -->
         <section class="sec">
             <div class="sec-head">
                 <span class="sec-num">05</span>
-                <h2 class="sec-title">What to do</h2>
+                <h2 class="sec-title">Where to buy</h2>
             </div>
-            <div class="actions">
-                <div class="action-box now">
-                    <h4>Start now</h4>
-                    <ul>
-                        <li>Keto-Mojo meter + strips</li>
-                        <li>Keto groceries + electrolytes</li>
-                        <li>GKI tracking sheet</li>
-                    </ul>
-                </div>
-                <div class="action-box wait">
-                    <h4>After Aug 13</h4>
-                    <ul>
-                        <li>Antiparasitics if MD approves</li>
-                        <li>Supplements per oncology</li>
-                        <li>Treatment calendar filled in</li>
-                    </ul>
-                </div>
-                <div class="action-box skip">
-                    <h4>Skip</h4>
-                    <ul>
-                        <li>Paid wellness funnels · bulk FBZ before oncology · anything that delays chemo</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-        <!-- 06 Sources -->
-        <section class="sec">
-            <div class="sec-head">
-                <span class="sec-num">06</span>
-                <h2 class="sec-title">Sources ranked</h2>
+            <div class="shop-row">
+                <div><label>Start today</label><strong>Keto-Mojo meter</strong> — amazon.com or keto-mojo.com (~$45). Comes with a few strips; order extra.</div>
+                <div><label>Strips (ongoing)</label><strong>Glucose strips</strong> + <strong>ketone strips</strong> — separate boxes, Keto-Mojo brand. ~2 checks/day = plan on refills.</div>
             </div>
-            <div class="tier">
-                <div class="tier-row">
-                    <div class="tier-badge t1">1</div>
-                    <div><strong>Karmanos + standard chemo</strong> — treatment decisions</div>
-                </div>
-                <div class="tier-row">
-                    <div class="tier-badge t2">2</div>
-                    <div><strong>Seyfried · Pharmacy Times</strong> — metabolic research + professional balance</div>
-                </div>
-                <div class="tier-row">
-                    <div class="tier-badge t3">3</div>
-                    <div><strong>Tippens · Berg · Supple</strong> — hope &amp; protocol ideas; not medical authority</div>
-                </div>
-                <div class="tier-row">
-                    <div class="tier-badge t4">4</div>
-                    <div><strong>Makis · Skymeds ads · sales funnels</strong> — debunked or flagged; do not follow</div>
-                </div>
+            <div class="shop-row">
+                <div><label>Keto food</label>Any grocery — eggs, avocados, olive oil, salmon, spinach, macadamia nuts, cheese, cauliflower. Zero sugar.</div>
+                <div><label>Electrolytes</label>Amazon or grocery — <strong>LMNT</strong>, <strong>Nuun</strong>, or bulk potassium + salt. Prevents keto flu.</div>
+            </div>
+            <div class="shop-row">
+                <div><label>Fenbendazole</label><strong>Panacur C</strong> — Tractor Supply, Amazon, farm stores (~$8–15). Each 1g packet = 222 mg. Or pre-made capsules (Sanare Lab, etc.) for convenience — same dose, not stronger.</div>
+                <div><label>Ivermectin</label>Human 12 mg tablets (online pharmacies / telehealth) preferred. Some use farm formulations — <strong>12 mg on cycle days</strong> is the target dose.</div>
+            </div>
+            <div class="shop-row">
+                <div><label>Magnesium</label><strong>Glycinate</strong> (best for sleep/cramps) or citrate — Amazon, ~200–400 mg elemental. Avoid magnesium oxide (cheap, poor absorption).</div>
+                <div><label>Supplements</label>Amazon, Costco, grocery — vitamin D3, E, curcumin. Pill organizer for cycle days.</div>
+            </div>
+            <div class="shop-row">
+                <div><label>GKI log</label>Print <a href="gki-tracking-sheet.html">GKI tracking sheet</a> — or notebook: date · glucose · ketones · GKI.</div>
+                <div><label>Liver mets note</label>Greg has liver mets — track how you feel; get LFTs when Karmanos runs labs.</div>
             </div>
         </section>
 
     </div>
 
     <footer class="foot">
-        <strong>At Karmanos:</strong> Lead with your diagnosis and questions about enhancing chemo — not "AI" or Facebook protocols.
-        <div class="links">
-            <a href="greg-karmanos-roadmap.html">Full Karmanos prep + 15 questions →</a>
-            <a href="gki-tracking-sheet.html">GKI tracking sheet →</a>
-            <a href="greg-benzimidazole-sourcing-guide.html">Fenbendazole vs mebendazole →</a>
-            <a href="index.html">All guides →</a>
-        </div>
+        <a href="shopping-sourcing-list.html">Print shopping list</a> ·
+        <a href="greg-karmanos-roadmap.html">Karmanos prep + questions</a> ·
+        <a href="gki-tracking-sheet.html">GKI log sheet</a>
     </footer>
 
 </div>
