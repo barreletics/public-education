@@ -1,27 +1,22 @@
-# Public Education
+# Public Education — Document Index
 
-Reference material for Kim, Greg, and anyone exploring metabolic cancer strategies. Read directly on GitHub or the live site — no setup required.
+**Greg:** open the [landing page](./index.html) — not this file.
 
-## Documents
+## Live site (after PR merge)
 
-| Topic | Link |
-|-------|------|
-| **Cancer Metabolic Strategy** — experts, community groups, NED data, protocol | [cancer-metabolic-strategy.html](./cancer-metabolic-strategy.html) |
-| **Greg's Roadmap** — Karmanos prep, 90-day OS, oncologist questions (sinus NEC, liver/pelvis mets) | [greg-karmanos-roadmap.html](./greg-karmanos-roadmap.html) |
-| **Mebendazole vs Fenbendazole** — comparison, farm supply truth-check, sources (for Greg) | [greg-benzimidazole-sourcing-guide.html](./greg-benzimidazole-sourcing-guide.html) |
-| **Project Roadmap** — what's built, what's next, access needed | [deliverables-roadmap.html](./deliverables-roadmap.html) |
-| **GKI Tracking Sheet** — printable 4-week log | [gki-tracking-sheet.html](./gki-tracking-sheet.html) |
-| **Shopping & Sourcing List** — meters, supplements, protocol items | [shopping-sourcing-list.html](./shopping-sourcing-list.html) |
-| **Treatment Calendar** — template (fill after Karmanos) | [greg-treatment-calendar.html](./greg-treatment-calendar.html) |
+https://barreletics.github.io/public-education/
 
-## What's in the cancer guide
+## All documents
 
-- Tiered expert directory (Seyfried, Riggins, Marik, skeptics, etc.)
-- Facebook groups, Reddit, Telegram — where real patients post NED stories
-- Compiled data tables (318–760+ community case reports)
-- Documented remission cases with source links
-- The community protocol: keto + GKI + fenbendazole/ivermectin cycling
+| Document | Audience |
+|----------|----------|
+| [index.html](./index.html) | **Greg — start here** |
+| [greg-karmanos-roadmap.html](./greg-karmanos-roadmap.html) | Greg — Karmanos Wed Aug 13 |
+| [greg-benzimidazole-sourcing-guide.html](./greg-benzimidazole-sourcing-guide.html) | Greg — FBZ vs MBZ |
+| [gki-tracking-sheet.html](./gki-tracking-sheet.html) | Greg — daily tracking |
+| [shopping-sourcing-list.html](./shopping-sourcing-list.html) | Greg — after oncologist OK |
+| [greg-treatment-calendar.html](./greg-treatment-calendar.html) | Greg — fill after Karmanos |
+| [cancer-metabolic-strategy.html](./cancer-metabolic-strategy.html) | Deep dive |
+| [deliverables-roadmap.html](./deliverables-roadmap.html) | Kim — project status |
 
-## Contributing
-
-Corrections welcome via issue or pull request.
+Facebook fact-checks: `transcripts/` folder

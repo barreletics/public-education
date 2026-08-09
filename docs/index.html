@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg's Cancer Roadmap</title>
+    <meta name="description" content="Personal roadmap for Greg — Karmanos prep, metabolic strategy, and practical tools. Chemo first. Metabolic protocol parallel.">
+    <style>
+        :root {
+            --bg: #0f1419;
+            --surface: #1a2332;
+            --surface-hover: #243044;
+            --text: #e8ecf1;
+            --muted: #94a3b8;
+            --accent: #3b82f6;
+            --accent-soft: rgba(59, 130, 246, 0.15);
+            --green: #34d399;
+            --green-soft: rgba(52, 211, 153, 0.12);
+            --amber: #fbbf24;
+            --amber-soft: rgba(251, 191, 36, 0.12);
+            --border: rgba(255, 255, 255, 0.08);
+            --radius: 14px;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.55;
+            min-height: 100vh;
+        }
+        .wrap {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 32px 20px 64px;
+        }
+        .hero {
+            text-align: center;
+            padding: 48px 0 40px;
+        }
+        .hero-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent);
+            background: var(--accent-soft);
+            padding: 6px 14px;
+            border-radius: 999px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: clamp(1.75rem, 5vw, 2.25rem);
+            font-weight: 700;
+            margin: 0 0 12px;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        .hero-sub {
+            font-size: 1.05rem;
+            color: var(--muted);
+            max-width: 520px;
+            margin: 0 auto 28px;
+        }
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+        .pill {
+            font-size: 0.82rem;
+            color: var(--muted);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 6px 12px;
+            border-radius: 999px;
+        }
+        .core-message {
+            background: linear-gradient(135deg, var(--green-soft), var(--accent-soft));
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px 22px;
+            margin: 32px 0;
+            text-align: center;
+            font-size: 1.02rem;
+        }
+        .core-message strong { color: var(--green); }
+        h2 {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin: 36px 0 14px;
+        }
+        .card {
+            display: block;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px 24px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.15s, border-color 0.15s, transform 0.15s;
+        }
+        .card:hover {
+            background: var(--surface-hover);
+            border-color: rgba(59, 130, 246, 0.35);
+            transform: translateY(-1px);
+        }
+        .card-primary {
+            border-color: rgba(59, 130, 246, 0.4);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), var(--surface));
+        }
+        .card-tag {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 6px;
+        }
+        .card-tag.green { color: var(--green); }
+        .card-tag.amber { color: var(--amber); }
+        .card-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .card-desc {
+            font-size: 0.92rem;
+            color: var(--muted);
+            margin: 0;
+        }
+        .card-arrow {
+            float: right;
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-top: -2.8rem;
+            opacity: 0.7;
+        }
+        .timeline {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-top: 8px;
+        }
+        .timeline-item {
+            display: flex;
+            gap: 14px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .timeline-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .timeline-item:first-child { padding-top: 0; }
+        .timeline-when {
+            flex-shrink: 0;
+            width: 72px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .timeline-what {
+            font-size: 0.92rem;
+            color: var(--muted);
+        }
+        .timeline-what strong { color: var(--text); font-weight: 500; }
+        .later {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+        .later-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+        .later-links a {
+            font-size: 0.85rem;
+            color: var(--muted);
+            text-decoration: none;
+            padding: 8px 14px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        .later-links a:hover { color: var(--text); border-color: var(--accent); }
+        footer {
+            margin-top: 48px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+        footer a { color: var(--muted); }
+        @media print {
+            body { background: white; color: #111; }
+            .card, .timeline, .core-message { border: 1px solid #ccc; background: #f9f9f9; }
+            .card:hover { transform: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+
+    <header class="hero">
+        <div class="hero-label">Built for Greg</div>
+        <h1>Your roadmap.<br>One step at a time.</h1>
+        <p class="hero-sub">Everything Kim compiled — Karmanos prep, the metabolic strategy, and the tools to run it. No noise. Just what matters.</p>
+        <div class="pill-row">
+            <span class="pill">Sinonasal NEC · Stage IV</span>
+            <span class="pill">Karmanos · Aug 13</span>
+            <span class="pill">Liver + pelvis mets</span>
+        </div>
+    </header>
+
+    <div class="core-message">
+        <strong>Chemo first.</strong> Carboplatin + etoposide is the main fight.<br>
+        Keto + GKI + antiparasitics run <em>parallel</em> — with Karmanos approval, never instead of standard care.
+    </div>
+
+    <!-- START HERE -->
+    <h2>Start here</h2>
+
+    <a class="card card-primary" href="greg-karmanos-roadmap.html">
+        <span class="card-arrow">→</span>
+        <div class="card-tag">Step 1 · Read first</div>
+        <div class="card-title">Karmanos Prep &amp; 90-Day Plan</div>
+        <p class="card-desc">What to bring Wednesday. Fifteen questions for your oncologist. Your weekly rhythm once treatment starts. Print this.</p>
+    </a>
+
+    <!-- UNDERSTAND -->
+    <h2>Understand the options</h2>
+
+    <a class="card" href="greg-benzimidazole-sourcing-guide.html">
+        <span class="card-arrow">→</span>
+        <div class="card-tag green">Step 2 · 10 min read</div>
+        <div class="card-title">Fenbendazole vs Mebendazole</div>
+        <p class="card-desc">Farm store vs human Rx. What Facebook gets wrong. What to ask Karmanos — with real sources, not hype.</p>
+    </a>
+
+    <!-- TOOLS -->
+    <h2>Tools — use when ready</h2>
+
+    <a class="card" href="gki-tracking-sheet.html">
+        <span class="card-arrow">→</span>
+        <div class="card-tag amber">Can start now</div>
+        <div class="card-title">GKI Tracking Sheet</div>
+        <p class="card-desc">Printable 4-week log. Glucose, ketones, and your GKI number — twice daily. Baseline before chemo.</p>
+    </a>
+
+    <a class="card" href="shopping-sourcing-list.html">
+        <span class="card-arrow">→</span>
+        <div class="card-tag amber">After Karmanos OK</div>
+        <div class="card-title">Shopping &amp; Sourcing List</div>
+        <p class="card-desc">Meter, keto groceries, supplements. What to buy — and what not to buy yet.</p>
+    </a>
+
+    <a class="card" href="greg-treatment-calendar.html">
+        <span class="card-arrow">→</span>
+        <div class="card-tag amber">After Aug 13</div>
+        <div class="card-title">Treatment Calendar</div>
+        <p class="card-desc">Blank template for chemo cycles, FBZ/IVM pulse weeks, and scan dates. Kim fills in after your visit.</p>
+    </a>
+
+    <!-- SIMPLE TIMELINE -->
+    <h2>Your timeline</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-when">Now</div>
+            <div class="timeline-what"><strong>Read Karmanos prep.</strong> Gather records. Order Keto-Mojo. Cut sugar.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-when">Aug 13</div>
+            <div class="timeline-what"><strong>Karmanos visit.</strong> Kim takes notes. Ask about chemo + metabolic adjuncts + liver monitoring.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-when">Week 1</div>
+            <div class="timeline-what"><strong>Start what oncologist approves.</strong> GKI sheet daily. Chemo cycle 1 if scheduled.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-when">Ongoing</div>
+            <div class="timeline-what"><strong>Run the system.</strong> Diet + tracking + approved protocol. Rest scans tell the story.</div>
+        </div>
+    </div>
+
+    <!-- DEEP DIVE - de-emphasized -->
+    <div class="later">
+        <h2>When you want to go deeper</h2>
+        <p style="color: var(--muted); font-size: 0.92rem; margin: 0;">Expert directory, patient communities, Facebook fact-checks, full protocol detail. Not required reading before Wednesday.</p>
+        <div class="later-links">
+            <a href="cancer-metabolic-strategy.html">Full metabolic strategy</a>
+            <a href="deliverables-roadmap.html">Project index (Kim)</a>
+        </div>
+    </div>
+
+    <footer>
+        Not medical advice. Decisions belong with your Karmanos team.<br>
+        <a href="https://github.com/barreletics/public-education">GitHub repository</a> · Updated August 2026
+    </footer>
+
+</div>
+
+</body>
+</html>
