@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Roadmap — Remaining Deliverables</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background: #f9f9f9; color: #333; }
+        h1 { border-bottom: 3px solid #2e7d32; padding-bottom: 10px; }
+        h2 { color: #2e7d32; margin-top: 28px; }
+        h3 { color: #333; margin-top: 18px; }
+        .banner { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 16px 20px; margin-bottom: 24px; border-radius: 4px; }
+        .section { background: white; padding: 20px; margin: 20px 0; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.08); }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.92em; }
+        th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+        th { background: #f5f5f5; }
+        .status-done { color: #2e7d32; font-weight: 600; }
+        .status-ready { color: #1565c0; font-weight: 600; }
+        .status-blocked { color: #c62828; font-weight: 600; }
+        .status-partial { color: #ef6c00; font-weight: 600; }
+        .phase { background: #f8f9fa; border-left: 3px solid #2e7d32; padding: 12px 16px; margin: 12px 0; }
+        .need-box { background: #fff3e0; border-left: 4px solid #ef6c00; padding: 14px 18px; margin: 14px 0; border-radius: 4px; }
+        .no-need { background: #e3f2fd; border-left: 4px solid #1565c0; padding: 14px 18px; margin: 14px 0; border-radius: 4px; }
+        a { color: #1565c0; }
+        ul { margin: 8px 0; }
+        @media print { body { background: white; } .section { box-shadow: none; border: 1px solid #ddd; } }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    <h1>Project Roadmap — What's Built, What's Next</h1>
+    <p><strong>For:</strong> Kim &amp; Greg · <strong>Updated:</strong> August 2026</p>
+    <p>Master plan for completing the public-education cancer toolkit. Links to all docs below.</p>
+</div>
+
+<div class="section">
+    <h2>Document Map (current)</h2>
+    <table>
+        <tr><th>Document</th><th>Status</th><th>Link</th></tr>
+        <tr>
+            <td>Cancer Metabolic Strategy</td>
+            <td class="status-done">Live</td>
+            <td><a href="cancer-metabolic-strategy.html">cancer-metabolic-strategy.html</a></td>
+        </tr>
+        <tr>
+            <td>Greg's Bite-Size Plan (diagrams)</td>
+            <td class="status-done">Live — give Greg this first</td>
+            <td><a href="greg-bite-size-guide.html">greg-bite-size-guide.html</a></td>
+        </tr>
+        <tr>
+            <td>Greg's Karmanos Roadmap</td>
+            <td class="status-partial">Built — merge PR #1 to go live</td>
+            <td><a href="greg-karmanos-roadmap.html">greg-karmanos-roadmap.html</a></td>
+        </tr>
+        <tr>
+            <td>GKI Tracking Sheet</td>
+            <td class="status-ready">Built (this batch)</td>
+            <td><a href="gki-tracking-sheet.html">gki-tracking-sheet.html</a></td>
+        </tr>
+        <tr>
+            <td>Shopping &amp; Sourcing List</td>
+            <td class="status-ready">Built (this batch)</td>
+            <td><a href="shopping-sourcing-list.html">shopping-sourcing-list.html</a></td>
+        </tr>
+        <tr>
+            <td>Mebendazole vs Fenbendazole Guide (Greg)</td>
+            <td class="status-done">Built — sourced comparison + farm supply truth-check</td>
+            <td><a href="greg-benzimidazole-sourcing-guide.html">greg-benzimidazole-sourcing-guide.html</a></td>
+        </tr>
+        <tr>
+            <td>Transcript Protocol Extract</td>
+            <td class="status-blocked">Blocked — need transcript files</td>
+            <td><em>docs/transcripts/ (not yet created)</em></td>
+        </tr>
+        <tr>
+            <td>Greg's Treatment Calendar</td>
+            <td class="status-blocked">Blocked — need Karmanos answers</td>
+            <td><a href="greg-treatment-calendar.html">greg-treatment-calendar.html</a> (template)</td>
+        </tr>
+        <tr>
+            <td>This roadmap</td>
+            <td class="status-done">You are here</td>
+            <td><a href="deliverables-roadmap.html">deliverables-roadmap.html</a></td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Remaining Deliverables — Detail</h2>
+
+    <h3>1. Transcript Protocol Extract</h3>
+    <p><strong>Goal:</strong> Searchable compilation of dosing, cycling, sourcing, and key quotes from your video transcripts — organized by topic, not by video.</p>
+    <p><strong>Priority source files (your inventory):</strong></p>
+    <ul>
+        <li><strong>High:</strong> Seyfried (2), MYAutoimmuneMD (IVM + FBZ), Dr. Carol Haddad</li>
+        <li><strong>Medium:</strong> Dr. Pete Sulak, Diary of a CEO (Seyfried), Dr. Roman (skeptic balance)</li>
+        <li><strong>Lower:</strong> Berg, Soon-Shiong, general cancer reels (unless FBZ-specific sections found)</li>
+    </ul>
+    <div class="need-box">
+        <strong>Access needed from you:</strong>
+        <ul>
+            <li>Upload transcript files to <code>docs/transcripts/</code> in this repo, <strong>or</strong> paste contents in chat</li>
+            <li>No YouTube login, Facebook login, or Instagram access required — plain text files are enough</li>
+        </ul>
+    </div>
+    <p><strong>Output when unblocked:</strong> <code>transcript-protocol-extract.html</code> with sections: Dosing · Cycling · Sourcing · Keto/GKI · Skeptic counterpoints · Source attribution per quote</p>
+
+    <h3>2. GKI Tracking Sheet</h3>
+    <p><strong>Goal:</strong> Printable 4-week log for fasting AM + pre-dinner glucose, ketones, and GKI calculation.</p>
+    <p class="status-done"><strong>Status: Ready now</strong> — no extra access needed.</p>
+    <p>→ <a href="gki-tracking-sheet.html">Open GKI Tracking Sheet</a></p>
+
+    <h3>3. Shopping &amp; Sourcing List</h3>
+    <p><strong>Goal:</strong> One-page checklist of meters, supplements, and community-sourced antiparasitic brands with safety notes.</p>
+    <p class="status-done"><strong>Status: Ready now</strong> — built from existing protocol docs + public community norms.</p>
+    <p>→ <a href="shopping-sourcing-list.html">Open Shopping List</a></p>
+
+    <h3>4. Greg's Treatment Calendar (week-by-week)</h3>
+    <p><strong>Goal:</strong> Calendar tying chemo cycles, FBZ/IVM pulse weeks, scan dates, and GKI targets to actual dates — not generic "Week 1–4."</p>
+    <div class="need-box">
+        <strong>Access needed from you (after Karmanos, Wed Aug 13):</strong>
+        <ul>
+            <li>Treatment start date</li>
+            <li>Confirmed regimen (e.g. carboplatin + etoposide, cycle length, number of cycles)</li>
+            <li>Scan schedule (restaging CT/PET dates)</li>
+            <li>Oncologist yes/no on metabolic adjuncts and any supplement restrictions</li>
+        </ul>
+    </div>
+    <p><strong>Output when unblocked:</strong> Personalized <code>greg-treatment-calendar.html</code> with real dates filled in. A blank template exists now.</p>
+    <p>→ <a href="greg-treatment-calendar.html">Open calendar template</a></p>
+</div>
+
+<div class="section">
+    <h2>Phased Build Plan</h2>
+
+    <div class="phase">
+        <h3>Phase A — Now (before Karmanos)</h3>
+        <ul>
+            <li>☑ Cancer metabolic strategy guide</li>
+            <li>☑ Greg's Karmanos prep + 15 questions</li>
+            <li>☑ GKI tracking sheet (printable)</li>
+            <li>☑ Shopping &amp; sourcing list</li>
+            <li>☑ Mebendazole vs fenbendazole guide (sourced, for Greg)</li>
+            <li>☑ Facebook post fact-checks (transcripts folder)</li>
+            <li>☐ Merge PR #1 so Greg's roadmap goes live on GitHub Pages</li>
+            <li>☐ Upload transcript files → build protocol extract</li>
+        </ul>
+    </div>
+
+    <div class="phase">
+        <h3>Phase B — Karmanos week (Aug 13+)</h3>
+        <ul>
+            <li>Greg attends appointment; Kim captures answers in roadmap blanks</li>
+            <li>Send back: regimen, start date, scan date, oncologist name, adjunct approval</li>
+            <li>We fill in personalized treatment calendar with real dates</li>
+            <li>Adjust shopping list if oncologist restricts specific supplements</li>
+        </ul>
+    </div>
+
+    <div class="phase">
+        <h3>Phase C — Treatment start (weeks 1–12)</h3>
+        <ul>
+            <li>Run daily GKI sheet + weekly checklist from Greg's roadmap</li>
+            <li>Log chemo side effects alongside GKI (helps spot patterns)</li>
+            <li>Rest scan comparison — update roadmap with results</li>
+            <li>Optional: add NED/progress section to Greg's doc if markers improve</li>
+        </ul>
+    </div>
+
+    <div class="phase">
+        <h3>Phase D — Ongoing maintenance</h3>
+        <ul>
+            <li>Refresh transcript extract when new videos are transcribed</li>
+            <li>Fix broken external links (fenbendazolehelp.org currently down)</li>
+            <li>Add new community NED cases with source links as they appear</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Do I Need Access to More Areas?</h2>
+
+    <table>
+        <tr><th>Area</th><th>Needed?</th><th>Why</th></tr>
+        <tr>
+            <td><strong>Your video transcript files</strong></td>
+            <td class="status-blocked">Yes — only blocker for transcript extract</td>
+            <td>Not in GitHub repo today. Upload to <code>docs/transcripts/</code> or paste text.</td>
+        </tr>
+        <tr>
+            <td><strong>Karmanos visit answers</strong></td>
+            <td class="status-blocked">Yes — for dated calendar</td>
+            <td>Start date, cycle schedule, scan dates, drug approval.</td>
+        </tr>
+        <tr>
+            <td><strong>GitHub PR merge</strong></td>
+            <td class="status-partial">Yes — for live URLs</td>
+            <td>Greg's roadmap 404s until <a href="https://github.com/barreletics/public-education/pull/1">PR #1</a> merges to <code>main</code>. No code access issue — just merge approval.</td>
+        </tr>
+        <tr>
+            <td>Facebook / Reddit / Instagram</td>
+            <td class="status-partial">Partial — paste/screenshot works</td>
+            <td>Links alone fail login wall. <strong>Paste post text or upload screenshots</strong> — you've done this successfully. Video files welcome.</td>
+        </tr>
+        <tr>
+            <td>Shopify / Barreletics store</td>
+            <td class="no-need">No</td>
+            <td>Public-education repo is separate from store theme.</td>
+        </tr>
+        <tr>
+            <td>Medical records / imaging</td>
+            <td class="no-need">No</td>
+            <td>Greg brings those to Karmanos. We only need summary answers you choose to share.</td>
+        </tr>
+        <tr>
+            <td>YouTube API / video download</td>
+            <td class="no-need">No</td>
+            <td>You already have transcripts. Re-transcribing would duplicate work.</td>
+        </tr>
+    </table>
+
+    <div class="no-need">
+        <strong>Minimum to unblock everything:</strong> (1) merge PR #1, (2) upload ~5 priority transcript files, (3) after Aug 13 send Karmanos summary in plain text. That's it.
+    </div>
+</div>
+
+<div class="section">
+    <h2>How to Upload Transcripts (when ready)</h2>
+    <ol>
+        <li>Create folder: <code>docs/transcripts/</code></li>
+        <li>Add plain-text or markdown files (your existing names are fine)</li>
+        <li>Push to GitHub or ask the agent to process them in the next session</li>
+        <li>Priority order: Seyfried → MYAutoimmuneMD → Carol Haddad → Pete Sulak → Roman (skeptic)</li>
+    </ol>
+    <p>Expected deliverable: <strong>Transcript Protocol Extract</strong> — one page Greg can print with dosing table + attributed quotes.</p>
+</div>
+
+<div class="section">
+    <h2>Quick Links</h2>
+    <ul>
+        <li><a href="greg-benzimidazole-sourcing-guide.html">Mebendazole vs Fenbendazole Guide (Greg)</a></li>
+        <li><a href="greg-karmanos-roadmap.html">Greg's Karmanos Roadmap</a></li>
+        <li><a href="cancer-metabolic-strategy.html">Cancer Metabolic Strategy</a></li>
+        <li><a href="gki-tracking-sheet.html">GKI Tracking Sheet</a></li>
+        <li><a href="shopping-sourcing-list.html">Shopping &amp; Sourcing List</a></li>
+        <li><a href="greg-treatment-calendar.html">Treatment Calendar (template)</a></li>
+        <li><a href="https://github.com/barreletics/public-education/pull/1">PR #1 — merge for live site</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg — Bite-Size Plan (Read This First)</title>
+    <style>
+        :root {
+            --bg: #0f1419; --surface: #1a2332; --text: #e8ecf1; --muted: #94a3b8;
+            --blue: #3b82f6; --green: #34d399; --red: #f87171; --amber: #fbbf24;
+            --border: rgba(255,255,255,0.1);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.5;
+        }
+        .wrap { max-width: 680px; margin: 0 auto; padding: 28px 18px 64px; }
+        h1 { font-size: 1.65rem; margin: 0 0 8px; line-height: 1.25; }
+        .sub { color: var(--muted); margin-bottom: 24px; font-size: 0.95rem; }
+        .pill { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em;
+            text-transform: uppercase; background: rgba(59,130,246,0.15); color: var(--blue);
+            padding: 5px 12px; border-radius: 999px; margin-bottom: 16px; }
+        .card {
+            background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+            padding: 20px; margin: 16px 0;
+        }
+        h2 { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase;
+            color: var(--muted); margin: 28px 0 12px; }
+        .rule {
+            text-align: center; font-size: 1.15rem; font-weight: 700; padding: 18px;
+            background: linear-gradient(135deg, rgba(52,211,153,0.15), rgba(59,130,246,0.12));
+            border-radius: 14px; border: 1px solid var(--border); margin: 20px 0;
+        }
+        .rule em { color: var(--green); font-style: normal; }
+
+        /* Two-lane diagram */
+        .lanes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0; }
+        @media (max-width: 520px) { .lanes { grid-template-columns: 1fr; } }
+        .lane {
+            border-radius: 12px; padding: 16px; text-align: center; font-size: 0.88rem;
+        }
+        .lane-main { background: rgba(59,130,246,0.2); border: 2px solid var(--blue); }
+        .lane-side { background: rgba(52,211,153,0.12); border: 2px dashed var(--green); }
+        .lane-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 8px; }
+        .lane-main .lane-title { color: #93c5fd; }
+        .lane-side .lane-title { color: var(--green); }
+        .plus { text-align: center; font-size: 1.5rem; font-weight: 700; color: var(--muted); margin: 4px 0; }
+
+        /* 3 steps */
+        .steps { counter-reset: step; }
+        .step {
+            display: flex; gap: 14px; align-items: flex-start; margin: 14px 0;
+            padding: 14px; background: var(--surface); border-radius: 12px; border: 1px solid var(--border);
+        }
+        .step-num {
+            flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%;
+            background: var(--blue); color: white; font-weight: 700;
+            display: flex; align-items: center; justify-content: center; font-size: 1rem;
+        }
+        .step-body strong { display: block; margin-bottom: 4px; }
+
+        /* Trust pyramid */
+        .pyramid { margin: 16px 0; }
+        .pyr-row {
+            margin: 6px auto; padding: 10px 14px; border-radius: 8px; text-align: center;
+            font-size: 0.85rem; font-weight: 600;
+        }
+        .pyr-1 { width: 55%; background: rgba(52,211,153,0.25); color: var(--green); }
+        .pyr-2 { width: 72%; background: rgba(59,130,246,0.2); color: #93c5fd; }
+        .pyr-3 { width: 88%; background: rgba(251,191,36,0.15); color: var(--amber); }
+        .pyr-4 { width: 100%; background: rgba(248,113,113,0.15); color: var(--red); font-weight: 500; }
+
+        /* Cycle diagram */
+        .cycle {
+            display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; margin: 12px 0;
+        }
+        .cycle-day {
+            width: 28px; height: 28px; border-radius: 6px; font-size: 0.65rem; font-weight: 700;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .on { background: var(--green); color: #064e3b; }
+        .off { background: #334155; color: var(--muted); }
+        .cycle-legend { font-size: 0.8rem; color: var(--muted); text-align: center; margin-top: 8px; }
+
+        /* Timeline */
+        .tl { border-left: 3px solid var(--blue); padding-left: 18px; margin: 12px 0; }
+        .tl-item { margin-bottom: 16px; position: relative; }
+        .tl-item::before {
+            content: ''; position: absolute; left: -25px; top: 6px;
+            width: 10px; height: 10px; border-radius: 50%; background: var(--blue);
+        }
+        .tl-when { font-size: 0.75rem; color: var(--blue); font-weight: 700; text-transform: uppercase; }
+
+        .skip { color: var(--red); }
+        .ok { color: var(--green); }
+        .links a {
+            display: block; color: var(--blue); text-decoration: none; padding: 10px 0;
+            border-bottom: 1px solid var(--border); font-size: 0.92rem;
+        }
+        .links a:last-child { border-bottom: none; }
+        .note { font-size: 0.82rem; color: var(--muted); margin-top: 24px; line-height: 1.55; }
+        @media print {
+            body { background: white; color: #111; }
+            .card, .step, .lane, .rule { border: 1px solid #ccc; background: #f5f5f5; }
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="pill">5-minute read · print this</div>
+    <h1>Greg's plan — bite size</h1>
+    <p class="sub">Sinonasal NEC · Stage IV · Liver + pelvis · Karmanos <strong>Wed Aug 13</strong></p>
+
+    <div class="rule">
+        <span style="color:var(--blue)">CHEMO FIRST</span> — carboplatin + etoposide<br>
+        Keto + tracking run <em>PARALLEL</em> — with doctor OK, never instead
+    </div>
+
+    <!-- DIAGRAM 1: Two lanes -->
+    <h2>Diagram — two lanes (not either/or)</h2>
+    <div class="card" style="padding:16px">
+        <div class="lanes">
+            <div class="lane lane-main">
+                <div class="lane-title">LANE 1 — Main fight</div>
+                Karmanos oncology<br>
+                Carboplatin + etoposide<br>
+                Radiation · scans · trials
+            </div>
+            <div class="lane lane-side">
+                <div class="lane-title">LANE 2 — Parallel</div>
+                Strict keto · GKI ≤3<br>
+                Antiparasitics (if OK'd)<br>
+                Supplements per team
+            </div>
+        </div>
+        <div class="plus">+ together, not instead</div>
+    </div>
+
+    <!-- DIAGRAM 2: 3 steps -->
+    <h2>Diagram — your 3 steps</h2>
+    <div class="steps">
+        <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <strong>Now → Aug 13</strong>
+                Gather records · cut sugar · order Keto-Mojo · read Karmanos questions.<br>
+                <span class="skip">No fenbendazole yet. No paid Facebook programs.</span>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <strong>Wednesday — Karmanos</strong>
+                Kim takes notes. Ask: chemo plan + is keto/FBZ safe with liver mets?<br>
+                Get names, dates, and plan <em>in writing</em>.
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <strong>Week 1+ — Run the system</strong>
+                Chemo cycles + daily GKI + only what oncologist approved.<br>
+                Judge at 8–12 weeks by <em>scans</em>, not Facebook.
+            </div>
+        </div>
+    </div>
+
+    <!-- DIAGRAM 3: Timeline -->
+    <h2>Diagram — timeline</h2>
+    <div class="card">
+        <div class="tl">
+            <div class="tl-item">
+                <div class="tl-when">Now</div>
+                Prep + keto start + GKI baseline
+            </div>
+            <div class="tl-item">
+                <div class="tl-when">Aug 13</div>
+                Karmanos — oncology owns the plan
+            </div>
+            <div class="tl-item">
+                <div class="tl-when">Week 1–4</div>
+                Chemo cycle 1 + approved adjuncts
+            </div>
+            <div class="tl-item">
+                <div class="tl-when">Week 5–12</div>
+                Stay on system · rest scans · don't quit early
+            </div>
+        </div>
+    </div>
+
+    <!-- DIAGRAM 4: FBZ cycle (after approval) -->
+    <h2>Diagram — antiparasitic cycle (only after Karmanos OK)</h2>
+    <div class="card">
+        <p style="margin:0 0 8px;font-size:0.88rem">14-day repeat pattern (community protocol):</p>
+        <div class="cycle">
+            <div class="cycle-day on">1</div><div class="cycle-day on">2</div><div class="cycle-day on">3</div><div class="cycle-day on">4</div>
+            <div class="cycle-day off">5</div><div class="cycle-day off">6</div><div class="cycle-day off">7</div>
+            <div class="cycle-day off">8</div><div class="cycle-day off">9</div><div class="cycle-day off">10</div>
+            <div class="cycle-day off">11</div><div class="cycle-day off">12</div><div class="cycle-day off">13</div><div class="cycle-day off">14</div>
+        </div>
+        <div class="cycle-legend">
+            <span class="ok">■ ON (4 days)</span> — 222 mg fenbendazole + 12 mg ivermectin · with fatty meal<br>
+            <span style="color:var(--muted)">■ OFF (10 days)</span> — keto + supplements only
+        </div>
+    </div>
+
+    <!-- About this OS -->
+    <h2>What this guide is (and isn't)</h2>
+    <div class="card" style="font-size:0.88rem">
+        <p style="margin-top:0"><strong>Your cancer operating system</strong> — clear path + grounded hope. Not Facebook chaos. Not a chatbot answer.</p>
+        <table style="width:100%;font-size:0.85rem;border-collapse:collapse;margin:12px 0">
+            <tr><td style="padding:6px 0;color:var(--muted)">Sources fact-checked</td><td style="padding:6px 0"><strong>17</strong></td></tr>
+            <tr><td style="padding:6px 0;color:var(--muted)">Research + build effort</td><td style="padding:6px 0"><strong>80–120+ hrs</strong> equivalent</td></tr>
+            <tr><td style="padding:6px 0;color:var(--muted)">Built by</td><td style="padding:6px 0">Engineer · Cursor power-user program</td></tr>
+            <tr><td style="padding:6px 0;color:var(--muted)">Mapped to</td><td style="padding:6px 0">Sinonasal NEC · stage IV · liver + pelvis</td></tr>
+            <tr><td style="padding:6px 0;color:var(--muted)">Already removed</td><td style="padding:6px 0">Retracted Makis · Hulscher EoC · sales funnels</td></tr>
+        </table>
+        <p style="margin-bottom:0"><strong>Not</strong> your treatment plan — Karmanos writes that Wednesday.<br>
+        <strong>At the doctor:</strong> say you prepped questions for NEC + adjunct safety — don't lead with "AI."</p>
+    </div>
+
+    <!-- DIAGRAM 5: Trust pyramid -->
+    <h2>Diagram — who to trust</h2>
+    <div class="pyramid">
+        <div class="pyr-row pyr-1">✅ Karmanos + standard NEC chemo</div>
+        <div class="pyr-row pyr-2">✅ Seyfried / Pharmacy Times (research + skeptic)</div>
+        <div class="pyr-row pyr-3">⚠️ Tippens · Berg · Supple · Sulack (hope + ideas only)</div>
+        <div class="pyr-row pyr-4">❌ Makis · Hulscher hype · Skymeds ads · Nurse Maria · Be Resilient sales</div>
+    </div>
+
+    <!-- Buy / skip -->
+    <h2>Buy now vs wait</h2>
+    <div class="card" style="font-size:0.9rem">
+        <p><span class="ok">✓ Now:</span> Keto-Mojo · keto food · electrolytes · GKI sheet</p>
+        <p><span class="ok">✓ After Aug 13:</span> FBZ / IVM / supplements — only if oncologist says yes</p>
+        <p style="margin-bottom:0"><span class="skip">✗ Skip:</span> Sulack $program · Skymeds · bulk FBZ · anything that delays chemo</p>
+    </div>
+
+    <!-- Links -->
+    <h2>Full docs (when you want more)</h2>
+    <div class="card links">
+        <a href="greg-karmanos-roadmap.html">→ Karmanos prep + 15 questions (print for Wednesday)</a>
+        <a href="greg-benzimidazole-sourcing-guide.html">→ Fenbendazole vs mebendazole (sourced)</a>
+        <a href="gki-tracking-sheet.html">→ GKI tracking sheet</a>
+        <a href="shopping-sourcing-list.html">→ Shopping list</a>
+        <a href="index.html">→ Home / all links</a>
+    </div>
+
+    <p class="note">
+        <strong>Built for Greg:</strong> Many tens of hours of source vetting and systems design — a full operating system (clear path + real hope), not a longer Facebook scroll. Karmanos writes the prescription; this gets you there ready.
+    </p>
+
+</div>
+</body>
+</html>

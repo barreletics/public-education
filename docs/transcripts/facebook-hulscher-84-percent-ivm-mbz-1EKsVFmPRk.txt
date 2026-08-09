@@ -1,0 +1,73 @@
+Source share: https://www.facebook.com/share/v/1EKsVFmPRk/
+Resolves to: https://www.facebook.com/reel/27213221871698300/
+Posted by: Worldview Tube (viral news clip page)
+Promoted by: Nicolas Hulscher, MPH (McCullough Foundation)
+
+=== CAPTION (og:metadata) ===
+
+BREAKING: Epidemiologist Nic Hulscher reports on a new peer-reviewed study of 200 cancer patients treated with compounded ivermectin + mebendazole.
+
+After 6 months: 84.4% showed benefit — remission, tumor shrinkage, regression, or stabilization. Largest human study to date.
+
+Now published in a major cancer journal.
+
+=== THE PAPER ===
+Title: Real-World Clinical Outcomes of Ivermectin and Mebendazole in Cancer Patients: Results from a Prospective Observational Cohort
+Authors: Hulscher et al. (+ McCullough, Risch, Wellness Company affiliates)
+Journal: Anticancer Research, Vol 46 No 6, pp 3243-3255, June 2026
+DOI: https://doi.org/10.21873/anticanres.18194 (study)
+Expression of Concern: https://doi.org/10.21873/anticanres.18276 (June 2026)
+PubMed: PMID 42203321
+
+=== WHAT THE STUDY ACTUALLY IS ===
+- N=197 enrolled; N=122 completed 6-month follow-up (61.9% — 38% dropped out)
+- **Observational cohort** — NOT randomized controlled trial
+- **Self-reported outcomes** via digital surveys — not independently verified scans
+- Intervention: compounded **25 mg ivermectin + 250 mg mebendazole** capsules (McCullough/Wellness Company protocol)
+- **NOT fenbendazole** — uses human mebendazole
+- Majority also on concurrent conventional therapies — not controlled for
+- Cancer mix: prostate 27.9%, breast 18.3%, lung 8.6% — **no sinonasal NEC**
+
+=== WHY IT SOUNDS "GOOD" ===
++ Actually published in peer-reviewed journal (Anticancer Research)
++ Larger n than Makis 3-patient retracted series
++ Uses **mebendazole** (human drug) — closer to Seyfried/Riggins lane than veterinary FBZ
++ 84.4% "clinical benefit ratio" includes stable disease, not just remission
++ Real paper exists — not pure Facebook fiction
+
+=== WHY IT'S NOT KARMANOS-GRADE EVIDENCE ===
+- Journal issued **Expression of Concern** (June 2026) citing:
+  - Verifiability and statistical reliability questions
+  - Ethical oversight / IRB concerns
+  - Self-reported data insufficient for "84.4% tumor regression" claims
+  - Post-publication audit initiated
+- Authors tied to **Wellness Company** — sells the same drug combo (financial COI)
+- Science-Based Medicine + Lead Stories: anonymous surveys, survivor bias, no control group
+- Hulscher also promotes **retracted Makis fenbendazole** paper on social media — credibility mixed
+- **Not retracted yet** (as of Aug 2026) but flagged
+
+=== RELEVANCE FOR GREG ===
+| Point | Detail |
+|-------|--------|
+| Drug combo | IVM 25 mg + MBZ 250 mg — different from community FBZ 222 mg + IVM 12 mg |
+| Mebendazole angle | Supports asking Karmanos about **mebendazole Rx** vs veterinary fenbendazole |
+| Liver mets | IVM+MBZ both hepatically metabolized — skeptic short warns liver synergy risk |
+| NEC | Zero patients with Greg's cancer type in cohort |
+| At Karmanos | "I've seen the Hulscher observational paper — it has an Expression of Concern. We're asking what you'd approve alongside carboplatin/etoposide, with liver monitoring." |
+
+=== VERDICT ===
+**Sounds good ≠ proven.** Real published study, but **caution tier** — same ecosystem as McCullough/Hulscher. Much stronger than Makis Facebook infographic; **much weaker** than Seyfried DOAC or Hopkins Phase I mebendazole trial.
+
+Do NOT cite "84.4% remission" without noting Expression of Concern and self-report design.
+
+=== FACT-CHECK LINKS ===
+- Expression of Concern: https://doi.org/10.21873/anticanres.18276
+- Science-Based Medicine critique: https://sciencebasedmedicine.org/a-shoddy-ethically-challenged-cancer-study-gets-published-for-now/
+- Lead Stories fact check: https://leadstories.com/hoax-alert/2026/04/fact-check-preprint-study-claiming-84-4-percent-clinical-benefit-ivermectin-mebendazole-cancer-treatment-not-proper-clinical-trial.html
+
+=== VS SEYFRIED REEL (17qfM9v6RT) ===
+| | Seyfried / Bartlett | This Hulscher reel |
+|---|-------------------|-------------------|
+| Legit tier | ✅ Research educator | ⚠️ Caution — EoC flagged |
+| Greg use | Why keto + GKI | Maybe mebendazole ask — with caveats |
+| Hype level | Low (long-form science) | High ("BREAKING 84.4%") |

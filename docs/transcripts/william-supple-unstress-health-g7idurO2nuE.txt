@@ -1,0 +1,38 @@
+Source: https://www.youtube.com/watch?v=g7idurO2nuE
+Title: Is Cancer a Parasite? — William F. Supple Jr., PhD on Unstress Health (Dr. Ron Ehrlich)
+Duration: ~long-form interview
+Note: Auto-captured transcript summary; verify quotes against video.
+
+=== KEY PROTOCOL INFO (Supple, this interview) ===
+
+Mother-in-law case (metastatic breast, age 83, 2021):
+- No chemo/radiation; hospice → recovered on fenbendazole only (his account)
+- Product: Amazon ~$50 / 6-month supply; Tractor Supply ~$8 package
+- Dose: mixed in daily yogurt (later states 222 mg — Joe Tippens minimum)
+- CA 27-29 tumor marker: 316 → 131 (~1 month) → normal (~6 months)
+- PET: no abnormal metabolic activity (April 2022)
+- Side effects: none reported
+
+DOSING RANGE (from Substack case reports, Supple states):
+- Minimum reported: 222 mg/day
+- Maximum reported: 2,000 mg/day
+- Mother-in-law used 222 mg
+- "You just have to take some" — absorption matters more than perfect schedule in his view
+
+Human analogs (same scaffold): mebendazole, albendazole, oxyfendazole, flubendazole
+
+Combination:
+- "You can do both" — traditional oncology + fenbendazole
+- Many case reports started FBZ AFTER chemo/radiation failed
+- Claims FBZ kills cancer stem cells left after taxanes/vinca alkaloids
+
+Substack: fenbendazole.substack.com (pseudonym "Ben Fen")
+Book: Cancer Is a Parusite — 21 case reports
+
+Mechanisms discussed: microtubules (beta-tubulin), glucose uptake, angiogenesis, immune cloaking, stroma, drug efflux pumps
+
+=== CAUTION FOR GREG ===
+- Not MD/oncologist; "cancer is a parasite" = metaphor/theory, not literal
+- Solid tumor focus (breast, lung, prostate) — NOT sinonasal high-grade NEC
+- Parasite epidemiology / deworming prevention claims are speculative
+- Do NOT skip Karmanos standard care

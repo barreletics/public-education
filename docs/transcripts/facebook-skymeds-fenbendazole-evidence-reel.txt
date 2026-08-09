@@ -1,0 +1,96 @@
+Source: User-pasted Facebook post (Skymeds Store — video reel + caption)
+Related: facebook-linda-traitz-skymeds-tippens-185geuguJW.txt · greg-benzimidazole-sourcing-guide.html
+
+=== FULL CAPTION ===
+
+🚨 Fenbendazole & Cancer: What Does the Evidence Actually Show?
+
+Interest in fenbendazole has grown rapidly, with many personal stories circulating online. But it's important to separate anecdotes from clinical evidence.
+
+🧬 What researchers know so far:
+• Laboratory and animal studies have suggested that fenbendazole may affect pathways involved in cancer cell growth.
+• Scientists continue to explore these findings through drug repurposing research.
+• Some individual case reports have been published, but case reports alone cannot prove that a treatment is safe or effective.
+
+⚠️ What is not yet established
+At this time, fenbendazole is not an approved cancer treatment, and there is no high-quality clinical evidence demonstrating that it improves survival or outcomes in people with cancer. Claims that it "saved lives" or that doctors routinely use it for themselves are not supported by reliable clinical evidence.
+
+🔬 What comes next?
+The next step is well-designed human clinical trials to evaluate:
+• Safety
+• Appropriate dosing
+• Potential benefits
+• Possible risks and drug interactions
+
+💙 Every promising idea deserves careful scientific testing. That's how new cancer treatments move from the laboratory to standard medical care.
+
+📚 Sources:
+• National Cancer Institute (NCI)
+• National Institutes of Health (NIH)
+• American Society of Clinical Oncology (ASCO)
+
+💬 What emerging area of cancer research would you like to learn more about?
+📌 Save this post for future reference and follow for evidence-based updates on cancer research and drug repurposing.
+
+⚠️ Educational only. This content is not medical advice and should not replace guidance from a qualified healthcare professional.
+
+Hashtags: Fenbendazole, cancer research, drug repurposing, clinical trials, oncology research, evidence-based medicine
+Media: Skymeds store.mp4
+
+=== CONTENT ACCURACY ===
+**✅ The science statements are largely CORRECT** — aligned with mainstream oncology/pharmacy view:
+
+| Claim in post | Accurate? |
+|---------------|-----------|
+| Lab/animal data exists | ✅ Yes — preclinical only |
+| Case reports ≠ proof | ✅ Yes |
+| Not approved cancer treatment | ✅ Yes (veterinary anthelmintic) |
+| No high-quality human survival data | ✅ Yes — no Phase III trials |
+| "Saved lives" / doctors-use-it hype unsupported | ✅ Yes — pushes back on Makis-style claims |
+| Need trials for safety, dosing, interactions | ✅ Yes |
+
+Same lane as **Pharmacy Times / Alex Gerlach** skeptic content in repo — NOT the Makis/Hulscher hype lane.
+
+=== BUT WHO POSTED IT? ===
+**⚠️ Skymeds Store** — online fenbendazole vendor ($160–220+), tagged on Linda Traitz / Nurse Maria sales reels.
+
+This is **NOT** NCI, NIH, or ASCO posting. They are **name-dropped** without specific citations or links.
+
+Business pattern:
+1. Post credible "evidence-based" content → build trust / followers
+2. Other posts sell Tippens stack + Skymeds products
+3. "Follow for updates" + "Save this post" = engagement + audience growth for future sales
+
+**Trust the MESSAGE, not the MESSENGER.**
+
+=== VS OTHER SKYMEDS POSTS IN REPO ===
+| Skymeds content | Verdict |
+|-----------------|---------|
+| Linda Traitz Joe Tippens reel | ❌ Sales — omits Keytruda, pushes vendor |
+| This "what does evidence show" reel | ✅ Accurate science — ⚠️ still from seller |
+| Nurse Maria fenbendazole + chemo post | ❌ Sales funnel |
+
+=== RELEVANCE FOR GREG (sinonasal NEC, stage IV, Karmanos Aug 13) ===
+
+**USE the framing at Karmanos:**
+"Social media claims fenbendazole saves lives, but NCI-level consensus is preclinical data only — no proven survival benefit in humans. We want to know if anything in this repurposing lane is safe **with** carboplatin/etoposide and my liver mets."
+
+**DO NOT:**
+- Buy from Skymeds because this post sounds responsible
+- Treat Skymeds as a medical authority
+- Delay Karmanos care while "waiting for trials" — Greg needs standard NEC chemo **now**; adjuncts only **parallel** with team approval
+
+**Better sources for same message (no sales conflict):**
+- Pharmacy Times / HOPA coverage (in repo)
+- NCI drug dictionary / cancer.gov
+- Karmanos oncology pharmacist
+
+=== BOTTOM LINE ===
+| Question | Answer |
+|----------|--------|
+| Is the post factually wrong? | **No — it's mostly right** |
+| Should Greg follow Skymeds? | **No — they're still a seller** |
+| Does this support self-treating with FBZ? | **No — it argues the opposite** |
+| Does this contradict Makis/Hulscher hype? | **Yes — explicitly** |
+
+One-line for Kim: *"Even the fenbendazole store admits there's no proof it works in people — that's why Greg needs Karmanos first, not Facebook shopping."*

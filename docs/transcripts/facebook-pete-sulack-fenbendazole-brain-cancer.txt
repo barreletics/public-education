@@ -1,0 +1,73 @@
+Source: Facebook post by Dr. Pete Sulack (user-pasted)
+Related: drpetesulack.com · Redeem Health (formerly Exodus Chiropractic), Knoxville TN
+Note: Same obfuscated prefix as Nurse Maria / Hulscher posts (spam-network cross-post pattern)
+
+=== FULL POST TEXT ===
+
+🔥 The Fenbendazole Stack: What I Used During Brain Cancer
+
+It started with a story—Joe Tippens beat terminal cancer using Fenbendazole.
+Then I saw the research. Then I tried it.
+
+📚 What the science says:
+ • Scientific Reports (2018): Fenbendazole disrupts tubulin polymerization in glioblastoma models
+ • J Cancer Sci Ther: Induces apoptosis and mitotic arrest in cancer cells
+ • Terrain therapy models: Suggest synergy with fasting, curcumin, and mitochondrial support
+
+💡 I used it under supervision, pulsed with metabolic therapy and detox.
+It wasn't a miracle drug—it was a terrain disruptor in the bigger strategy that got me to remission.
+
+Now I help others build that same strategy—because everyone deserves options.
+
+Comment "PROTOCOL" to see my full terrain stack
+Comment "EMAIL" for Fenbendazole research + tips
+Comment "CONSULT" to speak 1-on-1 with my team
+
+⚠️ DISCLAIMER: Not medical advice. For educational purposes only. Always consult your doctor before using any off-label therapies.
+
+#DrPeteSulack #Fenbendazole #BrainCancerSurvivor #JoeTippensProtocol ...
+
+=== WHO IS PETE SULACK ===
+- Chiropractor (DC), Northwestern Health Sciences University — NOT a medical oncologist or neuro-oncologist
+- Founded Exodus Chiropractic / Redeem Health — large wellness clinic, Knoxville TN
+- Claims: Grade 4 diffuse astrocytoma diagnosed Nov 2024; "full remission" ~4 months later (self-reported)
+- Protocol: faith-based healing + functional/metabolic "terrain" approach + repurposed drugs incl. fenbendazole
+- Business model: Facebook lead gen (comment PROTOCOL / EMAIL / CONSULT → DMs, consults, protocol sales)
+
+=== PAPERS CITED — FACT CHECK ===
+
+1. Scientific Reports 2018 — Dogra et al.
+   DOI: https://doi.org/10.1038/s41598-018-30158-6
+   REAL paper. Primarily A549 non-small cell lung cancer + mouse xenografts — NOT glioblastoma-specific models.
+   Shows microtubule destabilization, p53, glycolysis inhibition in vitro/in vivo — preclinical only.
+
+2. "J Cancer Sci Ther" — generic reference; multiple papers exist. Apoptosis/mitotic arrest claims are lab-level.
+
+3. "Terrain therapy models" — not a single peer-reviewed paper; integrative/alternative framing.
+
+=== IS THIS A LEGIT SOURCE? ===
+
+PARTIALLY USEFUL / MOSTLY CAUTION:
++ Closest Facebook story to CNS cancer (brain vs Greg's sinus primary — still different)
++ Cites real preclinical paper (with slight mislabel as "glioblastoma models")
++ Acknowledges FBZ as part of stack, not sole miracle drug
++ Disclaimer present
+
+− Chiropractor survivor anecdote — not controlled evidence
+− Lead-gen sales funnel (PROTOCOL/CONSULT comments)
+− Cannot verify what else contributed to remission (surgery? radiation? chemo? immunotherapy? — unclear from post)
+− Same spam-network posting pattern as Makis hype accounts
+− "Terrain" / faith-healing framing may not resonate at Karmanos
+− Diffuse astrocytoma ≠ high-grade sinonasal NEC with liver mets
+
+=== RELEVANCE FOR GREG ===
+- More relevant HOPE story than Makis breast/prostate/melanoma cases
+- Still NOT proof for NEC — different cancer, different anatomy, different standard care (carboplatin/etoposide)
+- Useful question for Karmanos: "Any data on benzimidazoles with neuroendocrine carcinoma or liver mets?"
+- Do NOT cite Sulack at Karmanos as medical authority — cite Riggins/GBM mebendazole work if brain-adjacent preclinical needed
+
+=== IF GREG ASKS "WHAT ABOUT DR. PETE?" ===
+"He's a chiropractor who says fenbendazole was part of his brain cancer stack — it's hope, not proof for my cancer. I'd want Karmanos to tell us if anything like that is safe with my chemo and liver mets."
+
+=== TIER FOR EXPERT DIRECTORY ===
+Patient / survivor advocate — with commercial lead-gen caveat (stronger than pure patient story like Tippens because of consult funnel)

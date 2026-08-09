@@ -1,19 +1,22 @@
-# Getting Started
+# Public Education — Document Index
 
-This document is the entry point for the Public Education repository. It explains what lives here, how the material is organized, and how to use it.
+**Greg:** open the [landing page](./index.html) — not this file.
 
-## What This Covers
+## Live site (after PR merge)
 
-Reference material written to be read directly on GitHub, without any setup or tooling. Each document is self-contained and can be linked to on its own.
+https://barreletics.github.io/public-education/
 
-*Add a short description of the first topic here, along with who it is written for and what a reader should already know.*
+## All documents
 
-## How to Use These Documents
+| Document | Audience |
+|----------|----------|
+| [index.html](./index.html) | **Greg — start here** |
+| [greg-karmanos-roadmap.html](./greg-karmanos-roadmap.html) | Greg — Karmanos Wed Aug 13 |
+| [greg-benzimidazole-sourcing-guide.html](./greg-benzimidazole-sourcing-guide.html) | Greg — FBZ vs MBZ |
+| [gki-tracking-sheet.html](./gki-tracking-sheet.html) | Greg — daily tracking |
+| [shopping-sourcing-list.html](./shopping-sourcing-list.html) | Greg — after oncologist OK |
+| [greg-treatment-calendar.html](./greg-treatment-calendar.html) | Greg — fill after Karmanos |
+| [cancer-metabolic-strategy.html](./cancer-metabolic-strategy.html) | Deep dive |
+| [deliverables-roadmap.html](./deliverables-roadmap.html) | Kim — project status |
 
-Read straight through, or jump to the section you need. Documents are versioned in Git, so the history of every change is visible and each revision can be referenced by commit.
-
-*Add usage notes here, including any conventions used across documents and where to start for a first-time reader.*
-
-## Contributing and Corrections
-
-Corrections and suggestions are welcome. Open an issue describing what is unclear or incorrect, or submit a pull request with the proposed change.
+Facebook fact-checks: `transcripts/` folder

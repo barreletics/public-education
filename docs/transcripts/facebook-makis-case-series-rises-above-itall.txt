@@ -1,0 +1,42 @@
+Source: https://www.facebook.com/share/p/1CQ7mJ3r5M/
+Resolves to: https://www.facebook.com/Risesaboveitall/posts/-new-research-is-shaking-things-upa-newly-published-case-series-in-case-reports-/10163072930176273/
+Posted by: Nikki Braun — Facebook page "Rises Above It All"
+
+=== POST CONTENT (partial — from og:description) ===
+
+🚨 New research is shaking things up…
+
+A newly published case series in Case Reports in Oncology (Dr. William Makis et al.) documented something remarkable:
+
+👉 3 patients with stage IV cancers...
+
+[Full post text truncated in metadata fetch — likely promotes complete remission on fenbendazole]
+
+=== THE PAPER THEY'RE SHARING ===
+Title: "Fenbendazole as an Anticancer Agent? A Case Series of Self-Administration in Three Patients"
+Authors: William Makis, Ilyes Baghli, Pierrick Martinez
+Journal: Case Reports in Oncology, 2025
+DOI: https://doi.org/10.1159/000546362
+PMC (may show retraction banner): https://pmc.ncbi.nlm.nih.gov/articles/PMC12215191/
+
+Claims in paper (before retraction):
+- 3 stage IV patients (breast, prostate, melanoma)
+- 2 complete remission, 1 near-complete
+- FBZ with other non-chemo therapies
+- Follow-up 11 months to ~3 years
+
+=== CRITICAL: RETRACTED JANUARY 21, 2026 ===
+Retraction DOI: https://doi.org/10.1159/000549387
+Reason: First author (Makis) failed to disclose conflict of interest — offered services related to study topic (fenbendazole coaching/sales) at time of submission.
+Editor: concerns would have affected interpretation and recommendations.
+
+Makis is in "caution" tier on cancer-metabolic-strategy.html (with McCullough).
+
+=== RELEVANCE FOR GREG ===
+- Facebook hype post — do NOT treat as current valid science
+- Cancer types ≠ Greg's sinonasal high-grade NEC
+- Makis paper retraction is exactly what oncologists may cite if Kim/Greg mention Facebook research
+- Pair with: Pharmacy Times misinformation video, skeptic Short on liver, Dr. Roman
+
+=== IF GREG ASKS "WHAT ABOUT THIS POST?" ===
+"The journal retracted that paper in January 2026 over undisclosed conflicts of interest. We're still considering FBZ as an adjunct with Karmanos approval — not because of retracted Facebook posts."
