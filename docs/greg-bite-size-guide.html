@@ -582,6 +582,34 @@
             white-space: nowrap;
         }
 
+        .checklist { list-style: none; padding: 0; margin: 0; }
+        .checklist li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .checklist li::before { content: "☐ "; font-weight: 700; color: var(--accent); }
+        .q-list { margin: 0; padding-left: 1.25rem; font-size: 15px; line-height: 1.65; color: var(--ink); }
+        .q-list li { margin: 8px 0; }
+        .script-box {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--muted);
+            border-left: 3px solid var(--accent);
+            padding: 12px 16px;
+            margin: 12px 0;
+            background: #fafbfc;
+        }
+        .warn-box {
+            background: #fff8e1;
+            border: 1px solid #ffe082;
+            padding: 12px 14px;
+            font-size: 14px;
+            line-height: 1.55;
+            margin: 12px 0;
+        }
+
         @media print {
             body { background: white; padding: 0; }
             .doc { box-shadow: none; border: none; max-width: 100%; }
@@ -595,8 +623,8 @@
 <div class="doc">
 
     <header class="head">
-        <div class="head-tag">Greg's plan · bite-size</div>
-        <h1>Clear path. Both lanes. One fight.</h1>
+        <div class="head-tag">Greg's plan · everything on one page</div>
+        <h1>Your plan. One page. Both lanes.</h1>
         <div class="meta">
             <div><label>Diagnosis</label>High-grade neuroendocrine carcinoma · sinus</div>
             <div><label>Stage</label>IV · liver + pelvis metastases</div>
@@ -615,7 +643,7 @@
         <ol>
             <li><strong>Start keto today</strong> — under 20g carbs · print the <a href="keto-starter-sheet.html">keto starter sheet</a></li>
             <li><strong>Order Keto-Mojo</strong> — measure GKI twice daily (morning + evening)</li>
-            <li><strong>Wednesday at Karmanos</strong> — get chemo plan in writing · tell them the metabolic protocol</li>
+            <li><strong>Wednesday at Karmanos</strong> — §06 below · bring this page · Kim takes notes</li>
             <li><strong>FBZ + ivermectin</strong> — sources disagree on cycle timing (see §04) · consider <strong>Dr. Katsonas</strong> to help pick the right schedule</li>
         </ol>
     </div>
@@ -729,7 +757,7 @@
                     <div class="path-n">1</div>
                     <div>
                         <strong>Now → Aug 13</strong>
-                        <p>Order shopping list items · start keto · log GKI twice daily · gather records for Karmanos.</p>
+                        <p>Order from §05 shopping list · start keto · log GKI · read §06 for Wednesday.</p>
                     </div>
                 </div>
                 <div class="path-item">
@@ -817,62 +845,90 @@
             </div>
         </section>
 
-        <!-- 05 Shopping -->
-        <section class="sec">
+        <!-- 05 Shopping (inline checklist) -->
+        <section class="sec" id="shopping">
             <div class="sec-head">
                 <span class="sec-num">05</span>
-                <h2 class="sec-title">Where to buy</h2>
+                <h2 class="sec-title">Shopping list</h2>
+            </div>
+            <p class="sec-lead">Check boxes as you buy. Print this page if you want a paper copy.</p>
+
+            <div class="warn-box">
+                <strong>Fenbendazole — skip random Amazon capsules.</strong> Best source: <strong>Panacur C</strong> from <strong>Tractor Supply</strong> or a local farm/feed store (~$8–15). Joe Tippens used this — one 1g packet = 222 mg. Mix into fatty food (avocado, nut butter). Amazon sells Panacur too, but farm store is usually cheaper and you know what you're getting. Avoid no-name "fenbendazole" supplement bottles — quality varies.
             </div>
 
-            <div class="shop-row">
-                <div><label>Start today</label><strong>Keto-Mojo meter</strong> — amazon.com or keto-mojo.com (~$45). Comes with a few strips; order extra.</div>
-                <div><label>Strips (ongoing)</label><strong>Glucose strips</strong> + <strong>ketone strips</strong> — separate boxes, Keto-Mojo brand. ~2 checks/day = plan on refills.</div>
-            </div>
-            <div class="shop-row">
-                <div><label>Keto food</label>Print <a href="keto-starter-sheet.html">keto starter sheet</a> · any grocery · eggs, avocado, meat, fish, greens, cheese. Optional app: Carb Manager or Cronometer (not required).</div>
-                <div><label>Electrolytes</label>Amazon or grocery — <strong>LMNT</strong>, <strong>Nuun</strong>, or salt + potassium. Prevents keto flu.</div>
-            </div>
-            <div class="shop-row">
-                <div><label>ACV + tea</label>Apple cider vinegar (any grocery) · matcha or green tea bags (Amazon / grocery)</div>
-                <div><label>Metabolic clinician</label><strong>Dr. Katsonas</strong> — Kim recommends a consult to pick cycle timing and tune the protocol</div>
-            </div>
-            <div class="shop-row">
-                <div><label>Fenbendazole</label><strong>Panacur C</strong> — Tractor Supply, Amazon, farm stores (~$8–15). Each 1g packet = 222 mg. Or pre-made capsules (Sanare Lab, etc.) for convenience — same dose, not stronger.</div>
-                <div><label>Ivermectin</label>Human 12 mg tablets (online pharmacies / telehealth) preferred. Some use farm formulations — <strong>12 mg on cycle days</strong> is the target dose.</div>
-            </div>
-            <div class="shop-row">
-                <div><label>Magnesium</label><strong>Glycinate</strong> (best for sleep/cramps) or citrate — Amazon, ~200–400 mg elemental. Avoid magnesium oxide (cheap, poor absorption).</div>
-                <div><label>Supplements</label>Amazon, Costco, grocery — vitamin D3, E, curcumin. Pill organizer for cycle days.</div>
-            </div>
-            <div class="shop-row">
-                <div><label>GKI log</label>Print <a href="gki-tracking-sheet.html">GKI tracking sheet</a> — or notebook: date · glucose · ketones · GKI.</div>
-                <div><label>Liver mets note</label>Greg has liver mets — track how you feel; get LFTs when Karmanos runs labs.</div>
-            </div>
+            <p style="font-size:14px;font-weight:600;margin:0 0 8px">Start now</p>
+            <ul class="checklist">
+                <li><strong>Keto-Mojo meter + strips</strong> — ketomojo.com or Amazon (~$45). Need glucose strips + ketone strips (two boxes).</li>
+                <li><strong>Keto groceries</strong> — any store · see <a href="keto-starter-sheet.html">keto starter sheet</a> (optional app: Carb Manager)</li>
+                <li><strong>Electrolytes</strong> — LMNT, Nuun, or grocery (no sugar)</li>
+                <li><strong>Magnesium glycinate</strong> — 200–400 mg · Amazon or CVS (not oxide)</li>
+                <li><strong>Vitamin D3</strong> 5000 IU · <strong>Vitamin E</strong> 400–800 IU · <strong>Curcumin</strong> 500–1000 mg</li>
+                <li><strong>Apple cider vinegar</strong> — grocery · 1–2 tbsp in water daily</li>
+                <li><strong>Matcha or green tea</strong> — grocery · 1–2 cups/day optional</li>
+            </ul>
+
+            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Before / with chemo</p>
+            <ul class="checklist">
+                <li><strong>Panacur C</strong> — Tractor Supply or farm store (not random Amazon capsules)</li>
+                <li><strong>Ivermectin 12 mg</strong> — human tablets via telehealth or compounding pharmacy</li>
+                <li><strong>Dr. Katsonas consult</strong> — Kim recommends · pick cycle timing · tune protocol</li>
+            </ul>
         </section>
 
-        <!-- 06 Print & links -->
-        <section class="sec">
+        <!-- 06 Karmanos Wednesday -->
+        <section class="sec" id="karmanos">
             <div class="sec-head">
                 <span class="sec-num">06</span>
-                <h2 class="sec-title">Print &amp; links</h2>
+                <h2 class="sec-title">Wednesday at Karmanos</h2>
             </div>
-            <p class="sec-lead">Everything lives on this one page. Print these extras for Wednesday and daily tracking.</p>
+            <p class="sec-lead">Kim takes notes. Get the chemo plan in writing. Tell them you're running metabolic support <em>with</em> chemo.</p>
+
+            <p style="font-size:14px;font-weight:600;margin:0 0 8px">Bring</p>
+            <ul class="checklist">
+                <li>Pathology reports · ask for Ki-67 score if missing</li>
+                <li>Imaging (CD/USB or portal login)</li>
+                <li>List of meds and supplements</li>
+                <li>Symptom list (pain, fatigue, weight, headaches)</li>
+                <li>This page · Kim to take notes</li>
+            </ul>
+
+            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">Questions for the oncologist</p>
+            <ol class="q-list">
+                <li>Confirm high-grade NEC — Ki-67? Small-cell or large-cell type?</li>
+                <li>First-line chemo — carboplatin + etoposide? How many cycles? When do we start?</li>
+                <li>Radiation to sinus? Any liver-directed options?</li>
+                <li>Was DOTATATE PET done? (Lutathera option — often no for high-grade NEC)</li>
+                <li>Clinical trials at Karmanos for this diagnosis?</li>
+                <li>We're doing strict keto + GKI tracking — any concerns with chemo?</li>
+                <li>We're adding fenbendazole 222 mg + ivermectin 12 mg on a cycle — interaction concerns with etoposide/platinum?</li>
+                <li>Which supplements to avoid during chemo? Who helps with nutrition?</li>
+                <li>How to reach you if side effects spike between visits?</li>
+            </ol>
+
+            <p style="font-size:14px;font-weight:600;margin:16px 0 8px">What to say (read aloud if helpful)</p>
+            <div class="script-box">
+                "Greg has high-grade neuroendocrine carcinoma, sinus primary, liver and pelvis mets. We want carboplatin/etoposide — that's the main weapon. We're also running metabolic therapy in parallel: strict keto, GKI monitoring, fenbendazole and ivermectin on a cycle, plus supplements. Not instead of chemo — to enhance response. We need your help on drug interactions, liver monitoring, and safe timing with chemo cycles."
+            </div>
+
+            <p style="font-size:14px;color:var(--muted);margin:8px 0 0">Write down: Oncologist _____ · Nurse navigator _____ · Chemo start date _____ · Next scan _____</p>
+        </section>
+
+        <!-- 07 Print helpers only -->
+        <section class="sec">
+            <div class="sec-head">
+                <span class="sec-num">07</span>
+                <h2 class="sec-title">Print helpers</h2>
+            </div>
+            <p class="sec-lead">Optional extras — the plan above is complete. These are just for logging food and numbers.</p>
 
             <div class="doc-links">
                 <a class="doc-link" href="keto-starter-sheet.html">
-                    <div><strong>Keto starter sheet</strong><span>What to eat · what to skip · stick on the fridge</span></div>
-                    <em>Print →</em>
-                </a>
-                <a class="doc-link" href="shopping-sourcing-list.html">
-                    <div><strong>Shopping list</strong><span>Checklist — Keto-Mojo, groceries, supplements, Panacur C</span></div>
-                    <em>Print →</em>
-                </a>
-                <a class="doc-link" href="greg-karmanos-roadmap.html">
-                    <div><strong>Karmanos prep</strong><span>15 questions for the oncologist · what to bring Wednesday</span></div>
+                    <div><strong>Keto starter sheet</strong><span>Fridge list — what to eat, what to skip</span></div>
                     <em>Print →</em>
                 </a>
                 <a class="doc-link" href="gki-tracking-sheet.html">
-                    <div><strong>GKI tracking sheet</strong><span>Log glucose, ketones, and GKI twice daily</span></div>
+                    <div><strong>GKI tracking sheet</strong><span>Daily log — glucose, ketones, GKI</span></div>
                     <em>Print →</em>
                 </a>
             </div>
