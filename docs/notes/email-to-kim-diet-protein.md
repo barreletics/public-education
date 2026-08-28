@@ -2,8 +2,7 @@
 
 **To:** Kim  
 **Subject:** Diet / Protein Summary  
-**How it was sent:** text, starting with: “Kim this can help for the protein. I was researching and this has good information to help:”  
-**Full text thread:** [texts-to-kim-protein.md](./texts-to-kim-protein.md)  
+**How it was sent:** text. This file is the diet summary as compiled.  
 **Status:** Sent by text. Mail-ready replacement: [kim-seyfried-diet-letter.pdf](../kim-seyfried-diet-letter.pdf) · [letter HTML](../kim-seyfried-diet-letter.html).  
 **Related:** [What we are treating](../what-we-are-treating.html) · [Greg compiled research briefing](../greg-compiled-research.html) · [Email to Dr. Max](./email-to-dr-max.md)
 
