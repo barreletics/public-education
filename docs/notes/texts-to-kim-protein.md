@@ -43,4 +43,6 @@ One clarification from what I sent you — I went back and checked Seyfried’s 
 
 ---
 
+**Later clarification for Kim:** no carbs or sugar unless it’s an avocado or something that’s mostly fat.
+
 **Note for the scientific team (not for Kim):** PMC6541653 is the mouse KD-R paper (~89% fat / ~9% protein / ~2% carb). The 0.8–1.2 g/kg and GKI ≤1.0 figures are community/clinical framing and the GKI calculator paper (PMC4367849). They are **not** Kim’s homework. Max sets grams. Do not underfeed protein if Greg is losing muscle.
