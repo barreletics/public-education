@@ -50,6 +50,7 @@ Copy from **[MESSAGE-FOR-GREG.md](./MESSAGE-FOR-GREG.md)** — explains research
 | Shopping list | [shopping-sourcing-list.html](./docs/shopping-sourcing-list.html) |
 | Treatment calendar (fill after Karmanos) | [greg-treatment-calendar.html](./docs/greg-treatment-calendar.html) |
 | Full metabolic strategy (deep dive) | [cancer-metabolic-strategy.html](./docs/cancer-metabolic-strategy.html) |
+| **Compiled research sent to Kim + Dr. Max** | [greg-compiled-research.html](./docs/greg-compiled-research.html) |
 | Kim — project status | [deliverables-roadmap.html](./docs/deliverables-roadmap.html) |
 
 ## Diagrams (bite-size guide)

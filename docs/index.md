@@ -17,6 +17,7 @@ https://barreletics.github.io/public-education/
 | [shopping-sourcing-list.html](./shopping-sourcing-list.html) | Greg — after oncologist OK |
 | [greg-treatment-calendar.html](./greg-treatment-calendar.html) | Greg — fill after Karmanos |
 | [cancer-metabolic-strategy.html](./cancer-metabolic-strategy.html) | Deep dive |
+| [greg-compiled-research.html](./greg-compiled-research.html) | Kim / Dr. Max — compiled research + emails |
 | [deliverables-roadmap.html](./deliverables-roadmap.html) | Kim — project status |
 
 Facebook fact-checks: `transcripts/` folder
