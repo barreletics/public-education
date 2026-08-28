@@ -2,7 +2,7 @@
 
 **To:** Dr. Max  
 **Status:** Sent. Greg has started conventional treatment. He has **not** started the metabolic diet or complementary protocol.  
-**Related:** [Greg compiled research briefing](../greg-compiled-research.html) · [Email to Kim — diet/protein](./email-to-kim-diet-protein.md)
+**Related:** [What we are treating](../what-we-are-treating.html) · [Greg compiled research briefing](../greg-compiled-research.html) · [Email to Kim — diet/protein](./email-to-kim-diet-protein.md)
 
 An initial medical report (pathology, imaging, labs) was attached to the email and is **not** stored in this repo.
 

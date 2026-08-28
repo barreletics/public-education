@@ -3,7 +3,7 @@
 **To:** Kim  
 **Subject:** Diet / Protein Summary  
 **Status:** Sent. Documented here as the diet piece of the compiled research packet.  
-**Related:** [Greg compiled research briefing](../greg-compiled-research.html) · [Email to Dr. Max](./email-to-dr-max.md)
+**Related:** [Mail-ready diet letter (PDF)](../kim-seyfried-diet-letter.pdf) · [letter HTML](../kim-seyfried-diet-letter.html) · [What we are treating](../what-we-are-treating.html) · [PMC6541653 citation](./pmc6541653-citation.md) · [Greg compiled research briefing](../greg-compiled-research.html) · [Email to Dr. Max](./email-to-dr-max.md)
 
 ---
 
