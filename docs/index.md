@@ -1,10 +1,8 @@
 # Public Education — Document Index
 
-**Greg:** open the [landing page](./index.html) — not this file.
+**Live site:** https://barreletics.github.io/public-education/
 
-## Live site (after PR merge)
-
-https://barreletics.github.io/public-education/
+**Start here (anyone):** [Seyfried metabolic protein guide](./seyfried-metabolic-protein-guide.html) · [PDF](./seyfried-metabolic-protein-guide.pdf)
 
 ## All documents
 

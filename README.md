@@ -2,13 +2,13 @@
 
 Personal reference for Greg — built from **17 fact-checked Facebook/YouTube sources**, oncology guidelines for high-grade NEC, and peer-reviewed metabolic research. **Not a longer rewrite of one initial message** — a separate synthesized package.
 
-## Give Greg this link first
+## Live site
 
-**→ [Bite-size plan with diagrams](https://barreletics.github.io/public-education/greg-bite-size-guide.html)** (5 min)
+**→ https://barreletics.github.io/public-education/**
 
-**→ [Landing page](https://barreletics.github.io/public-education/)**
+**→ [Seyfried metabolic diet — protein & fat](https://barreletics.github.io/public-education/seyfried-metabolic-protein-guide.html)** (any caregiver / patient; PDF on page)
 
-*(Live after [PR #1](https://github.com/barreletics/public-education/pull/1) merges. Until then, browse `docs/`.)*
+Case-specific Greg materials remain in the repo under `docs/greg-*`.
 
 ## Message to send Greg
 
